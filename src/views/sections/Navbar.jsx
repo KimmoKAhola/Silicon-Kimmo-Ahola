@@ -1,0 +1,24 @@
+import React from 'react'
+import {Link, NavLink} from "react-router-dom";
+import Logo from '../../images/logo/silicon-logo-light_theme.svg'
+
+const Navbar = () => {
+    return (
+        <header>
+            <div className="container">
+                <Link id="logo" to="/">
+                    <img src={Logo} alt="silicon logotype"/>
+                </Link>
+                <nav id="menu">
+                    <div className="menu-links">
+                        <NavLink className="nav-link" to="/#overview">Overview</NavLink>
+                        <NavLink className="nav-link" to="/#features">Features</NavLink>
+                        <NavLink className="nav-link" to="/#news">News</NavLink>
+                        <NavLink className="nav-link" to="/#contact">Contact</NavLink>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    )
+}
+export default Navbar
