@@ -2,12 +2,11 @@ import React from 'react'
 import Showcase from "./sections/Showcase.jsx";
 import Brands from "./sections/Brands.jsx";
 import Features from "./sections/Features.jsx";
+import Slider from "./sections/Slider.jsx";
 
 const Home = () => {
     return (
         <div>
-            app features
-            Slider
             #Features
             #Testimonials
             FAQ
@@ -16,6 +15,7 @@ const Home = () => {
             <Showcase/>
             <Brands/>
             <Features/>
+            <Slider/>
         </div>
     )
 }
