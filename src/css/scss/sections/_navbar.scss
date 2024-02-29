@@ -1,0 +1,15 @@
+//work on the navbar here
+header{
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+
+    .menu-links{
+      display: flex;
+      padding: 10px;
+      gap: 10px;
+    }
+  }
+}
