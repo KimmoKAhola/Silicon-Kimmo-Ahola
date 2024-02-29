@@ -371,4 +371,11 @@ header .container .left .menu-links .nav-link:hover {
   gap: 75px;
 }
 
+#features-container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid black;
+}
+
 /*# sourceMappingURL=main.css.map */
