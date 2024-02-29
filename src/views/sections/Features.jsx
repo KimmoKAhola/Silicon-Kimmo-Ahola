@@ -24,12 +24,16 @@ const Features = () => {
                 <button>Learn more</button>
             </div>
 
-            <div id="features-second"><img src={Card1} alt="TODO"/>
-                <img src={Card1Inner} alt="TODO"/></div>
+            <div id="features-second">
+                <img src={Card1} alt="TODO"/>
+                <img src={Card1Inner} alt="TODO"/>
+            </div>
 
 
-            <div id="features-third"><img src={Card2} alt="TODO"/>
-                <img src={Card2Inner} alt="TODO"/></div>
+            <div id="features-third">
+                <img src={Card2} alt="TODO"/>
+                <img src={Card2Inner} alt="TODO"/>
+            </div>
 
             <div id="features-fourth">
                 <h2>Receive payment from international bank details</h2>

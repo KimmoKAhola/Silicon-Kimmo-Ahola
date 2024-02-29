@@ -375,7 +375,24 @@ header .container .left .menu-links .nav-link:hover {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr;
-  border: 1px solid black;
+  margin: 50px 150px;
+  padding-top: 50px;
+}
+#features-container #features-second img {
+  position: absolute;
+}
+#features-container #features-second img:last-child {
+  position: relative;
+  top: 325px;
+  left: 200px;
+}
+#features-container #features-third img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#features-container #features-third img:last-child {
+  position: relative;
+  left: 30%;
 }
 
 /*# sourceMappingURL=main.css.map */
