@@ -21,6 +21,10 @@ const Navbar = () => {
                 </div>
 
                 <div className="right">
+                    <label className="switch">
+                        <input type="checkbox"/>
+                        <span className="slider round"></span>
+                    </label>
                     <button>Toggle light/dark</button>
                     <button>Sign in/up</button>
 
