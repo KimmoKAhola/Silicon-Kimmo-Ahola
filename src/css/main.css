@@ -165,8 +165,13 @@ header .container {
 }
 header .container .menu-links {
   display: flex;
-  padding: 10px;
   gap: 10px;
+}
+header .container .menu-links .nav-link {
+  background-color: #0B0F19;
+}
+header .container .menu-links .nav-link:hover {
+  background-color: #4C82F7;
 }
 
 /*# sourceMappingURL=main.css.map */

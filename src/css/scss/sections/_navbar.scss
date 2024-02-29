@@ -8,8 +8,15 @@ header{
 
     .menu-links{
       display: flex;
-      padding: 10px;
       gap: 10px;
+
+      .nav-link{
+        background-color: #0B0F19;
+      }
+
+      .nav-link:hover{
+        background-color: #4C82F7;
+      }
     }
   }
 }
