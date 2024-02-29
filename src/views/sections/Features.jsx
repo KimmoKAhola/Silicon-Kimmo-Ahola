@@ -1,57 +1,22 @@
 import React from 'react'
-import Test from '../../images/mobile-appfeatures.svg'
-import Feature1 from '../../images/icons/feature_1.svg'
-import Feature2 from '../../images/icons/feature_2.svg'
-import Feature3 from '../../images/icons/feature_3.svg'
-import Feature4 from '../../images/icons/feature_4.svg'
-import Feature5 from '../../images/icons/feature_5.svg'
-import Feature6 from '../../images/icons/feature_6.svg'
+import Card1 from '../../images/features/card-1.png'
+import Card2 from '../../images/features/card-2.png'
+import Card1Inner from '../../images/features/card-1-inner.png'
+import Card2Inner from '../../images/features/card-2-inner.png'
+
 
 const Features = () => {
     return (
         <div>
-
-            <h1>App Features</h1>
-            <img src={Test} alt="TODO"/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorum earum officiis, quaerat
-                quos reprehenderit similique. Ducimus iste molestiae repudiandae sequi vero? Beatae deleniti maxime
-                numquam praesentium quidem. Et, molestias.</p>
-            <div>
-                <h2>Easy Payments</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, possimus.</p>
-                <img src={Feature1} alt="TODO"/>
-            </div>
-
-            <div>
-                <h2>Data Security</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <img src={Feature2} alt="TODO"/>
-            </div>
-
-
-            <div>
-                <h2>Cost Statistics</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <img src={Feature3} alt="TODO"/>
-            </div>
-
-            <div>
-                <h2>Support 24/7</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <img src={Feature4} alt="TODO"/>
-            </div>
-
-            <div>
-                <h2>Regular Cashback</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <img src={Feature5} alt="TODO"/>
-            </div>
-
-            <div>
-                <h2>Top standards</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <img src={Feature6} alt="TODO"/>
-            </div>
+            <h1>Make your money transfer simple and clear</h1>
+            <p>Baking transactions are free for you</p>
+            <p>No monthly cash commission</p>
+            <p>Manage payments and transactions online</p>
+            <button>Learn more</button>
+            <img src={Card1} alt="TODO"/>
+            <img src={Card1Inner} alt="TODO"/>
+            <img src={Card2} alt="TODO"/>
+            <img src={Card2Inner} alt="TODO"/>
         </div>
     )
 }
