@@ -10,9 +10,9 @@ import Feature6 from '../../images/icons/feature_6.svg'
 const AppFeatures = () => {
     return (
         <div>
+            <img src={Test} alt="TODO"/>
 
             <h1>App Features</h1>
-            <img src={Test} alt="TODO"/>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorum earum officiis, quaerat
                 quos reprehenderit similique. Ducimus iste molestiae repudiandae sequi vero? Beatae deleniti maxime
                 numquam praesentium quidem. Et, molestias.</p>
