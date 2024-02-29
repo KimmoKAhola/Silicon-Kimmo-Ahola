@@ -9,48 +9,54 @@ import Feature6 from '../../images/icons/feature_6.svg'
 
 const AppFeatures = () => {
     return (
-        <div>
+        <div id="app-features">
             <img src={Test} alt="TODO"/>
 
-            <h1>App Features</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorum earum officiis, quaerat
-                quos reprehenderit similique. Ducimus iste molestiae repudiandae sequi vero? Beatae deleniti maxime
-                numquam praesentium quidem. Et, molestias.</p>
-            <div>
-                <h2>Easy Payments</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, possimus.</p>
-                <img src={Feature1} alt="TODO"/>
-            </div>
-
-            <div>
-                <h2>Data Security</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <img src={Feature2} alt="TODO"/>
-            </div>
+            <div id="feature-grid">
+                <h2>App Features</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus
+                    facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
 
 
-            <div>
-                <h2>Cost Statistics</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <img src={Feature3} alt="TODO"/>
-            </div>
+                <div id="grid">
+                    <div>
+                        <h3>Easy Payments</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, possimus.</p>
+                        <img src={Feature1} alt="TODO"/>
+                    </div>
 
-            <div>
-                <h2>Support 24/7</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <img src={Feature4} alt="TODO"/>
-            </div>
+                    <div>
+                        <h3>Data Security</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <img src={Feature2} alt="TODO"/>
+                    </div>
 
-            <div>
-                <h2>Regular Cashback</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <img src={Feature5} alt="TODO"/>
-            </div>
 
-            <div>
-                <h2>Top standards</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <img src={Feature6} alt="TODO"/>
+                    <div>
+                        <h3>Cost Statistics</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <img src={Feature3} alt="TODO"/>
+                    </div>
+
+                    <div>
+                        <h3>Support 24/7</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <img src={Feature4} alt="TODO"/>
+                    </div>
+
+                    <div>
+                        <h3>Regular Cashback</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <img src={Feature5} alt="TODO"/>
+                    </div>
+
+                    <div>
+                        <h3>Top standards</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <img src={Feature6} alt="TODO"/>
+                    </div>
+                </div>
+
             </div>
         </div>
     )

@@ -1,0 +1,21 @@
+#app-features{
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+
+  #feature-grid{
+    display: grid;
+    grid-template-rows: auto auto auto;
+
+    #grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+
+      div{
+        height: 60px;
+        width: 60px;
+      }
+    }
+  }
+}

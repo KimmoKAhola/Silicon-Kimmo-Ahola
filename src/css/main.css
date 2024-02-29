@@ -336,4 +336,23 @@ header .container .left .menu-links .nav-link:hover {
   border-radius: 5px;
 }
 
+#app-features {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+#app-features #feature-grid {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+#app-features #feature-grid #grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+#app-features #feature-grid #grid div {
+  height: 60px;
+  width: 60px;
+}
+
 /*# sourceMappingURL=main.css.map */
