@@ -360,4 +360,15 @@ header .container .left .menu-links .nav-link:hover {
   gap: 20px;
 }
 
+#slider-container {
+  display: grid;
+  place-items: center;
+}
+#slider-container #pictures {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  gap: 75px;
+}
+
 /*# sourceMappingURL=main.css.map */

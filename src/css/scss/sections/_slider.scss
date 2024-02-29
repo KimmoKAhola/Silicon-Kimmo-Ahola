@@ -1,0 +1,11 @@
+#slider-container{
+  display: grid;
+  place-items: center;
+
+  #pictures{
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 75px;
+  }
+}
