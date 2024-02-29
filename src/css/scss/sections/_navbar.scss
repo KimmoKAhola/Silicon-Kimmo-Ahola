@@ -1,21 +1,27 @@
 //work on the navbar here
-header{
-  .container{
+header {
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
 
-    .menu-links{
+    .left {
       display: flex;
-      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      .menu-links {
+        display: flex;
+        gap: 20px;
+        .nav-link {
+          transition: ease-in 0.3s;
+        }
 
-      .nav-link{
-        background-color: #0B0F19;
-      }
-
-      .nav-link:hover{
-        background-color: #4C82F7;
+        .nav-link:hover {
+          background-color: #4C82F7;
+          //Add something nice here
+        }
       }
     }
   }

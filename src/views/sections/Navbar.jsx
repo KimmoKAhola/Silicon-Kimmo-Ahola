@@ -6,18 +6,28 @@ const Navbar = () => {
     return (
         <header>
             <div className="container">
-                <Link id="logo" to="/">
+
+                <div className="left"><Link id="logo" to="/">
                     <img src={Logo} alt="silicon logotype"/>
                 </Link>
-                <nav id="menu">
-                    <div className="menu-links">
-                        <NavLink className="nav-link" to="/#overview">Overview</NavLink>
-                        <NavLink className="nav-link" to="/#features">Features</NavLink>
-                        <NavLink className="nav-link" to="/#news">News</NavLink>
-                        <NavLink className="nav-link" to="/#contact">Contact</NavLink>
-                    </div>
-                </nav>
+                    <nav id="menu">
+                        <div className="menu-links">
+                            <NavLink className="nav-link" to="/#overview">Overview</NavLink>
+                            <NavLink className="nav-link" to="/#features">Features</NavLink>
+                            <NavLink className="nav-link" to="/#news">News</NavLink>
+                            <NavLink className="nav-link" to="/#contact">Contact</NavLink>
+                        </div>
+                    </nav>
+                </div>
+
+                <div className="right">
+                    <button>Toggle light/dark</button>
+                    <button>Sign in/up</button>
+
+                </div>
+
             </div>
+
         </header>
     )
 }
