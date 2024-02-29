@@ -9,51 +9,68 @@ import Feature6 from '../../images/icons/feature_6.svg'
 
 const AppFeatures = () => {
     return (
-        <div id="app-features">
+        <div id="container">
             <img src={Test} alt="TODO"/>
 
             <div id="feature-grid">
-                <h2>App Features</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus
-                    facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
 
+                <div id="grid-left">
+                    <h2>App Features</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam
+                        luctus
+                        facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
+                </div>
 
-                <div id="grid">
+                <div id="grid-right">
                     <div>
                         <h3>Easy Payments</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, possimus.</p>
-                        <img src={Feature1} alt="TODO"/>
+                        <div>
+                            <img src={Feature1} alt="TODO"/>
+                            <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+                        </div>
                     </div>
 
                     <div>
                         <h3>Data Security</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <img src={Feature2} alt="TODO"/>
+
+                        <div>
+                            <img src={Feature2} alt="TODO"/>
+                            <p>Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non. </p>
+                        </div>
                     </div>
 
 
                     <div>
                         <h3>Cost Statistics</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <img src={Feature3} alt="TODO"/>
+                        <div>
+                            <img src={Feature3} alt="TODO"/>
+                            <p>Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh.</p>
+                        </div>
                     </div>
 
                     <div>
                         <h3>Support 24/7</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <img src={Feature4} alt="TODO"/>
+                        <div>
+                            <img src={Feature4} alt="TODO"/>
+                            <p>A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
+                        </div>
                     </div>
 
                     <div>
                         <h3>Regular Cashback</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <img src={Feature5} alt="TODO"/>
+                        <div>
+                            <img src={Feature5} alt="TODO"/>
+                            <p>Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend.</p>
+                        </div>
                     </div>
 
                     <div>
                         <h3>Top standards</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <img src={Feature6} alt="TODO"/>
+                        <div>
+                            <img src={Feature6} alt="TODO"/>
+                            <p>Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor
+                                arcu.</p>
+                        </div>
                     </div>
                 </div>
 
