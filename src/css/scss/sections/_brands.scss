@@ -1,0 +1,11 @@
+#brand-logos{
+  display: flex;
+  justify-content: center;
+
+  img{
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid $gray-300;
+    border-radius: 5px;
+  }
+}

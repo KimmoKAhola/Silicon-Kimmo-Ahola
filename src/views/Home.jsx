@@ -8,11 +8,6 @@ import Features from "./sections/Features.jsx";
 const Home = () => {
     return (
         <div>
-            #Features
-            #Testimonials
-            FAQ
-            subscribe
-            footer
             <Showcase/>
             <Brands/>
             <AppFeatures/>

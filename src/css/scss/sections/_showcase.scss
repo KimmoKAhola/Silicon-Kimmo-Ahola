@@ -1,0 +1,37 @@
+#showcase{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  #left-side{
+    display: grid;
+    justify-content: center;
+    padding-left: 50px;
+  }
+
+  #left-first{
+    display: grid;
+    grid-template-rows:auto auto auto;
+  }
+
+  #showcase-store-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 52px;
+  }
+
+  #left-second{
+    display: flex;
+  }
+
+  #right-side{
+
+  }
+
+  #next-btn{
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+  }
+
+}

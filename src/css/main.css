@@ -297,4 +297,43 @@ header .container .left .menu-links .nav-link:hover {
   background-color: #4C82F7;
 }
 
+#showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#showcase #left-side {
+  display: grid;
+  justify-content: center;
+  padding-left: 50px;
+}
+#showcase #left-first {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+#showcase #showcase-store-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 52px;
+}
+#showcase #left-second {
+  display: flex;
+}
+#showcase #next-btn {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+}
+
+#brand-logos {
+  display: flex;
+  justify-content: center;
+}
+#brand-logos img {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  border-radius: 5px;
+}
+
 /*# sourceMappingURL=main.css.map */

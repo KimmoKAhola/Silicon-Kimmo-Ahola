@@ -8,7 +8,7 @@ import Brand6 from '../../images/brands/brand_6.svg'
 
 const Brands = () => {
     return (
-        <div>
+        <div id="brand-logos">
             <img src={Brand1} alt="brand 1"/>
             <img src={Brand2} alt="brand 2"/>
             <img src={Brand3} alt="brand 3"/>
