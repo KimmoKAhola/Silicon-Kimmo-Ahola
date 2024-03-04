@@ -1,7 +1,7 @@
 import React from 'react'
-import How1 from '../../images/mobile-howdoesitwork_1.svg'
-import How2 from '../../images/mobile-howdoesitwork_2.svg'
-import How3 from '../../images/mobile-howdoesitwork_3.svg'
+import How1 from '../../../images/mobile-howdoesitwork_1.svg'
+import How2 from '../../../images/mobile-howdoesitwork_2.svg'
+import How3 from '../../../images/mobile-howdoesitwork_3.svg'
 
 const Slider = () => {
     return (

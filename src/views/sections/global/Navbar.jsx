@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link, NavLink} from "react-router-dom";
-import Logo from '../../images/logo/silicon-logo-light_theme.svg'
+import Logo from '../../../images/logo/silicon-logo-light_theme.svg'
 
 const Navbar = () => {
     return (
@@ -15,7 +15,7 @@ const Navbar = () => {
                             <NavLink className="nav-link" to="/#overview">Overview</NavLink>
                             <NavLink className="nav-link" to="/#features">Features</NavLink>
                             <NavLink className="nav-link" to="/#news">News</NavLink>
-                            <NavLink className="nav-link" to="/#contact">Contact</NavLink>
+                            <Link className="nav-link" to="/contact">Contact</Link>
                         </div>
                     </nav>
                 </div>

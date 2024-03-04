@@ -1,12 +1,12 @@
 import React from 'react'
-import Showcase from "./sections/Showcase.jsx";
-import Brands from "./sections/Brands.jsx";
-import AppFeatures from "./sections/AppFeatures.jsx";
-import Slider from "./sections/Slider.jsx";
-import Features from "./sections/Features.jsx";
-import Testimonials from "./sections/Testimonials.jsx";
-import Footer from "./sections/Footer.jsx";
-import Subscribe from "./sections/Subscribe.jsx";
+import Showcase from "./sections/home/Showcase.jsx";
+import Brands from "./sections/home/Brands.jsx";
+import AppFeatures from "./sections/home/AppFeatures.jsx";
+import Slider from "./sections/home/Slider.jsx";
+import Features from "./sections/home/Features.jsx";
+import Testimonials from "./sections/home/Testimonials.jsx";
+import FooterLight from "./sections/global/Footer-Light.jsx";
+import Subscribe from "./sections/home/Subscribe.jsx";
 
 const Home = () => {
     return (
@@ -18,7 +18,7 @@ const Home = () => {
             <Features/>
             <Testimonials/>
             <Subscribe/>
-            <Footer/>
+            <FooterLight/>
         </div>
     )
 }

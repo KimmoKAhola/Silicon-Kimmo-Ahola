@@ -1,10 +1,10 @@
 import React from 'react'
-import Brand1 from '../../images/brands/brand_1.svg'
-import Brand2 from '../../images/brands/brand_2.svg'
-import Brand3 from '../../images/brands/brand_3.svg'
-import Brand4 from '../../images/brands/brand_4.svg'
-import Brand5 from '../../images/brands/brand_5.svg'
-import Brand6 from '../../images/brands/brand_6.svg'
+import Brand1 from '../../../images/brands/brand_1.svg'
+import Brand2 from '../../../images/brands/brand_2.svg'
+import Brand3 from '../../../images/brands/brand_3.svg'
+import Brand4 from '../../../images/brands/brand_4.svg'
+import Brand5 from '../../../images/brands/brand_5.svg'
+import Brand6 from '../../../images/brands/brand_6.svg'
 
 const Brands = () => {
     return (

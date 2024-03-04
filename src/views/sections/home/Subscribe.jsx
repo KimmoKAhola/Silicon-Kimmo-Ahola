@@ -1,5 +1,5 @@
 import React from 'react'
-import Notification from '../../images/subscribe/notification.svg'
+import Notification from '../../../images/subscribe/notification.svg'
 const Subscribe = () => {
     return (
         <div>

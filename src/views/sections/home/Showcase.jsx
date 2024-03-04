@@ -1,7 +1,7 @@
 import React from 'react'
-import Mobile from '../../images/showcase-mobiles.svg';
-import AppStore from '../../images/appstore.svg'
-import GooglePlay from '../../images/googleplay.svg'
+import Mobile from '../../../images/showcase-mobiles.svg';
+import AppStore from '../../../images/appstore.svg'
+import GooglePlay from '../../../images/googleplay.svg'
 
 const Showcase = () => {
     return (

@@ -1,9 +1,9 @@
 import React from 'react'
-import Quotes from '../../images/testimonials/quotes.png'
-import Author1 from '../../images/testimonials/fannie-summers.png'
-import Author2 from '../../images/testimonials/albert-flores.png'
-import Stars1 from '../../images/testimonials/rating-1.png'
-import Stars2 from '../../images/testimonials/rating-2.png'
+import Quotes from '../../../images/testimonials/quotes.png'
+import Author1 from '../../../images/testimonials/fannie-summers.png'
+import Author2 from '../../../images/testimonials/albert-flores.png'
+import Stars1 from '../../../images/testimonials/rating-1.png'
+import Stars2 from '../../../images/testimonials/rating-2.png'
 
 const Testimonials = () => {
     return (

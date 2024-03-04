@@ -1,11 +1,11 @@
 import React from 'react'
-import Test from '../../images/mobile-appfeatures.svg'
-import Feature1 from '../../images/icons/feature_1.svg'
-import Feature2 from '../../images/icons/feature_2.svg'
-import Feature3 from '../../images/icons/feature_3.svg'
-import Feature4 from '../../images/icons/feature_4.svg'
-import Feature5 from '../../images/icons/feature_5.svg'
-import Feature6 from '../../images/icons/feature_6.svg'
+import Test from '../../../images/mobile-appfeatures.svg'
+import Feature1 from '../../../images/icons/feature_1.svg'
+import Feature2 from '../../../images/icons/feature_2.svg'
+import Feature3 from '../../../images/icons/feature_3.svg'
+import Feature4 from '../../../images/icons/feature_4.svg'
+import Feature5 from '../../../images/icons/feature_5.svg'
+import Feature6 from '../../../images/icons/feature_6.svg'
 
 const AppFeatures = () => {
     return (

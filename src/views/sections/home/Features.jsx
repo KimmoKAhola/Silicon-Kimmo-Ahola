@@ -1,10 +1,10 @@
 import React from 'react'
 
-import CheckMark from '../../images/features/bx-check-circle.svg';
-import FeatureOne from '../../images/features/feature_1.svg';
-import FeatureTwo from '../../images/features/feature_2.svg';
-import BottomCard from '../../images/features/bottom-card.png';
-import TopCard from '../../images/features/top-card.png';
+import CheckMark from '../../../images/features/bx-check-circle.svg';
+import FeatureOne from '../../../images/features/feature_1.svg';
+import FeatureTwo from '../../../images/features/feature_2.svg';
+import BottomCard from '../../../images/features/bottom-card.png';
+import TopCard from '../../../images/features/top-card.png';
 
 
 const Features = () => {

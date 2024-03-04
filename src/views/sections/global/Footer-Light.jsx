@@ -1,14 +1,14 @@
 import React from 'react'
-import Logo from '../../images/logo/silicon-logo-light_theme.svg'
-import AppStore from "../../images/appstore.svg";
-import GooglePlay from "../../images/googleplay.svg";
-import Facebook from '../../images/light-footer/bxl-facebook-square.svg'
-import Twitter from '../../images/light-footer/bxl-twitter.svg'
-import Instagram from '../../images/light-footer/bxl-instagram-alt.svg'
-import Youtube from '../../images/light-footer/bxl-youtube.svg'
+import Logo from '../../../images/logo/silicon-logo-light_theme.svg'
+import AppStore from "../../../images/appstore.svg";
+import GooglePlay from "../../../images/googleplay.svg";
+import Facebook from '../../../images/light-footer/bxl-facebook-square.svg'
+import Twitter from '../../../images/light-footer/bxl-twitter.svg'
+import Instagram from '../../../images/light-footer/bxl-instagram-alt.svg'
+import Youtube from '../../../images/light-footer/bxl-youtube.svg'
 
 
-const Footer = () => {
+const FooterLight = () => {
     return (
         <div id="light-footer">
             <img src={Logo} alt="TODO"/>
@@ -36,4 +36,4 @@ const Footer = () => {
         </div>
     )
 }
-export default Footer
+export default FooterLight
