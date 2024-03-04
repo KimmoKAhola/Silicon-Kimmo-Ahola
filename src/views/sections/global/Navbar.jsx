@@ -7,9 +7,10 @@ const Navbar = () => {
         <header>
             <div className="container">
 
-                <div className="left"><Link id="logo" to="/">
-                    <img src={Logo} alt="silicon logotype"/>
-                </Link>
+                <div className="left">
+                    <Link id="logo" to="/">
+                        <img src={Logo} alt="silicon logotype"/>
+                    </Link>
                     <nav id="menu">
                         <div className="menu-links">
                             <NavLink className="nav-link" to="/#overview">Overview</NavLink>

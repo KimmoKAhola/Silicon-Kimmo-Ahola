@@ -211,6 +211,14 @@ h6 {
   font-size: 42px;
 }
 
+.nav-link {
+  text-decoration: none;
+  transition: ease-in 0.2s;
+}
+.nav-link:hover {
+  color: #4C82F7;
+}
+
 button {
   border: none;
   transition: ease-in 0.3s;
@@ -298,7 +306,7 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 50px;
+  padding: 0 50px;
 }
 header .container .left {
   display: flex;
@@ -306,15 +314,13 @@ header .container .left {
   align-items: center;
   gap: 30px;
 }
+header .container .left #logo {
+  display: flex;
+  align-items: center;
+}
 header .container .left .menu-links {
   display: flex;
   gap: 20px;
-}
-header .container .left .menu-links .nav-link {
-  transition: ease-in 0.3s;
-}
-header .container .left .menu-links .nav-link:hover {
-  background-color: #4C82F7;
 }
 
 #showcase {
