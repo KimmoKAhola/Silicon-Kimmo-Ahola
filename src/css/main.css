@@ -322,6 +322,12 @@ header .container .left .menu-links {
   display: flex;
   gap: 20px;
 }
+header .container .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
 #showcase {
   display: grid;

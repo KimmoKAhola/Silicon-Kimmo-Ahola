@@ -22,13 +22,13 @@ const Navbar = () => {
                 </div>
 
                 <div className="right">
+                    <p>Light</p>
                     <label className="switch">
                         <input type="checkbox"/>
                         <span className="slider round"></span>
                     </label>
-                    <button>Toggle light/dark</button>
+                    <p>Dark</p>
                     <button>Sign in/up</button>
-
                 </div>
 
             </div>
