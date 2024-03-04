@@ -371,28 +371,27 @@ header .container .left .menu-links .nav-link:hover {
   gap: 75px;
 }
 
+#testimonials {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+#card {
+  display: flex;
+}
+
+.testimonial-card {
+  border: 1px solid black;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
 #features-container {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr;
-  margin: 50px 150px;
-  padding-top: 50px;
-}
-#features-container #features-second img {
-  position: absolute;
-}
-#features-container #features-second img:last-child {
-  position: relative;
-  top: 325px;
-  left: 200px;
-}
-#features-container #features-third img {
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-#features-container #features-third img:last-child {
-  position: relative;
-  left: 30%;
+  margin: 50px 200px;
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=main.css.map */

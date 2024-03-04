@@ -3,10 +3,8 @@ import React from 'react'
 import CheckMark from '../../images/features/bx-check-circle.svg';
 import FeatureOne from '../../images/features/feature_1.svg';
 import FeatureTwo from '../../images/features/feature_2.svg';
-import Card1 from '../../images/features/card-1.png';
-import Card2 from '../../images/features/card-2.png';
-import Card1Inner from '../../images/features/card-1-inner.png';
-import Card2Inner from '../../images/features/card-2-inner.png';
+import BottomCard from '../../images/features/bottom-card.png';
+import TopCard from '../../images/features/top-card.png';
 
 
 const Features = () => {
@@ -25,14 +23,12 @@ const Features = () => {
             </div>
 
             <div id="features-second">
-                <img src={Card1} alt="TODO"/>
-                <img src={Card1Inner} alt="TODO"/>
+                <img src={TopCard} alt="TODO"/>
             </div>
 
 
             <div id="features-third">
-                <img src={Card2} alt="TODO"/>
-                <img src={Card2Inner} alt="TODO"/>
+                <img src={BottomCard} alt="TODO"/>
             </div>
 
             <div id="features-fourth">

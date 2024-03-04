@@ -1,0 +1,15 @@
+#testimonials{
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+}
+
+#card{
+  display: flex;
+}
+
+.testimonial-card{
+  border: 1px solid black;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}

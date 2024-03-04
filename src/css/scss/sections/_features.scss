@@ -2,35 +2,22 @@
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr;
-  margin: 50px 150px;
-  padding-top: 50px;
+  margin: 50px 200px;
+  border: 1px solid black;
 
+  #features-first{
+
+  }
 
   #features-second{
 
-    img{
-      position: absolute;
-
     }
-
-    img:last-child{
-      position: relative;
-      top: 325px;
-      left: 200px;
-    }
-  }
 
   #features-third {
-    //display: grid;
 
-    img {
-      position: absolute;
-      transform: translate(-50%, -50%);
-    }
+  }
 
-    img:last-child {
-      position: relative;
-      left: 30%;
-    }
+  #features-fourth{
+
   }
 }
