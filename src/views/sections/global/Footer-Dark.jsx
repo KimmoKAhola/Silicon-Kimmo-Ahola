@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../../images/logo/silicon-logo-light_theme.svg'
+import Logo from '../../../images/logo/silicon-logo-dark_theme.svg'
 
 const FooterDark = () => {
     return (
