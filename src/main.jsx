@@ -18,7 +18,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path="/" element={<Home />}/>
                 <Route path="*" element={<Error />}/>
             </Routes>
-            <Footer />
         </div>
     </BrowserRouter>
   </React.StrictMode>,

@@ -5,6 +5,7 @@ import AppFeatures from "./sections/AppFeatures.jsx";
 import Slider from "./sections/Slider.jsx";
 import Features from "./sections/Features.jsx";
 import Testimonials from "./sections/Testimonials.jsx";
+import Footer from "./sections/Footer.jsx";
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Slider/>
             <Features/>
             <Testimonials/>
+            <Footer/>
         </div>
     )
 }

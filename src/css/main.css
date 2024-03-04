@@ -393,5 +393,25 @@ header .container .left .menu-links .nav-link:hover {
   margin: 50px 200px;
   border: 1px solid black;
 }
+#light-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#light-footer #footer-links {
+  display: flex;
+  gap: 10px;
+}
+#light-footer #brand-footer-logos {
+  display: flex;
+  gap: 10px;
+}
+#light-footer #brand-footer-logos img {
+  height: 20px;
+}
+#light-footer img {
+  height: 60px;
+}
 
 /*# sourceMappingURL=main.css.map */
