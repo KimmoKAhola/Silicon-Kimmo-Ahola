@@ -458,4 +458,21 @@ header .container .left .menu-links .nav-link:hover {
   max-width: 450px;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.container #map {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+}
+.container ul li {
+  display: flex;
+}
+.container ul div {
+  display: flex;
+}
+
 /*# sourceMappingURL=main.css.map */
