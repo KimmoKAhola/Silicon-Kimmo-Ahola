@@ -438,5 +438,24 @@ header .container .left .menu-links .nav-link:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 150px;
+}
+.hero .contact-info {
+  justify-self: end;
+  padding-right: 50px;
+}
+.hero .contact-form {
+  justify-content: start;
+  border: 1px solid black;
+}
+.hero .section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  max-width: 450px;
+}
 
 /*# sourceMappingURL=main.css.map */

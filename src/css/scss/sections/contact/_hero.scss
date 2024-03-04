@@ -1,0 +1,23 @@
+.hero{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 150px;
+
+
+  .contact-info{
+    justify-self: end;
+    padding-right: 50px;
+  }
+
+  .contact-form{
+    justify-content: start;
+    border: 1px solid black;
+  }
+
+  .section{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    max-width: 450px;
+  }
+}
