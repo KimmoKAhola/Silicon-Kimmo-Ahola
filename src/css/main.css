@@ -407,6 +407,20 @@ header .container .left .menu-links .nav-link:hover {
   margin: 50px 200px;
   border: 1px solid black;
 }
+.subscriber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscriber #sub-left {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+}
+.subscriber #sub-right {
+  display: flex;
+}
+
 #light-footer {
   display: flex;
   flex-direction: column;
@@ -464,7 +478,10 @@ header .container .left .menu-links .nav-link:hover {
 .container #map {
   width: 400px;
   height: 400px;
-  border: 1px solid black;
+  background-color: red;
+}
+.container ul li {
+  display: flex;
 }
 
 .brand-footer-logos ul {

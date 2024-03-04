@@ -1,0 +1,15 @@
+.subscriber{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #sub-left{
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+  }
+
+  #sub-right{
+    display: flex;
+  }
+}
