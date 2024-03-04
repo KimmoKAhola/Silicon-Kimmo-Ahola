@@ -6,6 +6,7 @@ import Slider from "./sections/Slider.jsx";
 import Features from "./sections/Features.jsx";
 import Testimonials from "./sections/Testimonials.jsx";
 import Footer from "./sections/Footer.jsx";
+import Subscribe from "./sections/Subscribe.jsx";
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <Slider/>
             <Features/>
             <Testimonials/>
+            <Subscribe/>
             <Footer/>
         </div>
     )
