@@ -1,0 +1,9 @@
+input{
+  border: 1px solid $gray-400;
+  border-radius: 5px;
+  padding: 5px;
+
+  &:focus{
+    outline: none;
+  }
+}

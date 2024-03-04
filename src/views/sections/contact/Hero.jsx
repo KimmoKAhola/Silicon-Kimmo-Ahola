@@ -5,7 +5,7 @@ import Envelope from '../../../images/contact/bx-envelope.svg'
 
 const Hero = () => {
     return (
-        <div>
+        <div id="hero-container">
             <div className="hero">
                 <div className="contact-info">
                     <h1>Contact Us</h1>

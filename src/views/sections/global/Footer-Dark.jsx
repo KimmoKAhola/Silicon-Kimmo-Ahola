@@ -10,9 +10,9 @@ const FooterDark = () => {
                     nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum
                     dolor ullamcorper sodales ultrices eros. </p>
                 <div>
-                    <h4>Subscribe to our newsletter</h4>
+                    <h6>Subscribe to our newsletter</h6>
                     <div id="footer-subscribe">
-                        <p>Your email</p>
+                        <input type="text"/>
                         <button>Subscribe</button>
                     </div>
                 </div>

@@ -3,15 +3,13 @@
   grid-template-columns: 1fr 1fr;
   padding: 0 150px;
 
-
   .contact-info{
     justify-self: end;
     padding-right: 50px;
   }
 
   .contact-form{
-    justify-content: start;
-    border: 1px solid black;
+    //justify-content: start;
   }
 
   .section{
@@ -21,3 +19,4 @@
     max-width: 450px;
   }
 }
+

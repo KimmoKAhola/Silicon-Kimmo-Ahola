@@ -2,6 +2,7 @@
   background-color: $gray-900;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 75px;
   padding: 20px 200px;
   gap: 50px;
 
@@ -20,5 +21,15 @@
   }
 
   #footer-contact{
+  }
+
+  h6{
+    color: $white;
+  }
+
+  input{
+    border-radius: 5px 0 0 5px;
+    background-color: $gray-900;
+    border: 1px rgba(255, 255, 255, 0.18) solid;
   }
 }
