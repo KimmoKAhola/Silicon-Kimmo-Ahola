@@ -211,10 +211,24 @@ h6 {
   font-size: 42px;
 }
 
+button {
+  border: none;
+  transition: ease-in 0.3s;
+}
+
+button:hover {
+  border: 1px solid black;
+}
+
 .arrow-button {
   border-radius: 50%;
-  background: none;
-  border: none;
+}
+
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 52px;
 }
 
 /* The switch - the box around the slider */
@@ -316,12 +330,6 @@ header .container .left .menu-links .nav-link:hover {
   display: grid;
   grid-template-rows: auto auto auto;
 }
-#showcase #showcase-store-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  height: 52px;
-}
 #showcase #left-second {
   display: flex;
 }
@@ -409,16 +417,6 @@ header .container .left .menu-links .nav-link:hover {
   display: flex;
   gap: 10px;
 }
-#light-footer #brand-footer-logos {
-  display: flex;
-  gap: 10px;
-}
-#light-footer #brand-footer-logos img {
-  height: 20px;
-}
-#light-footer img {
-  height: 60px;
-}
 
 #footer-dark {
   background-color: #0B0F19;
@@ -468,11 +466,13 @@ header .container .left .menu-links .nav-link:hover {
   height: 400px;
   border: 1px solid black;
 }
-.container ul li {
+
+.brand-footer-logos ul {
   display: flex;
+  gap: 20px;
 }
-.container ul div {
-  display: flex;
+.brand-footer-logos ul li img {
+  height: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
