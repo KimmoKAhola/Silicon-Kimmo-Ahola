@@ -1,0 +1,24 @@
+#footer-dark{
+  background-color: $gray-900;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 200px;
+  gap: 50px;
+
+  #footer-subscribe{
+    display: flex;
+  }
+
+  #site-links{
+    display: grid;
+    gap: 20px;
+  }
+
+  #footer-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #footer-contact{
+  }
+}

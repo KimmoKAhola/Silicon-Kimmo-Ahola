@@ -1,10 +1,14 @@
-@import './sections/navbar';
-@import './sections/showcase';
-@import './sections/brands';
-@import './sections/app-features';
-@import './sections/slider';
-@import './sections/testimonials';
-@import './sections/features';
-@import './sections/courses';
-@import './sections/subscribe';
-@import './sections/footer';
+@import 'sections/global/navbar';
+@import 'sections/home/showcase';
+@import 'sections/home/brands';
+@import 'sections/home/app-features';
+@import 'sections/home/slider';
+@import 'sections/home/testimonials';
+@import 'sections/home/features';
+@import 'sections/home/courses';
+@import 'sections/home/subscribe';
+@import 'sections/global/footer';
+@import 'sections/global/footer-dark';
+
+@import 'sections/contact/hero';
+@import 'sections/contact/map';

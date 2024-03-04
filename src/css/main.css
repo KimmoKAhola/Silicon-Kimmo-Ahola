@@ -414,4 +414,23 @@ header .container .left .menu-links .nav-link:hover {
   height: 60px;
 }
 
+#footer-dark {
+  background-color: #0B0F19;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 200px;
+  gap: 50px;
+}
+#footer-dark #footer-subscribe {
+  display: flex;
+}
+#footer-dark #site-links {
+  display: grid;
+  gap: 20px;
+}
+#footer-dark #footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 /*# sourceMappingURL=main.css.map */
