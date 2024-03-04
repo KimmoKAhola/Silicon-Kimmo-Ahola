@@ -12,7 +12,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
         <div className="wrapper">
-            <Navbar />
             <Routes>
                 <Route path="/" element={<Home />}/>
                 <Route path="/contact" element={<Contact />} />

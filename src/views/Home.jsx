@@ -7,10 +7,12 @@ import Features from "./sections/home/Features.jsx";
 import Testimonials from "./sections/home/Testimonials.jsx";
 import FooterLight from "./sections/global/Footer-Light.jsx";
 import Subscribe from "./sections/home/Subscribe.jsx";
+import Navbar from "./sections/global/Navbar.jsx";
 
 const Home = () => {
     return (
         <div>
+            <Navbar />
             <Showcase/>
             <Brands/>
             <AppFeatures/>

@@ -211,6 +211,12 @@ h6 {
   font-size: 42px;
 }
 
+.arrow-button {
+  border-radius: 50%;
+  background: none;
+  border: none;
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;

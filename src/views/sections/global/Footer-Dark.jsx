@@ -16,6 +16,8 @@ const FooterDark = () => {
                         <button>Subscribe</button>
                     </div>
                 </div>
+
+                <p>2024. All rights reserved. Silicon Template.</p>
             </div>
             <div id="footer-links">
                 <div id="site-links">
