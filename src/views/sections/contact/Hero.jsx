@@ -5,7 +5,7 @@ import Envelope from '../../../images/contact/bx-envelope.svg'
 
 const Hero = () => {
     return (
-        <div id="hero-container">
+        <div className="container">
             <div className="hero">
                 <div className="contact-info">
                     <h1>Contact Us</h1>
@@ -50,7 +50,7 @@ const Hero = () => {
                     <p>Time</p>
                     <input type="text"/>
 
-                    <button>Make an appointment</button>
+                    <button className="primary-button"><span>Make an appointment</span></button>
                 </div>
 
             </div>

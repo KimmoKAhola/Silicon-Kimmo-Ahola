@@ -1,10 +1,17 @@
 .brand-footer-logos {
   ul {
     display: flex;
-    gap: 20px;
+    gap:25px;
     li {
+      transition: ease-in 0.2s;
       img{
         height: 20px;
+        padding: 20px;
+      }
+      &:hover{
+        background-color: $primary;
+        border-radius: 8px;
+        cursor: pointer;
       }
     }
   }

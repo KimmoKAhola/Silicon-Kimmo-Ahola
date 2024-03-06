@@ -6,7 +6,7 @@ import Navbar from "./sections/global/Navbar.jsx";
 
 const Contact = () => {
     return (
-        <div className="wrapper">
+        <div>
             <Navbar />
             <Hero/>
             <Map/>

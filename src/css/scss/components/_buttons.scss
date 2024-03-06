@@ -25,7 +25,7 @@ button:hover {
 .store-buttons {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
   height: 52px;
 
   &:hover{
@@ -52,6 +52,30 @@ button:hover {
   gap: 20px;
   background-color: $primary;
   border-radius: 4px;
+  height: 36px;
+  width: fit-content;
+  padding: 20px 30px;
+}
+
+.footer-button {
+  img {
+    height: 18px;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    @include text-s;
+    color: $white;
+  }
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: $primary;
+  border-radius: 0 4px 4px 0;
   height: 36px;
   width: fit-content;
   padding: 20px 30px;

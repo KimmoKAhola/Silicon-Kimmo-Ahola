@@ -2,19 +2,22 @@ import React from 'react'
 import Logo from '../../../images/logo/silicon-logo-light_theme.svg'
 import StoreButtons from "../home/Store-Buttons.jsx";
 import Socials from "./Socials.jsx";
+import {Link} from "react-router-dom";
 
 
 const FooterLight = () => {
     return (
         <div className="container">
             <div id="light-footer">
-                <img src={Logo} alt="TODO"/>
+                <Link id="logo" to="/">
+                    <img src={Logo} alt="TODO"/>
+                </Link>
                 <ul id="footer-links">
-                    <li>Overview</li>
-                    <li>Features</li>
-                    <li>News</li>
-                    <li>Contact</li>
-                    <li>Account</li>
+                    <Link to="/overview">Overview</Link>
+                    <Link to="#features">Features</Link>
+                    <Link to="/overview">News</Link>
+                    <Link to="/contact">Contact</Link>
+                    <Link to="/*">Account</Link>
                 </ul>
                 <StoreButtons/>
                 <Socials/>
