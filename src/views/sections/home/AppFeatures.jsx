@@ -29,7 +29,7 @@ const AppFeatures = () => {
                         <div className="feature-grid-test">
                             <img className="feature-icon" src={Feature1} alt="TODO"/>
                             <div>
-                                <h4>Easy Payments</h4>
+                                <h5>Easy Payments</h5>
                                 <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
                             </div>
                         </div>
@@ -37,7 +37,7 @@ const AppFeatures = () => {
                         <div className="feature-grid-test">
                             <img className="feature-icon" src={Feature2} alt="TODO"/>
                             <div>
-                                <h4>Data Security</h4>
+                                <h5>Data Security</h5>
                                 <p>Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non. </p>
                             </div>
                         </div>
@@ -46,7 +46,7 @@ const AppFeatures = () => {
                         <div className="feature-grid-test">
                             <img className="feature-icon" src={Feature3} alt="TODO"/>
                             <div>
-                                <h4>Cost Statistics</h4>
+                                <h5>Cost Statistics</h5>
                                 <p>Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh.</p>
                             </div>
                         </div>
@@ -54,7 +54,7 @@ const AppFeatures = () => {
                         <div className="feature-grid-test">
                             <img className="feature-icon" src={Feature4} alt="TODO"/>
                             <div>
-                                <h4>Support 24/7</h4>
+                                <h5>Support 24/7</h5>
                                 <p>A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ const AppFeatures = () => {
                         <div className="feature-grid-test">
                             <img className="feature-icon" src={Feature5} alt="TODO"/>
                             <div>
-                                <h4>Regular Cashback</h4>
+                                <h5>Regular Cashback</h5>
                                 <p>Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet
                                     eleifend.</p>
                             </div>
@@ -71,7 +71,7 @@ const AppFeatures = () => {
                         <div className="feature-grid-test">
                             <img className="feature-icon" src={Feature6} alt="TODO"/>
                             <div>
-                                <h4>Top standards</h4>
+                                <h5>Top standards</h5>
                                 <p>Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis
                                     dolor
                                     arcu.</p>

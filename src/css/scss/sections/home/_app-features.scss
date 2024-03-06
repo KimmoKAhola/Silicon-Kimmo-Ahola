@@ -1,7 +1,6 @@
 #app-features {
   display: grid;
   grid-template-columns: auto 1fr;
-  justify-content: center;
 
   img{
     padding-right: 100px;
@@ -34,7 +33,7 @@
           border-radius: 8px;
           background-color: rgba(99, 102, 241, 0.12);
         }
-        h4{
+        h5{
           padding-bottom: 5px;
         }
       }
