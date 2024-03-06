@@ -26,9 +26,9 @@ const Features = () => {
                     </button>
                 </div>
 
-                <img src={TopCard} alt="TODO"/>
+                <img className="feature-card" id="top-card" src={TopCard} alt="TODO"/>
 
-                <img src={BottomCard} alt="TODO"/>
+                <img className="feature-card" id="bottom-card" src={BottomCard} alt="TODO"/>
 
                 <div id="features-fourth">
                     <h2>Receive payment from international bank details</h2>

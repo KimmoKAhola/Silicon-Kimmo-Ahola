@@ -632,7 +632,7 @@ header .site-settings img {
 
 #features-container {
   display: grid;
-  align-items: center;
+  place-items: center;
   grid-template-columns: 1fr 1fr;
   padding: 0 50px;
 }
@@ -659,6 +659,23 @@ header .site-settings img {
   padding-bottom: 10px;
 }
 
+@media (max-width: 1199px) {
+  .feature-card {
+    height: auto;
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  #features-container {
+    grid-template-columns: 1fr;
+  }
+  #features-container .feature-card {
+    max-width: 90%;
+  }
+  #features-container #top-card {
+    grid-row: 1;
+  }
+}
 .subscriber {
   display: flex;
   justify-content: center;
