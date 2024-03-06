@@ -9,19 +9,20 @@ const Showcase = () => {
 
             <div id="showcase">
                 <div id="left-side">
-                    <div id="left-first">
-                        <h1>Manage All Your Money in One App</h1>
-                        <p>We offer you a new generation of the mobile banking. <br/>
-                            Save, spend & manage money in your pocket.</p>
+                    <h1>Manage All Your Money in One App</h1>
+                    <p>We offer you a new generation of the mobile banking. <br/>
+                        Save, spend & manage money in your pocket.</p>
+                    <div id="showcase-buttons">
                         <StoreButtons/>
+                        <ArrowButton/>
                     </div>
-                    <ArrowButton/>
                 </div>
 
                 <div id="right-side">
                     <img src={Mobile} alt="TODO"/>
                 </div>
             </div>
+
         </div>
     )
 }

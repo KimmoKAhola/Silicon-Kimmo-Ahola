@@ -24,9 +24,15 @@ button:hover {
 
 .store-buttons {
   display: flex;
-  justify-content: center;
+  //justify-content: center; ?? needed?
   gap: 15px;
   height: 52px;
+
+  @include md{
+    display: grid;
+    width: 100%;
+    height: 100%;
+  }
 
   &:hover{
     cursor: pointer;
