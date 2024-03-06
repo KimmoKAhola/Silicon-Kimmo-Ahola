@@ -233,6 +233,9 @@ button {
   border: none;
   transition: ease-in 0.3s;
 }
+button:hover {
+  cursor: pointer;
+}
 
 button:hover {
   background-color: #4647a3;
@@ -244,7 +247,7 @@ button:hover {
   border-radius: 50%;
 }
 .arrow-button button:hover {
-  background-color: #F3F6FF;
+  background-color: #6366F1;
 }
 
 .store-buttons {
@@ -253,8 +256,11 @@ button:hover {
   gap: 10px;
   height: 52px;
 }
+.store-buttons:hover {
+  cursor: pointer;
+}
 
-.login-button {
+.primary-button {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -264,16 +270,19 @@ button:hover {
   width: fit-content;
   padding: 20px 30px;
 }
-.login-button img {
+.primary-button img {
   height: 18px;
 }
-.login-button span {
+.primary-button span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   white-space: nowrap;
   line-height: 160%;
   font-weight: 400;
   color: #565973;
   font-family: "Manrope", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color: #f2f2f2;
 }
 
@@ -398,6 +407,11 @@ header .site-settings {
   padding: 20px;
   border: 1px solid #E2E5F1;
   border-radius: 5px;
+  transition: ease-in 0.3s;
+}
+#brand-logos img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 #app-features {
@@ -482,11 +496,33 @@ header .site-settings {
 
 #features-container {
   display: grid;
-  place-items: center;
+  align-items: center;
   grid-template-columns: 1fr 1fr;
-  margin: 50px 200px;
-  border: 1px solid black;
+  padding: 0 50px;
 }
+#features-container #features-first {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+}
+#features-container #features-first ul li {
+  padding: 3px 0;
+  display: flex;
+  gap: 10px;
+}
+#features-container #features-fourth #test-lol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 50px 0;
+}
+#features-container #features-fourth #test-lol img {
+  height: 28px;
+  width: 28px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+
 .subscriber {
   display: flex;
   justify-content: center;

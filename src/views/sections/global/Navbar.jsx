@@ -25,7 +25,7 @@ const Navbar = () => {
                         <span className="slider round"></span>
                     </label>
                     <p>Dark</p>
-                    <button className="login-button"><img src={User} alt="TODO"/> <span>Sign in / up</span></button>
+                    <button className="primary-button"><img src={User} alt="TODO"/> <span>Sign in / up</span></button>
                 </div>
 
             </header>

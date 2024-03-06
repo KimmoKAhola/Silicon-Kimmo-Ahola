@@ -1,23 +1,42 @@
 #features-container {
   display: grid;
-  place-items: center;
+  align-items: center;
   grid-template-columns: 1fr 1fr;
-  margin: 50px 200px;
-  border: 1px solid black;
+  padding: 0 50px;
 
-  #features-first{
-
+  #features-first {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    ul{
+      li{
+        padding: 3px 0;
+        display: flex;
+        gap: 10px;
+      }
+    }
   }
 
-  #features-second{
+  #features-second {
 
-    }
+  }
 
   #features-third {
 
   }
 
-  #features-fourth{
-
+  #features-fourth {
+    #test-lol{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 50px 0;
+      img{
+        height: 28px;
+        width: 28px;
+        padding-left: 5px;
+        padding-bottom: 10px;
+      }
+    }
   }
 }

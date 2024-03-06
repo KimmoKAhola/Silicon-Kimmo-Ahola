@@ -1,6 +1,9 @@
 button {
   border: none;
   transition: ease-in 0.3s;
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 button:hover {
@@ -15,7 +18,7 @@ button:hover {
   }
 
   button:hover{
-    background-color: $gray-100;
+    background-color: $primary;
   }
 }
 
@@ -24,17 +27,23 @@ button:hover {
   justify-content: center;
   gap: 10px;
   height: 52px;
+
+  &:hover{
+    cursor: pointer;
+  }
 }
 
-.login-button {
-
+.primary-button {
   img {
     height: 18px;
   }
 
   span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     white-space: nowrap;
-    @include text-lg;
+    @include text-s;
     color: $white;
   }
 
