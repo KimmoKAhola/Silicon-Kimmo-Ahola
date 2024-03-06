@@ -8,13 +8,15 @@ import Brand6 from '../../../images/brands/brand_6.svg'
 
 const Brands = () => {
     return (
-        <div id="brand-logos">
-            <img src={Brand1} alt="brand 1"/>
-            <img src={Brand2} alt="brand 2"/>
-            <img src={Brand3} alt="brand 3"/>
-            <img src={Brand4} alt="brand 4"/>
-            <img src={Brand5} alt="brand 5"/>
-            <img src={Brand6} alt="brand 6"/>
+        <div className="container">
+            <div id="brand-logos">
+                <img src={Brand1} alt="brand 1"/>
+                <img src={Brand2} alt="brand 2"/>
+                <img src={Brand3} alt="brand 3"/>
+                <img src={Brand4} alt="brand 4"/>
+                <img src={Brand5} alt="brand 5"/>
+                <img src={Brand6} alt="brand 6"/>
+            </div>
         </div>
     )
 }

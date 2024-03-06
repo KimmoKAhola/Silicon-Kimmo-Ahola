@@ -9,6 +9,10 @@ html, body {
   grid-template-rows: auto 1fr auto;
 }
 
+.container{
+  margin: 20px 300px;
+}
+
 
 .text-lead {
   @include text-lead;

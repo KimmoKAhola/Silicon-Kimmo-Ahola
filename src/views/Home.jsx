@@ -15,12 +15,12 @@ const Home = () => {
             <Navbar />
             <Showcase/>
             <Brands/>
-            <AppFeatures/>
-            <Slider/>
-            <Features/>
-            <Testimonials/>
-            <Subscribe/>
-            <FooterLight/>
+            {/*<AppFeatures/>*/}
+            {/*<Slider/>*/}
+            {/*<Features/>*/}
+            {/*<Testimonials/>*/}
+            {/*<Subscribe/>*/}
+            {/*<FooterLight/>*/}
         </div>
     )
 }

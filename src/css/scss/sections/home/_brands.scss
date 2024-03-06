@@ -1,9 +1,9 @@
-#brand-logos{
+#brand-logos {
   display: flex;
-  justify-content: center;
+  width: 100%;
 
-  img{
-    margin: 10px;
+  img {
+    margin: 10px 0;
     padding: 20px;
     border: 1px solid $gray-300;
     border-radius: 5px;
