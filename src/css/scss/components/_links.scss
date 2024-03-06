@@ -13,7 +13,7 @@ a, .nav-link, Link{
 }
 
 .Link{
-  color: white;
+  color: $gray-100;
   &:hover{
     color: $primary;
   }

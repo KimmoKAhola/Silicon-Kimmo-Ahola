@@ -76,6 +76,18 @@ html, body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+@media (max-width: 1199px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+  }
+}
+
+.dark-container {
+  display: grid;
+  background-color: black;
+}
 
 .text-lead {
   line-height: 160%;
@@ -234,7 +246,7 @@ a:hover, .nav-link:hover, Link:hover {
 }
 
 .Link {
-  color: white;
+  color: #F3F6FF;
 }
 .Link:hover {
   color: #6366F1;
@@ -404,10 +416,28 @@ header .site-navigation nav {
   align-items: center;
   gap: 30px;
 }
-header .site-settings {
+header .site-settings div {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+header .site-settings img {
+  display: none;
+}
+@media (max-width: 991px) {
+  header .site-settings div {
+    display: none;
+  }
+  header .site-settings img {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 767px) {
+  header #menu {
+    display: none;
+  }
 }
 
 #showcase {
@@ -598,15 +628,17 @@ header .site-settings {
   background-color: #0B0F19;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 75px;
-  padding: 75px 200px;
-  gap: 50px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 #footer-dark div img {
   padding-bottom: 15px;
 }
 #footer-dark div #footer-text {
-  max-width: 65%;
+  max-width: 80%;
   color: rgba(255, 255, 255, 0.7);
 }
 #footer-dark #footer-subscribe {
@@ -638,7 +670,7 @@ header .site-settings {
   grid-template-columns: 1fr 1fr 1fr;
 }
 #footer-dark #footer-contact {
-  color: #f2f2f2;
+  color: #F3F6FF;
 }
 #footer-dark #footer-contact a {
   text-decoration: none;
@@ -653,7 +685,7 @@ header .site-settings {
   color: #565973;
   font-family: "Manrope", sans-serif;
   font-size: 14px;
-  color: #f2f2f2;
+  color: #F3F6FF;
 }
 #footer-dark input {
   border-radius: 5px 0 0 5px;

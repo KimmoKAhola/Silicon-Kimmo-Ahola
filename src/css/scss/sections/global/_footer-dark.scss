@@ -2,9 +2,11 @@
   background-color: $gray-900;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 75px;
-  padding: 75px 200px;
-  gap: 50px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding-top: 20px; //oklart
+  padding-bottom: 20px; //oklart
 
   div {
     img {
@@ -12,7 +14,7 @@
     }
 
     #footer-text {
-      max-width: 65%;
+      max-width: 80%;
       color: rgba(255, 255, 255, 0.7);
     }
   }
@@ -57,13 +59,13 @@
       text-decoration: underline;
     }
 
-    color: $white;
+    color: $gray-100;
   }
 
   h6 {
     padding-top: 40px;
     @include text-s;
-    color: $white;
+    color: $gray-100;
   }
 
   input {

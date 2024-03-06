@@ -9,6 +9,7 @@ html, body {
   grid-template-rows: auto 1fr auto;
 }
 
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -17,24 +18,42 @@ html, body {
   margin: 20px auto;
   padding-top: 20px; //oklart
   padding-bottom: 20px; //oklart
+
+  @include xl{
+    padding-left: 20px;
+    padding-right: 20px;
+    //padding-top: 20px; //oklart
+    //padding-bottom: 20px; //oklart
+    max-width: 100%;
+  }
+}
+
+.dark-container {
+  display: grid;
+  background-color: black;
 }
 
 
 .text-lead {
   @include text-lead;
 }
+
 .text-xl {
   @include text-xl;
 }
+
 .text-lg {
   @include text-lg;
 }
+
 .text-m {
   @include text-m;
 }
+
 .text-s {
   @include text-s;
 }
+
 .text-xs {
   @include text-xs;
 }
