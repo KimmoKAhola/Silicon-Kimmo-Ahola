@@ -68,7 +68,11 @@ html, body {
 }
 
 .container {
-  margin: 20px 300px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 20px auto;
 }
 
 .text-lead {
@@ -383,36 +387,53 @@ header .site-settings {
 #brand-logos {
   display: flex;
   width: 100%;
+  gap: 24px;
+  margin: 50px 0;
 }
 #brand-logos img {
-  margin: 10px 0;
+  max-width: 196px;
+  width: 100%;
   padding: 20px;
   border: 1px solid #E2E5F1;
   border-radius: 5px;
 }
 
-#container {
+#app-features {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 1px solid black;
+  grid-template-columns: auto 1fr;
   justify-content: center;
-  margin: 50px 100px;
 }
-#container #feature-grid {
+#app-features img {
+  padding-right: 100px;
+}
+#app-features #feature-grid {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 1fr;
 }
-#container #feature-grid #grid-left {
-  display: grid;
+#app-features #feature-grid #right-top {
+  padding-bottom: 25px;
 }
-#container #feature-grid #grid-right {
+#app-features #feature-grid #right-top h2 {
+  padding-bottom: 10px;
+}
+#app-features #feature-grid #right-bottom {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-#container #feature-grid #grid-right div div {
+#app-features #feature-grid #right-bottom .feature-grid-test {
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 20px;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+}
+#app-features #feature-grid #right-bottom .feature-grid-test .feature-icon {
+  height: 28px;
+  width: 28px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgba(99, 102, 241, 0.12);
+}
+#app-features #feature-grid #right-bottom .feature-grid-test h4 {
+  padding-bottom: 5px;
 }
 
 #slider-container {

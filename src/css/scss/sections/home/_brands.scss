@@ -1,9 +1,12 @@
 #brand-logos {
   display: flex;
   width: 100%;
+  gap: 24px;
+  margin: 50px 0;
 
   img {
-    margin: 10px 0;
+    max-width: 196px;
+    width: 100%;
     padding: 20px;
     border: 1px solid $gray-300;
     border-radius: 5px;

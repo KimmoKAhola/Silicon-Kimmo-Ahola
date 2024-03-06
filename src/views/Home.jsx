@@ -15,7 +15,7 @@ const Home = () => {
             <Navbar />
             <Showcase/>
             <Brands/>
-            {/*<AppFeatures/>*/}
+            <AppFeatures/>
             {/*<Slider/>*/}
             {/*<Features/>*/}
             {/*<Testimonials/>*/}
