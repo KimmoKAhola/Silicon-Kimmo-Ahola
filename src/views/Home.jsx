@@ -12,15 +12,15 @@ import Navbar from "./sections/global/Navbar.jsx";
 const Home = () => {
     return (
         <div>
-            {/*<Navbar />*/}
+            <Navbar />
             {/*<Showcase/>*/}
             {/*<Brands/>*/}
             {/*<AppFeatures/>*/}
             {/*<Slider/>*/}
-            <Features/>
-            {/*<Testimonials/>*/}
-            {/*<Subscribe/>*/}
-            {/*<FooterLight/>*/}
+            {/*<Features/>*/}
+            <Testimonials/>
+            <Subscribe/>
+            <FooterLight/>
         </div>
     )
 }

@@ -1,16 +1,27 @@
 .subscriber{
   display: flex;
-  justify-content: center;
+  flex: 1;
+  justify-content: space-between;
   align-items: center;
+  gap: 60px;
+  padding: 30px 100px;
+  background-color: $gray-300;
+  border-radius: 15px;
+  max-width: 100%;
 
   #sub-left{
     display: flex;
+    flex: 1;
     gap: 20px;
     align-items: center;
-    max-width: 600px;
+    max-width: 750px;
   }
 
   #sub-right{
     display: flex;
+    flex: 1;
+    input{
+      width: 70%;
+    }
   }
 }

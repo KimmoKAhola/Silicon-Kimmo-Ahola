@@ -6,11 +6,11 @@ const Subscribe = () => {
             <div className="subscriber">
                 <div id="sub-left">
                     <img src={Notification} alt="TODO"/>
-                    <h4>Subscribe to our newsletter to stay informed about latest updates</h4>
+                    <h5>Subscribe to our newsletter to stay informed about latest updates</h5>
                 </div>
                 <div id="sub-right">
                     <input type="text"/>
-                    <button>Subscribe</button>
+                    <button className="footer-button"><span>Subscribe</span></button>
                 </div>
             </div>
         </div>
