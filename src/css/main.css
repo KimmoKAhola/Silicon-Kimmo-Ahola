@@ -281,6 +281,7 @@ button:hover {
 @media (max-width: 767px) {
   .store-buttons {
     display: grid;
+    place-items: center;
     width: 100%;
     height: 100%;
   }
@@ -588,31 +589,32 @@ header .site-settings img {
   }
 }
 #slider-container {
-  display: grid;
-  place-items: center;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  gap: 60px;
 }
 #slider-container #pictures {
   display: flex;
+  gap: 20px;
   align-items: center;
-  padding-bottom: 40px;
-  gap: 75px;
-}
-#slider-container #pictures #left-button {
-  transform: rotate(90deg);
-}
-#slider-container #pictures #right-button {
-  transform: rotate(-90deg);
 }
 #slider-container #slider-bottom {
-  max-width: 50%;
-}
-#slider-container #slider-bottom h4 {
+  display: grid;
+  place-items: center;
   text-align: center;
-  padding-bottom: 10px;
 }
-#slider-container #slider-bottom p {
-  text-align: center;
+@media (max-width: 1199px) {
+  #slider-container #pictures img {
+    height: auto;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #slider-container .outer {
+    display: none;
+  }
 }
 
 #testimonials {
@@ -688,6 +690,12 @@ header .site-settings img {
   max-width: 100%;
 }
 @media (max-width: 575px) {
+  .subscriber {
+    padding: 20px 10px;
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
   .subscriber {
     padding: 20px 10px;
     gap: 20px;

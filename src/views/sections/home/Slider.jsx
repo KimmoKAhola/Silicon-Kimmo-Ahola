@@ -12,11 +12,11 @@ const Slider = () => {
                 <h2>How Does It Work?</h2>
 
                 <div id="pictures">
-                    <div id="left-button"><ArrowButton/></div>
-                    <img src={How1} alt="TODO"/>
+                    <ArrowButton direction="left"/>
+                    <img className="outer" src={How1} alt="TODO"/>
                     <img src={How2} alt="TODO"/>
-                    <img src={How3} alt="TODO"/>
-                    <div id="right-button"><ArrowButton/></div>
+                    <img className="outer" src={How3} alt="TODO"/>
+                    <ArrowButton direction="right"/>
                 </div>
 
                 <div id="slider-bottom">
