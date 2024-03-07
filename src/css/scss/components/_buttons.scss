@@ -19,7 +19,7 @@ button:hover {
   }
 
   button:hover{
-    background-color: $primary;
+    background-color: $primary; //oklart TODO
   }
 
   &.active button{
@@ -30,7 +30,7 @@ button:hover {
 
 .store-buttons {
   display: flex;
-  //justify-content: center; ?? needed?
+  //justify-content: center; ?? needed? TODO
   gap: 15px;
   height: 52px;
 

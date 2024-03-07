@@ -878,6 +878,9 @@ header .site-settings img {
   align-items: center;
   justify-content: space-between;
 }
+.accordion:hover {
+  cursor: pointer;
+}
 
 #faq-container {
   display: grid;
