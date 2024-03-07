@@ -1,14 +1,19 @@
 #testimonials{
   display: grid;
   grid-template-columns: auto 1fr;
+  gap: 20px;
 }
 
 #card{
   display: flex;
+  gap: 20px;
 }
 
 .testimonial-card{
-  border: 1px solid black;
+  border: 1px solid $gray-400;
+  @include shadow-l;
+  padding: 20px;
+  border-radius: 8px;
   display: grid;
   grid-template-rows: auto auto auto;
 }

@@ -5,7 +5,7 @@ import FooterDark from "./sections/global/Footer-Dark.jsx";
 
 const News = () => {
     return (
-        <div className="wrapper">
+        <div>
             <Navbar/>
             <Card/>
             <FooterDark/>

@@ -1,9 +1,38 @@
-input{
+input {
   border: 1px solid $gray-400;
   border-radius: 5px;
-  padding: 5px;
+  padding-left: 30px;
+  @include text-m;
+  color: $gray-700;
 
-  &:focus{
+  &:focus {
     outline: none;
   }
+}
+
+#sub-right {
+  display: flex;
+
+  div {
+    display: flex;
+    flex: 1;
+
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.subscriber-form {
+  position: relative;
+  input{
+    border-radius: 4px 0 0 4px;
+  }
+}
+
+.subscriber-form .icon {
+  position: absolute;
+  left: 5px; // Adjust as needed for desired spacing
+  top: 50%;
+  transform: translateY(-50%);
 }

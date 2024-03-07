@@ -1,4 +1,20 @@
-#faq-container{
+#faq-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  gap: 10px;
+
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    .faq-card {
+      @include text-s;
+      color: $gray-700;
+      border: 1px solid $gray-400;
+      border-radius: 8px;
+      display: grid;
+      gap: 10px;
+      padding: 20px;
+    }
+  }
 }

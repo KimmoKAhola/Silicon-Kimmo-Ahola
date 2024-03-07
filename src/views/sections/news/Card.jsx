@@ -5,6 +5,7 @@ import Jerome from '../../../images/news/jerome.png'
 
 const Card = () => {
     return (
+
         <div>
             <img src={Card1} alt="TODO"/>
             <div>
@@ -13,7 +14,6 @@ const Card = () => {
                 <img src={Jerome} alt="TODO"/>
                 <p>Jerome Bell</p>
             </div>
-
         </div>
     )
 }

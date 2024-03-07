@@ -13,16 +13,16 @@ import FAQ from "./sections/home/FAQ.jsx";
 const Home = () => {
     return (
         <div>
-            {/*<Navbar />*/}
-            {/*<Showcase/>*/}
-            {/*<Brands/>*/}
-            {/*<AppFeatures/>*/}
-            {/*<Slider/>*/}
-            {/*<Features/>*/}
-            {/*<Testimonials/>*/}
+            <Navbar />
+            <Showcase/>
+            <Brands/>
+            <AppFeatures/>
+            <Slider/>
+            <Features/>
+            <Testimonials/>
             <FAQ/>
-            {/*<Subscribe/>*/}
-            {/*<FooterLight/>*/}
+            <Subscribe/>
+            <FooterLight/>
         </div>
     )
 }

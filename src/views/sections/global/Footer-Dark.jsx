@@ -1,13 +1,14 @@
 import React from 'react'
 import Logo from '../../../images/logo/silicon-logo-dark_theme.svg'
 import {Link} from "react-router-dom";
+import SubscriberButton from "./SubscriberButton.jsx";
 
 const FooterDark = () => {
     return (
         <div className="dark-container">
             <div id="footer-dark">
                 <div>
-                    <Link to="/home">
+                    <Link className="logo" to="/home">
                         <img src={Logo} alt="TODO"/>
                     </Link>
                     <p id="footer-text">Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit.
@@ -17,11 +18,8 @@ const FooterDark = () => {
                         dolor ullamcorper sodales ultrices eros. </p>
                     <div>
                         <h6>Subscribe to our newsletter</h6>
-                        <div id="footer-subscribe">
-                            <input type="text"/>
-                            <button className="footer-button"><span>Subscribe</span></button>
-                        </div>
                     </div>
+                    <SubscriberButton/>
 
                     <p id="dark-copyright">2024. All rights reserved. Silicon Template.</p>
                 </div>
@@ -31,7 +29,7 @@ const FooterDark = () => {
                             <Link to="/" className="Link">Home</Link>
                             <Link to="#" className="Link">Services</Link>
                             <Link to="#" className="Link">Our Clients</Link>
-                            <Link to="/testimionals" className="Link">Testimonials</Link>
+                            <Link to="#" className="Link">Testimonials</Link>
                             <Link to="/news" className="Link">News</Link>
                         </ul>
                         <ul>
