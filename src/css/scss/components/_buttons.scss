@@ -21,6 +21,11 @@ button:hover {
   button:hover{
     background-color: $primary;
   }
+
+  &.active button{
+    background-color: $primary;
+    //box-shadow: 1px 1px black;
+  }
 }
 
 .store-buttons {

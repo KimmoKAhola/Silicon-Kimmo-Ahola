@@ -1,11 +1,17 @@
-.accordion-item{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 180px;
+.accordion {
+  margin: 10px;
   padding: 10px;
-  margin: 5px;
-  border: 1px solid $gray-300;
+  background-color: $gray-300;
   border-radius: 8px;
-  @include shadow-l;
+  .accordion-item {
+    display: grid;
+    grid-template-rows: auto;
+
+    .accordion-title {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }

@@ -13,11 +13,11 @@ const FooterLight = () => {
                     <img src={Logo} alt="TODO"/>
                 </Link>
                 <ul id="footer-links">
-                    <Link to="/overview">Overview</Link>
-                    <Link to="#features">Features</Link>
-                    <Link to="/overview">News</Link>
-                    <Link to="/contact">Contact</Link>
-                    <Link to="/*">Account</Link>
+                    <Link className="nav-link" to="/overview">Overview</Link>
+                    <Link className="nav-link" to="#features">Features</Link>
+                    <Link className="nav-link" to="/overview">News</Link>
+                    <Link className="nav-link" to="/contact">Contact</Link>
+                    <Link className="nav-link" to="/*">Account</Link>
                 </ul>
                 <StoreButtons/>
                 <Socials/>

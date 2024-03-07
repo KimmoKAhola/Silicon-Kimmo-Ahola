@@ -1,9 +1,9 @@
 import React from 'react'
 import Arrow from '../../../images/icons/down-arrow.svg'
 
-const ArrowButton = ({direction}) => {
+const ArrowButton = ({ direction, isActive }) => {
     let rotationDegrees = 0;
-    switch (direction){
+    switch (direction) {
         case 'left':
             rotationDegrees = 90;
             break;
@@ -16,14 +16,16 @@ const ArrowButton = ({direction}) => {
         case 'down':
             rotationDegrees = 0;
             break;
-
+        default:
+            rotationDegrees = 0;
     }
+
     return (
-        <div className="arrow-button">
-            <button style={{transform: `rotate(${rotationDegrees}deg)`}}>
-                <img src={Arrow} alt="TODO"/>
+        <div className={`arrow-button ${isActive ? 'active' : ''}`}>
+            <button style={{ transform: `rotate(${rotationDegrees}deg)`, transition: 'transform 0.2s ease' }}>
+                <img src={Arrow} alt="TODO" />
             </button>
         </div>
-    )
-}
+    );
+};
 export default ArrowButton
