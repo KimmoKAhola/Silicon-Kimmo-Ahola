@@ -5,6 +5,10 @@
   align-items: center;
   gap: 60px;
   padding: 30px 100px;
+  @include sm{
+    padding: 20px 10px;
+    gap: 20px;
+  }
   background-color: $gray-300;
   border-radius: 15px;
   max-width: 100%;
@@ -23,5 +27,12 @@
     input{
       width: 70%;
     }
+  }
+}
+
+@include lg{
+  .subscriber{
+    display: grid;
+    text-align: center;
   }
 }
