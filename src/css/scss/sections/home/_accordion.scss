@@ -1,0 +1,11 @@
+.accordion-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 180px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid $gray-400;
+  border-radius: 8px;
+  @include shadow-l;
+}

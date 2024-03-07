@@ -8,19 +8,21 @@ import Testimonials from "./sections/home/Testimonials.jsx";
 import FooterLight from "./sections/global/Footer-Light.jsx";
 import Subscribe from "./sections/home/Subscribe.jsx";
 import Navbar from "./sections/global/Navbar.jsx";
+import FAQ from "./sections/home/FAQ.jsx";
 
 const Home = () => {
     return (
         <div>
-            <Navbar />
+            {/*<Navbar />*/}
             {/*<Showcase/>*/}
             {/*<Brands/>*/}
             {/*<AppFeatures/>*/}
-            <Slider/>
+            {/*<Slider/>*/}
             {/*<Features/>*/}
             {/*<Testimonials/>*/}
+            <FAQ/>
             {/*<Subscribe/>*/}
-            <FooterLight/>
+            {/*<FooterLight/>*/}
         </div>
     )
 }

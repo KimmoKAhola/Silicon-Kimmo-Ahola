@@ -1,4 +1,8 @@
 @import 'sections/global/navbar';
+@import 'sections/global/footer';
+@import 'sections/global/footer-dark';
+@import 'sections/global/social-links';
+
 @import 'sections/home/showcase';
 @import 'sections/home/brands';
 @import 'sections/home/app-features';
@@ -7,9 +11,10 @@
 @import 'sections/home/features';
 @import 'sections/home/courses';
 @import 'sections/home/subscribe';
-@import 'sections/global/footer';
-@import 'sections/global/footer-dark';
+@import 'sections/home/accordion';
+@import 'sections/home/faq';
+
+
 
 @import 'sections/contact/hero';
 @import 'sections/contact/map';
-@import 'sections/global/social-links';
