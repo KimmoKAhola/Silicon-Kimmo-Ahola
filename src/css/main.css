@@ -927,7 +927,7 @@ header .site-settings img {
 }
 
 .full-width::after {
-  width: 100vw;
+  width: 100%;
 }
 
 .subscriber {
