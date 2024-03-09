@@ -7,10 +7,12 @@ import Stars2 from '../../../images/testimonials/rating-2.png'
 
 const Testimonials = () => {
     return (
-        <div className="container">
-            <div id="testimonials">
-                <h2>Clients are Loving Our App</h2>
-                <Card/>
+        <div id="testimonials-bg">
+            <div className="container">
+                <div id="testimonials">
+                    <h2>Clients are Loving Our App</h2>
+                    <Card/>
+                </div>
             </div>
         </div>
     )

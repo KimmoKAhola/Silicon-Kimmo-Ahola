@@ -1,13 +1,14 @@
 button {
   border: none;
-  transition: ease-in 0.3s;
-  &:hover{
+  transition: ease-in 0.1s;
+
+  &:hover {
     cursor: pointer;
   }
 }
 
 button:hover {
-  background-color: $secondary;
+  @include shadow-l;
 }
 
 .arrow-button {
@@ -16,32 +17,32 @@ button:hover {
     width: 44px;
     border-radius: 50%;
     @include shadow-s;
+    &:hover {
+      background-color: $gray-100;
+    }
   }
 
-  button:hover{
-    background-color: $primary; //oklart TODO
-  }
 
-  &.active button{
-    background-color: $primary;
-    //box-shadow: 1px 1px black;
+  &.active {
+    button {
+      background-color: $primary;
+    }
   }
 }
 
 .store-buttons {
   display: flex;
-  //justify-content: center; ?? needed? TODO
   gap: 15px;
   height: 52px;
 
-  @include md{
+  @include md {
     display: grid;
     place-items: center;
     width: 100%;
     height: 100%;
   }
 
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
 }
@@ -49,6 +50,10 @@ button:hover {
 .primary-button {
   img {
     height: 18px;
+  }
+
+  &:hover {
+    background-color: $secondary;
   }
 
   span {
@@ -73,6 +78,10 @@ button:hover {
 .footer-button {
   img {
     height: 18px;
+  }
+
+  &:hover {
+    background-color: $secondary;
   }
 
   span {

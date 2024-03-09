@@ -19,19 +19,11 @@ const Accordion = () => {
         {
             title: 'What formats can I download my transaction history in?',
             content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' +
-                'Consequuntur cupiditate dolore, iste iure magnam nihil nisi nulla praesentium repellendus sint sit tempore totam voluptatibus. ' +
-                'Ab aspernatur dignissimos eligendi et facere natus nesciunt optio quaerat quidem sequi. ' +
-                'Ab, accusamus accusantium alias atque corporis doloremque ducimus est fugiat, inventore ipsam nobis quisquam recusandae rerum suscipit tenetur! ' +
-                'Asperiores, culpa delectus deserunt dicta dolore doloremque ducimus ex ' +
-                'exercitationem facilis fugiat hic illo, impedit inventore itaque laboriosam maiores maxime ' +
-                'necessitatibus neque, nulla numquam omnis pariatur perspiciatis provident qui quibusdam quisquam rem ' +
-                'sequi soluta ullam vitae. Animi assumenda blanditiis consequuntur dolore ducimus eligendi et explicabo facilis ' +
-                'fuga, fugit id iste laboriosam laborum neque nesciunt nisi nobis obcaecati odio perferendis possimus quasi ' +
-                'quisquam rerum saepe sint soluta tempore, unde voluptatem. Accusantium, beatae, blanditiis corporis dicta error ' +
-                'molestiae nemo nostrum odio, quas quibusdam quos reprehenderit saepe sapiente temporibus veniam veritatis voluptatibus. ' +
-                'Asperiores, distinctio eveniet. Atque dignissimos ex itaque numquam! Aliquam architecto consectetur eius eos harum illo, ipsa ' +
-                'magnam modi molestiae nam nulla, obcaecati omnis quae quod ratione rem sequi sit tempora temporibus ut vel velit vitae? A, ad ' +
-                'assumenda deserunt dolore ex nemo porro provident reiciendis. Consectetur debitis delectus ipsam odit quas quibusdam quo repellat vero. Et, voluptate.'
+                'Ab commodi cum dolor, ducimus eum ex explicabo harum incidunt, iste necessitatibus odio officia pariatur placeat quod rerum tempora veniam voluptatum! ' +
+                'Aliquid aspernatur culpa debitis delectus et facere facilis laborum odio omnis quasi qui, quo rem sed sunt tenetur ullam unde, ut! ' +
+                'Dolore ducimus, eveniet in labore natus provident tempore totam veritatis. ' +
+                'labore maxime minima nam odit quaerat sequi similique soluta suscipit ullam ut velit. Hic nemo nostrum quod? Beatae dignissimos ratione repudiandae s' +
+                'int temporibus! Cum delectus deserunt dolore doloribus ducimus eaque nam nisi odio optio quasi qui quibusdam, quo quos rerum unde vel vero voluptate?'
         },
         {
             title: 'Can I schedule future transfers?',
@@ -78,7 +70,8 @@ const Accordion = () => {
                                 }
                             </div>
                         </div>
-                        {accordionStates[index] && <div className="accordion-content">{item.content}</div>}
+                        {accordionStates[index] && <div className="accordion-content">
+                            {item.content}</div>}
                     </div>
                 </div>
             ))}

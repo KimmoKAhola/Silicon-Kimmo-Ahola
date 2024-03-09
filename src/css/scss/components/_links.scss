@@ -1,6 +1,6 @@
 a, .nav-link, Link{
   text-decoration: none;
-  transition: ease-in 0.2s;
+  transition: ease-in 0.1s;
   &:hover{
     cursor: pointer;
   }
@@ -8,7 +8,8 @@ a, .nav-link, Link{
 
 .nav-link {
   &:hover {
-    color: #4C82F7;
+    color: $primary;
+    //color: $secondary;
   }
 }
 
