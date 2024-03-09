@@ -8,7 +8,7 @@ const News = () => {
     return (
         <div>
             <Navbar/>
-            {/*<Grid/>*/}
+            <Grid/>
             <Subscribe/>
             <FooterDark/>
         </div>

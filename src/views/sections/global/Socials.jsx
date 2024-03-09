@@ -8,10 +8,10 @@ const Socials = () => {
     return (
         <div className="brand-footer-logos">
             <ul>
-                <li><img src={Facebook} alt="TODO"/></li>
-                <li><img src={Twitter} alt="TODO"/></li>
-                <li><img src={Instagram} alt="TODO"/></li>
-                <li><img src={Youtube} alt="TODO"/></li>
+                <li><img id="facebook" src={Facebook} alt="TODO"/></li>
+                <li><img id="twitter" src={Twitter} alt="TODO"/></li>
+                <li><img id="instagram" src={Instagram} alt="TODO"/></li>
+                <li><img id="youtube" src={Youtube} alt="TODO"/></li>
             </ul>
         </div>
     )

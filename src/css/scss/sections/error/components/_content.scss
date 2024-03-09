@@ -1,0 +1,24 @@
+.error-container{
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto auto;
+  height: 100vh;
+  transition: transform 0.3s ease-in-out;
+
+  //:hover{
+  //  #error-404-image{
+  //    transform: scale(1.1);
+  //  }
+  //}
+}
+
+
+#error-test-bottom{
+  place-items: end;
+}
+
+.wrapper:hover .error-container {
+  #error-404-image{
+    transform: scale(1.005); /* Scale up the error container on hover */
+  }
+}

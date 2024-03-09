@@ -11,7 +11,7 @@ const Grid = () => {
                 const jsonData = await response.json();
                 setData(jsonData);
             } catch (error) {
-                console.error('Error fetching data', error);
+                console.error('Content fetching data', error);
             }
         };
 
