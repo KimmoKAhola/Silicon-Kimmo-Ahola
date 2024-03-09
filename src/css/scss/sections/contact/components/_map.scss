@@ -4,9 +4,10 @@
   grid-template-columns: 1fr 1fr;
 
   #map {
-    width: 400px;
-    height: 400px;
-    background-color: red;
+    iframe{
+      height: 540px;
+      width: 636px;
+    }
   }
 
   ul {

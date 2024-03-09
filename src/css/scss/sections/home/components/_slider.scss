@@ -2,13 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  //max-width: 1200px;
   gap: 60px;
 
   #pictures {
     display: flex;
     gap: 20px;
     align-items: center;
+    .outer{
+      filter: brightness(70%) blur(2px);
+      transform: scale(0.7);
+    }
   }
 
   #slider-bottom {
@@ -34,4 +37,23 @@
 
 #slider-bg{
   background: $gray-100;
+}
+
+.slider-bottom-border::after{
+  content: '';
+  display: block;
+  border-bottom: 3px solid $primary;
+  transition: ease-in 0.3s;
+}
+
+.one-third-width::after {
+  width: calc(100vw / 3);
+}
+
+.two-thirds-width::after {
+  width: calc(2 * 100vw / 3);
+}
+
+.full-width::after {
+  width: calc(3 * 100vw / 3);
 }

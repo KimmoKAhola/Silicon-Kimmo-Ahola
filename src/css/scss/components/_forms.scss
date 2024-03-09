@@ -10,6 +10,14 @@ input {
   }
 }
 
+.contact-text-field{
+  padding-left: 10px;
+}
+
+.contact-time-field{
+  padding: 5px;
+}
+
 #sub-right {
   display: flex;
 
@@ -25,6 +33,7 @@ input {
 
 .subscriber-form {
   position: relative;
+
   input{
     border-radius: 4px 0 0 4px;
   }
