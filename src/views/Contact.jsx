@@ -7,8 +7,10 @@ import Navbar from "./sections/global/Navbar.jsx";
 const Contact = () => {
     return (
         <div>
-            <Navbar />
-            <Hero/>
+            <div id="contact-bg">
+                <Navbar/>
+                <Hero/>
+            </div>
             <Map/>
             <FooterDark/>
         </div>

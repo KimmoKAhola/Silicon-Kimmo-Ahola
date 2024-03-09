@@ -9,7 +9,7 @@
     gap: 20px;
     align-items: center;
     .outer{
-      filter: brightness(70%) blur(2px);
+      filter: brightness(50%) blur(2px);
       transform: scale(0.7);
     }
   }
@@ -29,6 +29,9 @@
     }
   }
   @include md {
+    p{
+      width: 80%;
+    }
     .outer{
       display: none;
     }
@@ -39,11 +42,13 @@
   background: $gray-100;
 }
 
+
 .slider-bottom-border::after{
   content: '';
   display: block;
   border-bottom: 3px solid $primary;
   transition: ease-in 0.3s;
+  top: -1px;
 }
 
 .one-third-width::after {

@@ -24,6 +24,7 @@ const headers = [
 const Carousel = ({images, headers}) => {
     const [index, setIndex] = useState(0);
 
+    // I know we are not supposed to touch the DOM when using react, but this was the only way I knew how to do this! :(
     useEffect(() => {
         const container = document.querySelector('.slider-bottom-border');
 

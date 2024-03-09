@@ -2,6 +2,8 @@ import React from 'react'
 import Accordion from "./Accordion.jsx";
 import Phone from '../../../images/icons/faq-phone.svg'
 import ChatBubble from '../../../images/icons/faq-chat-bubble.svg'
+import RightArrow from '../../../images/icons/right-arrow.svg'
+import RightArrowGreen from '../../../images/icons/right-arrow-green.svg'
 
 const Faq = () => {
     return (
@@ -15,13 +17,13 @@ const Faq = () => {
                         <div className="faq-card">
                             <img src={Phone} alt="TODO"/>
                             <p>Still have questions?</p>
-                            <a href="#">Contact us</a>
+                            <a id="call" href="#"><span>Contact us <img src={RightArrow} alt="TODO"/></span></a>
                         </div>
 
                         <div className="faq-card">
                             <img src={ChatBubble} alt="TODO"/>
                             <p>Don't like phone calls?</p>
-                            <a href="#">Contact us</a>
+                            <a id="chat" href="#"><span>Contact us <img src={RightArrowGreen} alt="TODO"/></span></a>
                         </div>
                     </div>
                 </div>

@@ -1,18 +1,25 @@
-.hero{
+.hero {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
-
-  .contact-info{
-    //justify-self: end;
+  .contact-info {
     padding-right: 50px;
   }
 
-  .contact-form{
-    //justify-content: start;
+  .contact-form {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 24px;
+    border-radius: 8px;
+    padding: 72px;
+    @include shadow-l;
+    input{
+      width: 100%;
+      padding: 5px;
+    }
   }
 
-  .section{
+  .section {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 20px;
@@ -20,3 +27,27 @@
   }
 }
 
+#contact-bg {
+  background-color: $gray-100;
+  height: 40%;
+}
+
+.contact-icon {
+  background-color: $white;
+  padding: 16px;
+  border-radius: 50%;
+}
+
+.contact-specialist-field{
+  width: 100%;
+  background-color: $white;
+  border-radius: 8px;
+  box-shadow: none;
+  padding: 20px;
+}
+
+.contact-time{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}

@@ -45,9 +45,10 @@ const Hero = () => {
                 <div className="contact-info">
                     <h1>Contact Us</h1>
 
-                    <div id="email-us"><h2>Email us</h2>
+                    <div id="email-us">
+                        <h2>Email us</h2>
                         <div className="section">
-                            <img src={Envelope} alt="TODO"/>
+                            <img className="contact-icon" src={Envelope} alt="TODO"/>
                             <div>
                                 <p>Please feel free to drop us a line. We will respond as soon as possible</p>
                                 <a href="#">Leave a message</a>
@@ -56,9 +57,10 @@ const Hero = () => {
                         </div>
                     </div>
 
-                    <div id="careers"><h2>Careers</h2>
+                    <div id="careers">
+                        <h2>Careers</h2>
                         <div className="section">
-                            <img src={AddGroup} alt="TODO"/>
+                            <img className="contact-icon" src={AddGroup} alt="TODO"/>
                             <div>
                                 <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
                                 <a href="#">Send an application</a>
@@ -70,28 +72,40 @@ const Hero = () => {
 
                 <div className="contact-form">
                     <h2>Get Online Consultation</h2>
-                    <p>Full name</p>
-                    <input className="contact-text-field" type="text"/>
+                    <div>
+                        <p>Full name</p>
+                        <input className="contact-text-field" type="text"/>
+                    </div>
 
-                    <p>Email address</p>
-                    <input className="contact-text-field" type="text"/>
+                    <div>
+                        <p>Email address</p>
+                        <input className="contact-text-field" type="text"/>
+                    </div>
 
-                    <p>Specialist</p>
-                    <select value={selectedSpecialist} onChange={handleSpecialistChange}>
-                        <option value="">Select a specialist</option>
-                        {specialists.map((specialist) => (
-                            <option key={specialist.id} value={specialist.id}>
-                                {specialist.firstName} {specialist.lastName}
-                            </option>
-                        ))}
-                    </select>
-                    <div id="result">{result}</div>
+                    <div>
+                        <p>Specialist</p>
+                        <select className="contact-specialist-field" value={selectedSpecialist}
+                                onChange={handleSpecialistChange}>
+                            <option value="">Select a specialist</option>
+                            {specialists.map((specialist) => (
+                                <option key={specialist.id} value={specialist.id}>
+                                    {specialist.firstName} {specialist.lastName}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
 
-                    <p>Date</p>
-                    <input className="contact-time-field" type="date"/>
+                    <div className="contact-time">
+                        <div>
+                            <p>Date</p>
+                            <input className="contact-time-field" type="date"/>
+                        </div>
 
-                    <p>Time</p>
-                    <input className="contact-time-field" type="time"/>
+                        <div>
+                            <p>Time</p>
+                            <input className="contact-time-field" type="time"/>
+                        </div>
+                    </div>
 
                     <button className="primary-button"><span>Make an appointment</span></button>
                 </div>

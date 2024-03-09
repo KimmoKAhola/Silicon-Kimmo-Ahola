@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+
     .faq-card {
       @include text-s;
       color: $gray-700;
@@ -15,6 +16,29 @@
       display: grid;
       gap: 10px;
       padding: 20px;
+      transition: ease-in 0.2s;
+
+      a {
+        span {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        transform: translateY(-2px);
+        @include shadow-s;
+      }
+
+
+      #call {
+        color: $primary;
+      }
+
+      #chat {
+        color: $success;
+      }
     }
   }
 }

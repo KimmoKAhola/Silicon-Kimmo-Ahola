@@ -4,13 +4,18 @@ import Author1 from '../../../images/testimonials/fannie-summers.png'
 import Author2 from '../../../images/testimonials/albert-flores.png'
 import Stars1 from '../../../images/testimonials/rating-1.png'
 import Stars2 from '../../../images/testimonials/rating-2.png'
+import ArrowButton from "../global/ArrowButton.jsx";
 
 const Testimonials = () => {
     return (
         <div id="testimonials-bg">
             <div className="container">
                 <div id="testimonials">
-                    <h2>Clients are Loving Our App</h2>
+                    <div>
+                        <h2>Clients are Loving Our App</h2>
+                        <ArrowButton direction="left"/>
+                        <ArrowButton direction="right"/>
+                    </div>
                     <Card/>
                 </div>
             </div>
