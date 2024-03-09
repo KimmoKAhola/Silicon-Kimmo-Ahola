@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import ArrowButton from '../../../images/contact/arrow-btn.svg'
 import AddGroup from '../../../images/contact/add-group.svg'
 import Envelope from '../../../images/contact/bx-envelope.svg'
+import RightArrow from '../../../images/icons/right-arrow.svg'
 
 const Hero = () => {
     const [specialists, setSpecialists] = useState([]);
@@ -51,8 +52,7 @@ const Hero = () => {
                             <img className="contact-icon" src={Envelope} alt="TODO"/>
                             <div>
                                 <p>Please feel free to drop us a line. We will respond as soon as possible</p>
-                                <a href="#">Leave a message</a>
-                                <button className="arrow-button"><img src={ArrowButton} alt="TODO"/></button>
+                                <a href="#">Leave a message <img src={RightArrow} alt="TODO"/></a>
                             </div>
                         </div>
                     </div>
@@ -63,8 +63,7 @@ const Hero = () => {
                             <img className="contact-icon" src={AddGroup} alt="TODO"/>
                             <div>
                                 <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
-                                <a href="#">Send an application</a>
-                                <button className="arrow-button"><img src={ArrowButton} alt="TODO"/></button>
+                                <a href="#">Send an application <img src={RightArrow} alt="TODO"/></a>
                             </div>
                         </div>
                     </div>

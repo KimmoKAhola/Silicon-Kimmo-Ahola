@@ -71,7 +71,7 @@ html, body {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 80%;
-  margin: 10px auto;
+  margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -1096,10 +1096,17 @@ header .site-settings img {
   gap: 20px;
   max-width: 450px;
 }
+.hero .section a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.hero .section a:hover {
+  color: #4647a3;
+}
 
 #contact-bg {
   background-color: #F3F6FF;
-  height: 40%;
 }
 
 .contact-icon {
