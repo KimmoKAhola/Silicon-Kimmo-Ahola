@@ -1,0 +1,29 @@
+#sub-container{
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 48px;
+}
+
+#sub-header{
+  display: flex;
+}
+
+.news-sub-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+
+  h5{
+    max-width: 196px;
+  }
+}
+
+.news-subscription{
+  display: flex;
+}
+
+
+#news-subscribe-bg{
+  background-color: $gray-100;
+}

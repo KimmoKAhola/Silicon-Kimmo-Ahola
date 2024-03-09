@@ -5,12 +5,14 @@ import SubscriberButton from "../global/SubscriberButton.jsx";
 const Subscribe = () => {
     return (
         <div className="container">
-            <div className="subscriber">
-                <div id="sub-left">
-                    <img src={Notification} alt="TODO"/>
-                    <h5>Subscribe to our newsletter to stay informed about latest updates</h5>
+            <div className="testing">
+                <div className="subscriber">
+                    <div id="sub-left">
+                        <img src={Notification} alt="TODO"/>
+                        <h5>Subscribe to our newsletter to stay informed about latest updates</h5>
+                    </div>
+                    <SubscriberButton/>
                 </div>
-                <SubscriberButton/>
             </div>
         </div>
     )

@@ -4,7 +4,10 @@
 
   #left-side {
     h1{
-      @include d1;
+      @include d4;
+    }
+    p{
+      @include text-lead;
     }
     margin-top: 30px;
     display: flex;

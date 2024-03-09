@@ -1,0 +1,14 @@
+.news-card{
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto 1fr;
+
+  div{
+    display: flex;
+    flex-direction: column;
+    div{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

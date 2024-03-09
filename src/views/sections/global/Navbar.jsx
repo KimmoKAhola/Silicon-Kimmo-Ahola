@@ -29,7 +29,7 @@ const Navbar = () => {
                         <button className="primary-button"><img src={User} alt="TODO"/> <span>Sign in / up</span>
                         </button>
                     </div>
-                    <img className="mobile-menu" src={Hamburger} alt="TODO"/>
+                    <button className="hamburger-menu"><img className="mobile-menu" src={Hamburger} alt="TODO"/></button>
 
                 </div>
 

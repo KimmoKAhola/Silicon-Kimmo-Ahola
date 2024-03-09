@@ -20,10 +20,10 @@ const Grid = () => {
 
 
     return (
-        <div>
-            {data.map((item) => (
+        <div className="container">
+            <div id="news-grid">{data.map((item) => (
                 <Card key={item.id} data={item}/>
-            ))}
+            ))}</div>
         </div>
     )
 }

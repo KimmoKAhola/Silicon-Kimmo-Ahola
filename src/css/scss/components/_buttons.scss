@@ -7,6 +7,16 @@ button {
   }
 }
 
+.hamburger-menu {
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    height: 30px;
+  }
+}
+
 button:hover {
   @include shadow-l;
 }
@@ -17,6 +27,7 @@ button:hover {
     width: 44px;
     border-radius: 50%;
     @include shadow-s;
+
     &:hover {
       background-color: $gray-100;
     }

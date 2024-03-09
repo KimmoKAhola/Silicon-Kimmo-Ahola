@@ -259,6 +259,16 @@ button:hover {
   cursor: pointer;
 }
 
+.hamburger-menu {
+  background-color: #fcfcfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hamburger-menu img {
+  height: 30px;
+}
+
 button:hover {
   background: #fcfcfc;
   box-shadow: 0px 4px 13px -2px rgba(19, 16, 34, 0.06), 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1);
@@ -480,7 +490,10 @@ header .site-settings img {
   header .site-settings img {
     display: flex;
     align-items: center;
-    padding-right: 50px;
+  }
+  header .site-settings button {
+    padding: 10px;
+    margin-right: 50px;
   }
 }
 @media (max-width: 767px) {
@@ -786,7 +799,14 @@ header .site-settings img {
   font-weight: 800;
   color: #0B0F19;
   font-family: "Manrope", sans-serif;
-  font-size: 80px;
+  font-size: 56px !important;
+}
+#showcase #left-side p {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
 }
 #showcase #left-side #showcase-buttons {
   display: flex;
@@ -866,14 +886,12 @@ header .site-settings img {
 
 .subscriber {
   display: flex;
-  flex: 1;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 60px;
-  padding: 30px 100px;
+  padding: 72px 110px;
   background-color: rgb(226, 229, 241);
   border-radius: 15px;
-  max-width: 100%;
 }
 @media (min-width: 350px) and (max-width: 575px) {
   .subscriber {
@@ -901,6 +919,11 @@ header .site-settings img {
     text-align: center;
   }
 }
+.testing {
+  display: grid;
+  place-items: center;
+}
+
 #testimonials {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -924,6 +947,58 @@ header .site-settings img {
 
 #testimonials-bg {
   background: radial-gradient(120.91% 118.4% at 50% 100%, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
+}
+
+.news-card {
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto 1fr;
+}
+.news-card div {
+  display: flex;
+  flex-direction: column;
+}
+.news-card div div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+}
+@media (max-width: 1199px) {
+  #news-grid {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+
+#sub-container {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 48px;
+}
+
+#sub-header {
+  display: flex;
+}
+
+.news-sub-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.news-sub-form h5 {
+  max-width: 196px;
+}
+
+.news-subscription {
+  display: flex;
+}
+
+#news-subscribe-bg {
+  background-color: #F3F6FF;
 }
 
 .hero {

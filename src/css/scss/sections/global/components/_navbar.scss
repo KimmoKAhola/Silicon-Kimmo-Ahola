@@ -42,7 +42,13 @@ header {
       img {
         display: flex;
         align-items: center;
-        padding-right: 50px;
+        //padding-right: 50px;
+        //margin-right: 50px;
+      }
+      button{
+        //padding-right: 50px;
+        padding: 10px;
+        margin-right: 50px;
       }
     }
   }
