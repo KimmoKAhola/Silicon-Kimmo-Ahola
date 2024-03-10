@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Link, NavLink} from "react-router-dom";
 import Logo from '../../../images/logo/silicon-logo-light_theme.svg'
 import User from '../../../images/icons/user.svg'
 import Hamburger from '../../../images/icons/bx-menu.svg'
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toggleMenu = () =>{
+        setIsOpen(!isOpen);
+    }
+
+
     return (
         <div className="container">
             <header>
@@ -29,11 +36,18 @@ const Navbar = () => {
                         <button className="primary-button"><img src={User} alt="TODO"/> <span>Sign in / up</span>
                         </button>
                     </div>
-                    <button className="hamburger-menu"><img className="mobile-menu" src={Hamburger} alt="TODO"/></button>
-
+                    <button onClick={toggleMenu} className="hamburger-menu"><img className="mobile-menu" src={Hamburger} alt="TODO"/></button>
                 </div>
 
             </header>
+            {isOpen && (
+                <nav id="mobile-menu">
+                    <NavLink className="nav-link" to="/#overview">Overview</NavLink>
+                    <NavLink className="nav-link" to="/#features">Features</NavLink>
+                    <Link className="nav-link" to="/news">News</Link>
+                    <Link className="nav-link" to="/contact">Contact</Link>
+                </nav>
+            )}
         </div>
     )
 }

@@ -501,11 +501,31 @@ header .site-settings img {
   header .site-settings button {
     padding: 10px;
     margin-right: 50px;
+    transition: 0.6s ease-in;
   }
 }
 @media (max-width: 767px) {
   header #menu {
     display: none;
+  }
+}
+
+#mobile-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  padding: 70px 10px;
+  background-color: #F3F6FF;
+  border-radius: 8px;
+}
+@media (max-width: 991px) {
+  #mobile-menu {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  #mobile-menu {
+    display: grid;
   }
 }
 

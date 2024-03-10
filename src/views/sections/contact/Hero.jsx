@@ -5,12 +5,18 @@ import Envelope from '../../../images/contact/bx-envelope.svg'
 import RightArrow from '../../../images/icons/right-arrow.svg'
 import FormInput from "./FormInput.jsx";
 import map from "./Map.jsx";
+import Modal from "../global/Modal.jsx";
 
 const Hero = () => {
     const [specialists, setSpecialists] = useState([]);
     const [selectedSpecialist, setSelectedSpecialist] = useState('');
     const apiEndPoint = 'https://kyhnet23-assignment.azurewebsites.net/api/specialists'
+    const [showModal, setShowModal] = useState(false);
 
+
+    const closeModal = () =>{
+        setShowModal(false);
+    }
     const [values, setValues] = useState({
         fullName: "",
         email: "",
@@ -80,6 +86,7 @@ const Hero = () => {
                     date: "",
                     time: "",
                 })
+                setShowModal(true);
                 console.log("values cleared? Values: ", values)
             } else {
                 console.log("error: ", values)
@@ -152,6 +159,12 @@ const Hero = () => {
                     <button className="primary-button"><span>Make an appointment</span></button>
                 </form>
 
+                {showModal && (
+                    <Modal onClose={closeModal}>
+                        <p className="text-xl">Appointment booked!</p>
+                        <button className="primary-button" onClick={closeModal}><span>Close</span></button>
+                    </Modal>
+                )}
             </div>
 
         </div>
