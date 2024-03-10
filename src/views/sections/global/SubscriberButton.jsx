@@ -22,6 +22,7 @@ const SubscriberButton = () => {
                 console.log("fel")
             } if (response.ok){
                 setShowModal(true);
+                setEmail('')
             }
         } catch (error) {
             console.error("error: ", error);

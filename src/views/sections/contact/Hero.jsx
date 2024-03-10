@@ -3,12 +3,21 @@ import ArrowButton from '../../../images/contact/arrow-btn.svg'
 import AddGroup from '../../../images/contact/add-group.svg'
 import Envelope from '../../../images/contact/bx-envelope.svg'
 import RightArrow from '../../../images/icons/right-arrow.svg'
+import FormInput from "./FormInput.jsx";
+import map from "./Map.jsx";
 
 const Hero = () => {
     const [specialists, setSpecialists] = useState([]);
     const [selectedSpecialist, setSelectedSpecialist] = useState('');
-    const [result, setResult] = useState('');
     const apiEndPoint = 'https://kyhnet23-assignment.azurewebsites.net/api/specialists'
+
+    const [values, setValues] = useState({
+        fullName: "",
+        email: "",
+        specialist: "",
+        date: "",
+        time: "",
+    });
 
     useEffect(() => {
         const fetchData = async () => {
@@ -23,22 +32,63 @@ const Hero = () => {
         fetchData();
     }, []);
 
-    const handleSpecialistChange = async (event) => {
-        const specialist = event.target.value;
-        setSelectedSpecialist(specialist);
 
-        if (specialist) {
-            try {
-                const response = await fetch(apiEndPoint);
-                const data = await response.json();
-                setResult(JSON.stringify(data));
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        } else {
-            setResult('');
-        }
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setValues((prevData) => ({...prevData, [name]: value}));
     };
+
+    const handleSpecialistChange = (e) => {
+        const selectedSpecialistId = e.target.value;
+        setValues(prevValues => ({
+            ...prevValues,
+            specialist: selectedSpecialistId
+        }));
+        setSelectedSpecialist(selectedSpecialistId);
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        console.log("button clicked!")
+
+        try {
+
+            const response = await fetch(
+                'https://kyhnet23-assignment.azurewebsites.net/api/book-appointment',
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        fullName: values.fullName,
+                        email: values.email,
+                        specialist: values.specialist,
+                        date: values.date,
+                        time: values.time,
+                    })
+
+                });
+            if (response.ok) {
+                console.log("response ok, values: ", values)
+                setSelectedSpecialist('')
+                setValues({
+                    fullName: "",
+                    email: "",
+                    specialist: "",
+                    date: "",
+                    time: "",
+                })
+                console.log("values cleared? Values: ", values)
+            } else {
+                console.log("error: ", values)
+            }
+
+        } catch (error) {
+            console.error("error: ", error);
+        }
+    }
 
     return (
         <div className="container">
@@ -69,17 +119,14 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="contact-form">
+                <form className="contact-form" onSubmit={handleSubmit}>
                     <h2>Get Online Consultation</h2>
-                    <div>
-                        <p>Full name</p>
-                        <input className="contact-text-field" type="text"/>
-                    </div>
 
-                    <div>
-                        <p>Email address</p>
-                        <input className="contact-text-field" type="text"/>
-                    </div>
+                    <FormInput id="fullName" type="text" label="full name" name="fullName" onChange={handleChange}
+                               required="required" errorMessage="Please enter a valid full name"/>
+                    <FormInput id="email" type="text" label="email" name="email" onChange={handleChange}
+                               required="required" errorMessage="Please enter a valid email"/>
+
 
                     <div>
                         <p>Specialist</p>
@@ -93,21 +140,17 @@ const Hero = () => {
                             ))}
                         </select>
                     </div>
-
-                    <div className="contact-time">
-                        <div>
-                            <p>Date</p>
-                            <input className="contact-time-field" type="date"/>
-                        </div>
-
-                        <div>
-                            <p>Time</p>
-                            <input className="contact-time-field" type="time"/>
-                        </div>
+                    <div>
+                        <FormInput id="date" type="date" label="date" name="date" onChange={handleChange}
+                                   required="required"
+                                   errorMessage="Please enter a valid date"/>
+                        <FormInput id="time" type="time" label="time" name="time" onChange={handleChange}
+                                   required="required"
+                                   errorMessage="Please enter a valid time"/>
                     </div>
 
                     <button className="primary-button"><span>Make an appointment</span></button>
-                </div>
+                </form>
 
             </div>
 

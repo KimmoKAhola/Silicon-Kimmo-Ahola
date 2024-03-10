@@ -1,0 +1,12 @@
+.form-demo{
+  form{
+    background-color: $white;
+    @include shadow-l;
+    input{
+      max-width: 70%;
+    }
+    #contact-form-specialist{
+      max-width: 70%;
+    }
+  }
+}
