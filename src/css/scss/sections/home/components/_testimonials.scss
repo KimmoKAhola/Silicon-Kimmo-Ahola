@@ -4,19 +4,46 @@
   gap: 60px;
 }
 
+#testimonial-buttons{
+  display: flex;
+  gap: 20px;
+  padding-top: 70px;
+}
+
 #card{
   display: flex;
   gap: 20px;
-
 }
 
+
+
 .testimonial-card{
+  position: relative;
   border: 1px solid $gray-400;
   @include shadow-l;
-  padding: 20px;
+  padding: 30px;
   border-radius: 8px;
   display: grid;
   grid-template-rows: auto auto auto;
+  gap: 10px;
+  p{
+    max-width: 350px;
+  }
+}
+
+.card-quote-icon{
+  position: absolute;
+  top: -30px;
+  left: 15px;
+}
+.testimonial-author{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  img{
+    height: 48px;
+    width: 48px;
+  }
 }
 
 #testimonials-bg{

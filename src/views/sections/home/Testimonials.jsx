@@ -13,8 +13,10 @@ const Testimonials = () => {
                 <div id="testimonials">
                     <div>
                         <h2>Clients are Loving Our App</h2>
-                        <ArrowButton direction="left"/>
-                        <ArrowButton direction="right"/>
+                        <div id="testimonial-buttons">
+                            <ArrowButton direction="left"/>
+                            <ArrowButton direction="right"/>
+                        </div>
                     </div>
                     <Card/>
                 </div>
@@ -27,29 +29,35 @@ const Card = () => {
     return (
         <div id="card">
             <div className="testimonial-card">
-                <img src={Quotes} alt="TODO"/>
+                <img className="card-quote-icon" src={Quotes} alt="TODO"/>
                 <img src={Stars1} alt="TODO"/>
-                <p>Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis.
+                <p className="text-lg">Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis.
                 Laoreet
                 posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo
                 turpis
                 sit amet.</p>
                 <div className="testimonial-author">
                     <img src={Author1} alt="TODO"/>
-                    <h3>Fannie Summers</h3>
-                    <h4>Designer</h4>
+                    <div>
+                        <h6>Fannie Summers</h6>
+                        <p className="text-s">Designer</p>
+                    </div>
                 </div>
             </div>
+
+
             <div className="testimonial-card">
-                <img src={Quotes} alt="TODO"/>
+                <img className="card-quote-icon" src={Quotes} alt="TODO"/>
                 <img src={Stars2} alt="TODO"/>
-                <p>Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet
+                <p className="text-lg">Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet
                     porttitor. Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor
                     tincidunt egestas eget nunc.</p>
                 <div className="testimonial-author">
                     <img src={Author2} alt="TODO"/>
-                    <h3>Albert Flores</h3>
-                    <h4>Developer</h4>
+                    <div>
+                        <h6>Albert Flores</h6>
+                        <p className="text-s">Developer</p>
+                    </div>
                 </div>
             </div>
 

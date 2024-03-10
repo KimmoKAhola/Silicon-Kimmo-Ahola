@@ -20,10 +20,9 @@ input {
 
 #sub-right {
   display: flex;
-
   div {
     display: flex;
-    flex: 1;
+    //flex: 1;  //TODO this messes with my modal
 
     input {
       width: 100%;
