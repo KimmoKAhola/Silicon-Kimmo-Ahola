@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react'
-import ArrowButton from '../../../images/contact/arrow-btn.svg'
+// import ArrowButton from '../../../images/contact/arrow-btn.svg'
 import AddGroup from '../../../images/contact/add-group.svg'
 import Envelope from '../../../images/contact/bx-envelope.svg'
 import RightArrow from '../../../images/icons/right-arrow.svg'
 import FormInput from "./FormInput.jsx";
-import map from "./Map.jsx";
+// import map from "./Map.jsx";
 import Modal from "../global/Modal.jsx";
 
 const Hero = () => {
@@ -129,10 +129,23 @@ const Hero = () => {
                 <form className="contact-form" onSubmit={handleSubmit}>
                     <h2>Get Online Consultation</h2>
 
-                    <FormInput id="fullName" type="text" label="full name" name="fullName" onChange={handleChange}
-                               required="required" errorMessage="Please enter a valid full name"/>
-                    <FormInput id="email" type="text" label="email" name="email" onChange={handleChange}
-                               required="required" errorMessage="Please enter a valid email"/>
+                    <FormInput id="fullName"
+                               type="text"
+                               label="Full name"
+                               name="fullName"
+                               onChange={handleChange}
+                               required="required"
+                               errorMessage="Please enter a valid full name"
+                               regexPattern="^(?!.*[.'-, ]{2})[a-zA-ZåäöÅÄÖ]{2,} [a-zA-ZåäöÅÄÖ. ',-]{1,}[a-zA-ZåäöÅÄÖ]$"/>
+
+                    <FormInput id="email"
+                               type="text"
+                               label="Email"
+                               name="email"
+                               onChange={handleChange}
+                               required="required"
+                               errorMessage="Please enter a valid email"
+                               regexPattern="^[a-öA-Ö0-9_.+-]{2,}@[a-öA-Ö0-9-]{2,}\.[a-öA-Ö]{2,}$"/>
 
 
                     <div>
@@ -148,10 +161,19 @@ const Hero = () => {
                         </select>
                     </div>
                     <div>
-                        <FormInput id="date" type="date" label="date" name="date" onChange={handleChange}
+                        <FormInput id="date"
+                                   type="date"
+                                   label="date"
+                                   name="date"
+                                   onChange={handleChange}
                                    required="required"
                                    errorMessage="Please enter a valid date"/>
-                        <FormInput id="time" type="time" label="time" name="time" onChange={handleChange}
+
+                        <FormInput id="time"
+                                   type="time"
+                                   label="time"
+                                   name="time"
+                                   onChange={handleChange}
                                    required="required"
                                    errorMessage="Please enter a valid time"/>
                     </div>

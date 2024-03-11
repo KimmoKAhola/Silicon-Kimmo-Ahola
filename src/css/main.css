@@ -1232,6 +1232,10 @@ header .site-settings img {
   max-width: 70%;
 }
 
+#contact-form-span {
+  color: #EF4444;
+}
+
 .error-container {
   display: grid;
   place-items: center;
