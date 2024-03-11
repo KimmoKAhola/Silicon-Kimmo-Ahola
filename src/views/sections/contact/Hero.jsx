@@ -13,7 +13,6 @@ const defaultData = {
     time: "",
 };
 
-const regex = [``]
 const apiEndPoint = 'https://kyhnet23-assignment.azurewebsites.net/api/specialists';
 const fullNameRegex = new RegExp(`^(?!.*[.'-, ]{2})[a-zA-ZåäöÅÄÖ]{2,} [a-zA-ZåäöÅÄÖ. ',-]{1,}[a-zA-ZåäöÅÄÖ]$`);
 const emailRegex = new RegExp(`^[a-öA-Ö0-9_.-]{2,}@[a-öA-Ö]{2,}\\.[a-öA-Ö]{2,}$`);
