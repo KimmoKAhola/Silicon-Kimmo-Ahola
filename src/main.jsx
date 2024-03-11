@@ -7,6 +7,7 @@ import Home from './views/Home.jsx';
 import Error from './views/Error.jsx';
 import Contact from './views/Contact.jsx';
 import News from "./views/News.jsx";
+import Navbar from "./views/sections/global/Navbar.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
