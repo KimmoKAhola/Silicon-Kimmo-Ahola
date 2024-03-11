@@ -1,13 +1,15 @@
 import React, {useState, useEffect} from 'react'
 import Card from "./Card.jsx";
 
+
+const apiEndPoint = `https://kyhnet23-assignment.azurewebsites.net/api/news`;
 const Grid = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://kyhnet23-assignment.azurewebsites.net/api/news');
+                const response = await fetch(apiEndPoint);
                 const jsonData = await response.json();
                 setData(jsonData);
             } catch (error) {

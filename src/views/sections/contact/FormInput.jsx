@@ -4,7 +4,7 @@ const FormInput = ({ id, label, type, name, value, regexPattern, onChange, requi
     const [isValid, setIsValid] = useState(true);
     const handleChange = (e) => {
         const inputValue = e.target.value;
-        const isValidInput = new RegExp(regexPattern).test(inputValue);
+        const isValidInput = new RegExp(regexPattern).test(inputValue); // use this for displaying error messages after each keystroke
         setIsValid(isValidInput);
         onChange(e);
     };
