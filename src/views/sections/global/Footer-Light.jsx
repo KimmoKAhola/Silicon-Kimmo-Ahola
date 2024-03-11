@@ -13,9 +13,9 @@ const FooterLight = () => {
                     <img src={Logo} alt="TODO"/>
                 </Link>
                 <ul id="footer-links">
-                    <Link className="nav-link" to="/overview">Overview</Link>
-                    <Link className="nav-link" to="#features">Features</Link>
-                    <Link className="nav-link" to="/overview">News</Link>
+                    <Link className="nav-link" to="/">Overview</Link>
+                    <Link className="nav-link" to="/">Features</Link>
+                    <Link className="nav-link" to="/news">News</Link>
                     <Link className="nav-link" to="/contact">Contact</Link>
                     <Link className="nav-link" to="/*">Account</Link>
                 </ul>

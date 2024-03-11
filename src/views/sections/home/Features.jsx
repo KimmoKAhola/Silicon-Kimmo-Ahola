@@ -11,7 +11,7 @@ import ArrowRight from '../../../images/icons/arrow-right.svg'
 const Features = () => {
     return (
 
-        <div className="container">
+        <div className="container" id="features">
             <div id="features-container">
 
                 <div id="features-first">
