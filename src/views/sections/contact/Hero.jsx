@@ -1,29 +1,33 @@
 import React, {useState, useEffect} from 'react'
-// import ArrowButton from '../../../images/contact/arrow-btn.svg'
 import AddGroup from '../../../images/contact/add-group.svg'
 import Envelope from '../../../images/contact/bx-envelope.svg'
 import RightArrow from '../../../images/icons/right-arrow.svg'
 import FormInput from "./FormInput.jsx";
-// import map from "./Map.jsx";
 import Modal from "../global/Modal.jsx";
+
+const defaultData = {
+    fullName: "",
+    email: "",
+    specialist: "",
+    date: "",
+    time: "",
+};
+
+const regex = [``]
+const apiEndPoint = 'https://kyhnet23-assignment.azurewebsites.net/api/specialists';
+const fullNameRegex = new RegExp(`^(?!.*[.'-, ]{2})[a-zA-ZåäöÅÄÖ]{2,} [a-zA-ZåäöÅÄÖ. ',-]{1,}[a-zA-ZåäöÅÄÖ]$`);
+const emailRegex = new RegExp(`^[a-öA-Ö0-9_.-]{2,}@[a-öA-Ö]{2,}\\.[a-öA-Ö]{2,}$`);
 
 const Hero = () => {
     const [specialists, setSpecialists] = useState([]);
     const [selectedSpecialist, setSelectedSpecialist] = useState('');
-    const apiEndPoint = 'https://kyhnet23-assignment.azurewebsites.net/api/specialists'
-    const [showModal, setShowModal] = useState(false);
-    const [test, setTest] = useState(false);
 
-    const defaultData = {
-        fullName: "",
-        email: "",
-        specialist: "",
-        date: "",
-        time: "",
-    }
-    const closeModal = () =>{
+    const [showModal, setShowModal] = useState(false);
+    const [specialistError, setSpecialistError] = useState(false);
+
+    const closeModal = () => {
         setShowModal(false);
-    }
+    };
     const [values, setValues] = useState(defaultData);
 
     useEffect(() => {
@@ -41,8 +45,8 @@ const Hero = () => {
 
 
     const handleChange = (e) => {
-        setTest(false);
-        const { name, value } = e.target;
+        setSpecialistError(false);
+        const {name, value} = e.target;
         setValues((prevData) => ({...prevData, [name]: value}));
     };
 
@@ -58,41 +62,48 @@ const Hero = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if (!values.specialist) {
-            setTest(true); //date needs to contain a value, time too
-            return;
-        }
+        const isValidName = fullNameRegex.test(values.fullName);
+        const isValidEmail = emailRegex.test(values.email);
 
-        try {
+        if (isValidEmail && isValidName) {
 
-            const response = await fetch(
-                'https://kyhnet23-assignment.azurewebsites.net/api/book-appointment',
-                {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        fullName: values.fullName,
-                        email: values.email,
-                        specialist: values.specialist,
-                        date: values.date,
-                        time: values.time,
-                    })
-
-                });
-            if (response.ok) {
-                setSelectedSpecialist('')
-                setValues(defaultData)
-                setShowModal(true);
-                setTest(false);
-                console.log("values cleared?:", defaultData)
-            } else {
-                console.log("error: ", values)
+            if (!values.specialist) {
+                setSpecialistError(true);
+                return;
             }
 
-        } catch (error) {
-            console.error("error: ", error);
+            try {
+                const response = await fetch(
+                    'https://kyhnet23-assignment.azurewebsites.net/api/book-appointment',
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            fullName: values.fullName,
+                            email: values.email,
+                            specialist: values.specialist,
+                            date: values.date,
+                            time: values.time,
+                        })
+
+                    });
+                if (response.ok) {
+                    setSelectedSpecialist('')
+                    setValues(defaultData)
+                    setShowModal(true);
+                    setSpecialistError(false);
+                    console.log("values cleared?:", defaultData)
+                } else {
+                    console.log("error: ", values)
+                }
+            } catch (error) {
+                console.error("error: ", error);
+            }
+        }
+        else{
+            console.log("regex failed"); // Add some more error handling here
         }
     }
 
@@ -136,7 +147,8 @@ const Hero = () => {
                                onChange={handleChange}
                                required="required"
                                errorMessage="Please enter your first and last name."
-                               regexPattern="^(?!.*[.'-, ]{2})[a-zA-ZåäöÅÄÖ]{2,} [a-zA-ZåäöÅÄÖ. ',-]{1,}[a-zA-ZåäöÅÄÖ]$"/>
+                               // regexPattern="^(?!.*[.'-, ]{2})[a-zA-ZåäöÅÄÖ]{2,} [a-zA-ZåäöÅÄÖ. ',-]{1,}[a-zA-ZåäöÅÄÖ]$"
+                               regexPattern={fullNameRegex}/>
 
                     <FormInput id="email"
                                type="text"
@@ -160,7 +172,7 @@ const Hero = () => {
                                 </option>
                             ))}
                         </select>
-                        {test && <span>ERROR FILL ME!</span>}
+                        {specialistError && <span>ERROR FILL ME!</span>}
                     </div>
                     <div>
                         <FormInput id="date"
