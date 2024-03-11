@@ -25,13 +25,6 @@ const FormInput = ({ id, label, type, name, value, regexPattern, onChange, requi
         onChange(e);
     };
 
-    // const handleFocus = () =>{
-    //     setFocused(true);
-    // }
-    // const handleBlur = () =>{
-    //     setFocused(false);
-    // }
-
     return (
         <div className="contact-form">
             <label htmlFor={id}>{label}</label>
