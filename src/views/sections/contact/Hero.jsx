@@ -12,7 +12,7 @@ const Hero = () => {
     const [selectedSpecialist, setSelectedSpecialist] = useState('');
     const apiEndPoint = 'https://kyhnet23-assignment.azurewebsites.net/api/specialists'
     const [showModal, setShowModal] = useState(false);
-
+    const [test, setTest] = useState(false);
 
     const closeModal = () =>{
         setShowModal(false);
@@ -40,6 +40,7 @@ const Hero = () => {
 
 
     const handleChange = (e) => {
+        setTest(false);
         const { name, value } = e.target;
         setValues((prevData) => ({...prevData, [name]: value}));
     };
@@ -57,6 +58,11 @@ const Hero = () => {
         e.preventDefault();
 
         console.log("button clicked!")
+
+        if (!values.specialist) {
+            setTest(true); //date needs to contain a value, time too
+            return;
+        }
 
         try {
 
@@ -87,7 +93,8 @@ const Hero = () => {
                     time: "",
                 })
                 setShowModal(true);
-                console.log("values cleared? Values: ", values)
+                console.log("values cleared? Values: ", values);
+                setTest(false);
             } else {
                 console.log("error: ", values)
             }
@@ -135,7 +142,7 @@ const Hero = () => {
                                name="fullName"
                                onChange={handleChange}
                                required="required"
-                               errorMessage="Please enter a valid full name"
+                               errorMessage="Please enter your first and last name."
                                regexPattern="^(?!.*[.'-, ]{2})[a-zA-ZåäöÅÄÖ]{2,} [a-zA-ZåäöÅÄÖ. ',-]{1,}[a-zA-ZåäöÅÄÖ]$"/>
 
                     <FormInput id="email"
@@ -144,21 +151,22 @@ const Hero = () => {
                                name="email"
                                onChange={handleChange}
                                required="required"
-                               errorMessage="Please enter a valid email"
-                               regexPattern="^[a-öA-Ö0-9_.+-]{2,}@[a-öA-Ö0-9-]{2,}\.[a-öA-Ö]{2,}$"/>
+                               errorMessage="Please enter a valid email."
+                               regexPattern="^[a-öA-Ö0-9_.-]{2,}@[a-öA-Ö]{2,}\.[a-öA-Ö]{2,}$"/>
 
 
                     <div>
                         <p>Specialist</p>
                         <select className="contact-specialist-field" value={selectedSpecialist}
                                 onChange={handleSpecialistChange}>
-                            <option value="">Select a specialist</option>
+                            <option value=""></option>
                             {specialists.map((specialist) => (
                                 <option key={specialist.id} value={specialist.id}>
                                     {specialist.firstName} {specialist.lastName}
                                 </option>
                             ))}
                         </select>
+                        {test && <span>ERROR FILL ME!</span>}
                     </div>
                     <div>
                         <FormInput id="date"
@@ -168,7 +176,6 @@ const Hero = () => {
                                    onChange={handleChange}
                                    required="required"
                                    errorMessage="Please enter a valid date"/>
-
                         <FormInput id="time"
                                    type="time"
                                    label="time"
