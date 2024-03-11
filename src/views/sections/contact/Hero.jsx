@@ -14,16 +14,17 @@ const Hero = () => {
     const [showModal, setShowModal] = useState(false);
     const [test, setTest] = useState(false);
 
-    const closeModal = () =>{
-        setShowModal(false);
-    }
-    const [values, setValues] = useState({
+    const defaultData = {
         fullName: "",
         email: "",
         specialist: "",
         date: "",
         time: "",
-    });
+    }
+    const closeModal = () =>{
+        setShowModal(false);
+    }
+    const [values, setValues] = useState(defaultData);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -57,8 +58,6 @@ const Hero = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        console.log("button clicked!")
-
         if (!values.specialist) {
             setTest(true); //date needs to contain a value, time too
             return;
@@ -83,18 +82,11 @@ const Hero = () => {
 
                 });
             if (response.ok) {
-                console.log("response ok, values: ", values)
                 setSelectedSpecialist('')
-                setValues({
-                    fullName: "",
-                    email: "",
-                    specialist: "",
-                    date: "",
-                    time: "",
-                })
+                setValues(defaultData)
                 setShowModal(true);
-                console.log("values cleared? Values: ", values);
                 setTest(false);
+                console.log("values cleared?:", defaultData)
             } else {
                 console.log("error: ", values)
             }
@@ -140,6 +132,7 @@ const Hero = () => {
                                type="text"
                                label="Full name"
                                name="fullName"
+                               value={values.fullName}
                                onChange={handleChange}
                                required="required"
                                errorMessage="Please enter your first and last name."
@@ -149,6 +142,7 @@ const Hero = () => {
                                type="text"
                                label="Email"
                                name="email"
+                               value={values.email}
                                onChange={handleChange}
                                required="required"
                                errorMessage="Please enter a valid email."
@@ -173,13 +167,16 @@ const Hero = () => {
                                    type="date"
                                    label="date"
                                    name="date"
+                                   value={values.date}
                                    onChange={handleChange}
                                    required="required"
                                    errorMessage="Please enter a valid date"/>
+
                         <FormInput id="time"
                                    type="time"
                                    label="time"
                                    name="time"
+                                   value={values.time}
                                    onChange={handleChange}
                                    required="required"
                                    errorMessage="Please enter a valid time"/>

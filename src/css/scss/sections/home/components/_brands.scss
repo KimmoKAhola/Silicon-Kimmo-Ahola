@@ -14,7 +14,7 @@
     @include shadow-l;
 
     &:hover{
-      transform: scale(1.05);
+      transform: translateY(-2px);
       cursor: pointer;
     }
   }

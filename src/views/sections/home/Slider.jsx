@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import How1 from '../../../images/mobile-howdoesitwork_1.svg'
 import How2 from '../../../images/mobile-howdoesitwork_2.svg'
 import How3 from '../../../images/mobile-howdoesitwork_3.svg'
+import PhoneFrame from '../../../images/phone-frame.png'
 import ArrowButton from "../global/ArrowButton.jsx";
 
 const images = [How1, How2, How3];
@@ -53,6 +54,7 @@ const Carousel = ({images, headers}) => {
                 <ArrowButton onClick={handlePrevious} direction="left"/>
                 <img className="outer" src={images[index]} alt="TODO"/>
                 <img src={images[(index + 1) % images.length]} alt="TODO"/>
+                {/*<img src={PhoneFrame} alt="TODO" style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', zIndex: 1 }}/>*/}
                 <img className="outer" src={images[(index + 2) % images.length]} alt="TODO"/>
                 <ArrowButton onClick={handleNext} direction="right"/>
             </div>

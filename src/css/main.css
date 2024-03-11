@@ -674,6 +674,25 @@ header .site-settings img {
   color: #22C55E;
 }
 
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.breadcrumb-component {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.breadcrumb-component .breadcrumb-link {
+  color: #6366F1;
+  transition: 0.3s ease-in;
+}
+.breadcrumb-component .breadcrumb-link:hover {
+  color: #4647a3;
+}
+
 .accordion {
   margin: 10px;
   padding: 10px;
@@ -773,7 +792,7 @@ header .site-settings img {
   box-shadow: 0px 4px 13px -2px rgba(19, 16, 34, 0.06), 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1);
 }
 #brand-logos img:hover {
-  transform: scale(1.05);
+  transform: translateY(-2px);
   cursor: pointer;
 }
 @media (max-width: 991px) {
