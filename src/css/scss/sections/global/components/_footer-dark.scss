@@ -1,5 +1,8 @@
-#footer-dark {
+#footer-dark-bg {
   background-color: $gray-900;
+}
+
+#footer-dark {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -7,9 +10,12 @@
   margin: 20px auto;
   padding-top: 20px; //oklart
   padding-bottom: 20px; //oklart
+  @include lg {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
 
-  div {
-
+  #footer-dark-subscription {
     #footer-text {
       max-width: 80%;
       color: rgba(255, 255, 255, 0.7);
@@ -64,5 +70,22 @@
     border-radius: 5px 0 0 5px;
     background-color: $gray-900;
     border: 1px rgba(255, 255, 255, 0.18) solid;
+  }
+}
+
+@include lg {
+  #footer-dark {
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+  }
+
+  #footer-dark-subscription{
+    display: grid;
+    place-items: center;
+  }
+
+  #footer-links{
+    padding-top: 50px;
   }
 }

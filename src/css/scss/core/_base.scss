@@ -26,11 +26,6 @@ html, body {
   }
 }
 
-.dark-container {
-  display: grid;
-  background-color: black;
-}
-
 
 .text-lead {
   @include text-lead;

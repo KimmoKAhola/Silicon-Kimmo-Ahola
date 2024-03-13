@@ -83,11 +83,6 @@ html, body {
   }
 }
 
-.dark-container {
-  display: grid;
-  background-color: black;
-}
-
 .text-lead {
   line-height: 160%;
   font-weight: 400;
@@ -415,6 +410,10 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+input[type=checkbox]:hover {
+  cursor: pointer;
+}
+
 input {
   border: 1px solid #D4D7E5;
   border-radius: 5px;
@@ -560,8 +559,11 @@ header .site-settings img {
   text-align: center;
 }
 
-#footer-dark {
+#footer-dark-bg {
   background-color: #0B0F19;
+}
+
+#footer-dark {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -570,7 +572,13 @@ header .site-settings img {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-#footer-dark div #footer-text {
+@media (max-width: 991px) {
+  #footer-dark {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+}
+#footer-dark #footer-dark-subscription #footer-text {
   max-width: 80%;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -622,6 +630,20 @@ header .site-settings img {
   border: 1px rgba(255, 255, 255, 0.18) solid;
 }
 
+@media (max-width: 991px) {
+  #footer-dark {
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+  }
+  #footer-dark-subscription {
+    display: grid;
+    place-items: center;
+  }
+  #footer-links {
+    padding-top: 50px;
+  }
+}
 .brand-footer-logos ul {
   display: flex;
   gap: 25px;
@@ -1180,13 +1202,11 @@ header .site-settings img {
   position: absolute;
   top: 16px;
   right: 16px;
-  transition: ease-in 0.3s;
   z-index: 1;
 }
 .news-card-image-bookmark:hover {
   cursor: pointer;
   background: #EFF2FC;
-  transform: translateY(-1px);
 }
 .news-card-image-bookmark.active {
   background: #22C55E;
@@ -1303,6 +1323,13 @@ header .site-settings img {
 }
 .news-subscription {
   display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
 }
 
 #news-subscribe-field {

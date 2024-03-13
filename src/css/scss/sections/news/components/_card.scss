@@ -32,12 +32,10 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  transition: ease-in 0.3s;
   z-index: 1;
   &:hover{
     cursor: pointer;
     background: $gray-200;
-    transform: translateY(-1px);
   }
   &.active{
     background: $success;

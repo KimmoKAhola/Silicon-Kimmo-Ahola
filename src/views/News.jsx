@@ -12,7 +12,7 @@ const News = () => {
             <BreadCrumb/>
             <Grid/>
             <Subscribe/>
-            {/*<FooterDark/>*/}
+            <FooterDark/>
         </div>
     )
 }

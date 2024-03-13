@@ -38,6 +38,9 @@
 
 .news-subscription{
   display: flex;
+  align-items: center;
+  gap: 8px;
+  @include text-s;
 }
 
 #news-subscribe-field{
