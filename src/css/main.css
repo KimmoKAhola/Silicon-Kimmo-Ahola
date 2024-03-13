@@ -82,6 +82,11 @@ html, body {
     max-width: 1500px;
   }
 }
+@media (max-width: 420px) {
+  .container {
+    max-width: 70%;
+  }
+}
 
 .text-lead {
   line-height: 160%;
@@ -850,10 +855,11 @@ input:focus {
 
 #app-features {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr 1fr;
 }
-#app-features img {
-  padding-right: 100px;
+#app-features #app-features-mobile {
+  max-width: 70%;
+  height: auto;
 }
 #app-features #feature-grid {
   display: grid;
@@ -868,6 +874,33 @@ input:focus {
 #app-features #feature-grid #right-bottom {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+@media (max-width: 1199px) {
+  #app-features #feature-grid #right-bottom {
+    grid-template-columns: 1fr;
+  }
+  #app-features #feature-grid #right-bottom .feature-grid-test {
+    max-width: 60%;
+    padding: 15px;
+  }
+}
+@media (max-width: 1199px) and (max-width: 991px) {
+  #app-features #feature-grid #right-bottom .feature-grid-test {
+    max-width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  #app-features #feature-grid #right-bottom {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  #app-features #feature-grid #right-bottom {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
 }
 #app-features #feature-grid #right-bottom .feature-grid-test {
   display: grid;
@@ -875,6 +908,7 @@ input:focus {
   gap: 24px;
 }
 #app-features #feature-grid #right-bottom .feature-grid-test .feature-icon {
+  place-self: start;
   height: 28px;
   width: 28px;
   padding: 10px;
@@ -884,11 +918,6 @@ input:focus {
 #app-features #feature-grid #right-bottom .feature-grid-test h5 {
   padding-bottom: 5px;
 }
-@media (max-width: 1199px) {
-  #app-features img {
-    padding-right: 50px;
-  }
-}
 
 @media (max-width: 991px) {
   #app-features {
@@ -896,17 +925,15 @@ input:focus {
     grid-template-columns: 1fr;
     place-items: center;
   }
+  #app-features #app-features-mobile {
+    padding-right: 0;
+  }
   #app-features #right-top h2 {
     text-align: center;
     padding-top: 20px;
   }
   #app-features #right-top p {
     text-align: center;
-  }
-}
-@media (max-width: 767px) {
-  .feature-grid-test {
-    padding: 15px;
   }
 }
 #brand-logos {

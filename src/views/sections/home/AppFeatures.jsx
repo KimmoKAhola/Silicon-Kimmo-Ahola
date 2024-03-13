@@ -11,8 +11,8 @@ const AppFeatures = () => {
     return (
         <div className="container">
 
-            <div className="test-lol" id="app-features">
-                <img src={Mobile} alt="TODO"/>
+            <div id="app-features">
+                <img id="app-features-mobile" src={Mobile} alt="TODO"/>
 
                 <div id="feature-grid">
 
