@@ -70,8 +70,8 @@ const SubscriberButton = () => {
             </div>
             {showModal && (
                 <Modal onClose={closeModal}>
-                    <p className="text-xl">You have been successfully subscribed to our newsletter!</p>
-                    <p>You will receive your emails at {chosenEmail}</p>
+                    <p id="modal-success" className="text-xl">You have been successfully subscribed to our newsletter!</p>
+                    <p>Our newsletter will be sent to {chosenEmail}</p>
                     <button className="primary-button" onClick={closeModal}>Close</button>
                 </Modal>
             )}

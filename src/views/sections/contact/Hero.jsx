@@ -11,6 +11,7 @@ const defaultData = {
     specialist: "",
     date: "",
     time: "",
+    profileImageUrl: "",
 };
 
 const apiEndPoint = 'https://kyhnet23-assignment.azurewebsites.net/api/specialists';
@@ -23,6 +24,9 @@ const Hero = () => {
 
     const [showModal, setShowModal] = useState(false);
     const [specialistError, setSpecialistError] = useState(false);
+
+    const [chosenData, setChosenData] = useState("")
+    const [chosenImage, setChosenImage] = useState("")
 
     const closeModal = () => {
         setShowModal(false);
@@ -56,6 +60,10 @@ const Hero = () => {
             specialist: selectedSpecialistId
         }));
         setSelectedSpecialist(selectedSpecialistId);
+
+        const data = specialists.find(specialists => specialists.id === selectedSpecialistId)
+        setChosenData(`${data.firstName} ${data.lastName}`)
+        setChosenImage(data.profileImageUrl)
     };
 
     const handleSubmit = async (e) => {
@@ -88,20 +96,20 @@ const Hero = () => {
                         })
 
                     });
+
                 if (response.ok) {
+                    console.log(values)
                     setSelectedSpecialist('')
                     setValues(defaultData)
                     setShowModal(true);
                     setSpecialistError(false);
-                    console.log("values cleared?:", defaultData)
                 } else {
                     console.log("error: ", values)
                 }
             } catch (error) {
                 console.error("error: ", error);
             }
-        }
-        else{
+        } else {
             console.log("regex failed"); // Add some more error handling here
         }
     }
@@ -126,7 +134,7 @@ const Hero = () => {
                     <div id="careers">
                         <h2>Careers</h2>
                         <div className="section">
-                            <img className="contact-icon" src={AddGroup} alt="TODO"/>
+                            <img className="icon-rounded" src={AddGroup} alt="TODO"/>
                             <div>
                                 <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
                                 <a href="#">Send an application <img src={RightArrow} alt="TODO"/></a>
@@ -197,7 +205,10 @@ const Hero = () => {
 
                 {showModal && (
                     <Modal onClose={closeModal}>
-                        <p className="text-xl">Appointment booked!</p>
+                        <p id="modal-success" className="text-xl">Your appointment has been booked.</p>
+                        <p>Your chosen specialist:</p>
+                        <img src={chosenImage} alt="TODO"/>
+                        {chosenData}
                         <button className="primary-button" onClick={closeModal}><span>Close</span></button>
                     </Modal>
                 )}

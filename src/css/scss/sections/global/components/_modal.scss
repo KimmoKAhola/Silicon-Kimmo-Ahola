@@ -43,12 +43,13 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  p{
-    color: $success;
-  }
   flex: 1;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+}
+
+#modal-success{
+  color: $success;
 }

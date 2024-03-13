@@ -24,6 +24,9 @@
     grid-template-columns: auto 1fr;
     gap: 20px;
     max-width: 450px;
+    img{
+      padding: 16px;
+    }
     a{
       display: flex;
       align-items: center;
@@ -40,11 +43,7 @@
   background-color: $gray-100;
 }
 
-.contact-icon {
-  background-color: $white;
-  padding: 16px;
-  border-radius: 50%;
-}
+
 
 .contact-specialist-field{
   width: 100%;

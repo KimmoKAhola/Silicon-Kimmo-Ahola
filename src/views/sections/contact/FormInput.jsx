@@ -10,7 +10,7 @@ const FormInput = ({ id, label, type, name, value, regexPattern, onChange, requi
     };
 
     return (
-        <div className="contact-form">
+        <div>
             <label htmlFor={id}>{label}</label>
             <input
                 type={type}
