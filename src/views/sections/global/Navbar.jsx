@@ -36,7 +36,7 @@ const Navbar = () => {
                             <span className="slider round"></span>
                         </label>
                         <label htmlFor="theme-switch-mode">Dark</label>
-                        <button className="primary-button"><img src={User} alt="TODO"/> <span>Sign in / up</span>
+                        <button id="sign-in-button" className="primary-button"><img src={User} alt="TODO"/> <span>Sign in / up</span>
                         </button>
                     </div>
                     <button onClick={toggleMenu} className="hamburger-menu">
@@ -46,6 +46,21 @@ const Navbar = () => {
             </header>
             {isOpen && (
                 <nav id="mobile-menu" className={isOpen ? 'active' : ''}>
+
+                    <div id="mobile-site-settings">
+                        <div id="mobile-theme-mode" className="theme-switch">
+                            <label htmlFor="theme-switch-mode">Light</label>
+                            <label className="switch">
+                                <input id="theme-switch-mode" type="checkbox"/>
+                                <span className="slider round"></span>
+                            </label>
+                            <label htmlFor="theme-switch-mode">Dark</label>
+                        </div>
+                        <button id="sign-in-button" className="primary-button"><img src={User} alt="TODO"/> <span>Sign in / up</span>
+                        </button>
+                    </div>
+
+
                     <div className="mobile-item">
                         <NavLink className="nav-link" to="/#overview">Overview</NavLink>
                     </div>
@@ -62,14 +77,7 @@ const Navbar = () => {
                         <Link className="nav-link" to="/contact">Contact</Link>
                     </div>
 
-                    <div id="theme-mode" className="theme-switch">
-                        <label htmlFor="theme-switch-mode">Light</label>
-                        <label className="switch">
-                            <input id="theme-switch-mode" type="checkbox"/>
-                            <span className="slider round"></span>
-                        </label>
-                        <label htmlFor="theme-switch-mode">Dark</label>
-                    </div>
+
                 </nav>
 
             )}

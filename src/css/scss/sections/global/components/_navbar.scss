@@ -15,21 +15,6 @@
       }
     }
 
-    .hamburger-menu {
-      //background-color: red;
-      display: none;
-    }
-
-    #arrow {
-      display: block;
-      background-color: #8B5CF6;
-    }
-
-    #navbar-arrow {
-      display: block;
-      background-color: red;
-    }
-
     #mobile-menu {
       display: block;
     }
@@ -39,7 +24,9 @@
     #mobile-menu.active {
       display: none;
     }
-
+    #theme-mode{
+      display: none;
+    }
   }
 
   .site-navigation {
@@ -66,10 +53,6 @@
       gap: 20px;
     }
 
-    //img {
-    //  display: none;
-    //}
-
     .hamburger-menu {
       display: none;
     }
@@ -77,26 +60,28 @@
 
   @include lg {
     .site-settings {
-      div {
+
+      #sign-in-button {
         display: none;
       }
 
-      img {
-        display: flex;
-        align-items: center;
-        //padding-right: 50px;
-        //margin-right: 50px;
-      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
 
       .hamburger-menu {
         display: block;
       }
 
-      button {
-        //padding-right: 50px;
-        padding: 10px;
-        margin-right: 50px;
-        transition: 0.6s ease-in;
+      .mobile-menu {
+        background-color: $gray-500;
+        padding: 3px;
+        border-radius: 50%;
+        &:hover{
+
+        }
+        height: 40px;
       }
     }
   }
@@ -121,12 +106,15 @@
     display: none;
   }
   @include md {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    #arrow {
-      place-self: end;
+    //display: grid;
+    //grid-template-rows: 1fr;
+    //grid-template-columns: 1fr 1fr;
+    #mobile-site-settings{
+      display: flex;
     }
+    display: flex;
+    flex-direction: column;
+
     padding: 20px;
     gap: 20px;
     border-radius: 8px;

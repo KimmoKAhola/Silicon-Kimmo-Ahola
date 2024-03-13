@@ -361,7 +361,6 @@ button:hover {
 .theme-switch {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 .theme-switch label {
   cursor: pointer;
@@ -495,22 +494,14 @@ input:focus {
     display: none;
   }
 }
-.navbar.active .hamburger-menu {
-  display: none;
-}
-.navbar.active #arrow {
-  display: block;
-  background-color: #8B5CF6;
-}
-.navbar.active #navbar-arrow {
-  display: block;
-  background-color: red;
-}
 .navbar.active #mobile-menu {
   display: block;
 }
 @media (max-width: 991px) {
   .navbar #mobile-menu.active {
+    display: none;
+  }
+  .navbar #theme-mode {
     display: none;
   }
 }
@@ -537,20 +528,23 @@ input:focus {
   display: none;
 }
 @media (max-width: 991px) {
-  .navbar .site-settings div {
-    display: none;
-  }
-  .navbar .site-settings img {
+  .navbar .site-settings {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 20px;
+  }
+  .navbar .site-settings #sign-in-button {
+    display: none;
   }
   .navbar .site-settings .hamburger-menu {
     display: block;
   }
-  .navbar .site-settings button {
-    padding: 10px;
-    margin-right: 50px;
-    transition: 0.6s ease-in;
+  .navbar .site-settings .mobile-menu {
+    background-color: #B4B7C9;
+    padding: 3px;
+    border-radius: 50%;
+    height: 40px;
   }
 }
 @media (max-width: 767px) {
@@ -581,14 +575,14 @@ input:focus {
 }
 @media (max-width: 767px) {
   #mobile-menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     gap: 20px;
     border-radius: 8px;
   }
-  #mobile-menu #arrow {
-    place-self: end;
+  #mobile-menu #mobile-site-settings {
+    display: flex;
   }
   #mobile-menu .mobile-item * {
     background-color: #F3F6FF;
