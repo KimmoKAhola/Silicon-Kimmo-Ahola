@@ -45,3 +45,21 @@ input {
   top: 50%;
   transform: translateY(-50%);
 }
+
+@include sm{
+  .subscriber-form{
+    input{
+      display: grid;
+      place-items: center;
+    }
+  }
+}
+
+@include mobile{
+  .subscriber-form{
+    height: auto;
+    input{
+      width: 80%;
+    }
+  }
+}

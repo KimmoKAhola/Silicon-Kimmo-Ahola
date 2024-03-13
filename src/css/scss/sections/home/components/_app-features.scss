@@ -1,10 +1,13 @@
 #app-features {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  #app-features-mobile{
+
+  #app-features-mobile {
     max-width: 70%;
     height: auto;
   }
+
+
 
   #feature-grid {
     display: grid;
@@ -23,21 +26,21 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 50px;
-      @include xl{
+      @include xl {
         grid-template-columns: 1fr;
-        .feature-grid-test{
+        .feature-grid-test {
           max-width: 60%;
-          @include lg{
+          @include lg {
             max-width: 100%;
           }
           padding: 15px;
         }
       }
-      @include lg{
+      @include lg {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
       }
-      @include md{
+      @include md {
         grid-template-columns: 1fr;
         place-items: center;
       }
@@ -63,21 +66,24 @@
     }
   }
 }
+
 @include lg {
   #app-features {
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
 
-    #app-features-mobile{
+    #app-features-mobile {
       padding-right: 0;
     }
-    #right-top{
-      h2{
+
+    #right-top {
+      h2 {
         text-align: center;
         padding-top: 20px;
       }
-      p{
+
+      p {
         text-align: center;
       }
     }

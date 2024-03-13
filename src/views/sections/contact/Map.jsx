@@ -17,52 +17,48 @@ const Map = () => {
                     </iframe>
                 </div>
                 <div id="contact-addresses">
-                    <div>
-                        <ul>
-                            <h3>Medical Center 1</h3>
-                            <li>
+                    <div id="med-center-first">
+                        <h4>Medical Center 1</h4>
+
+                        <span className="med-center-span">
                                 <img src={MapSymbol} alt="TODO"/>
                                 <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
-                            </li>
-                            <li>
+                            </span>
+
+                        <span className="med-center-span">
                                 <img src={Phone} alt="TODO"/>
                                 <p>(406) 555-0120</p>
-                            </li>
-                            <li>
-                                <ul>
-                                    <li>
-                                        <img src={Clock} alt="TODO"/>
-                                        <p>Mon-Fri: 9:00 am - 22:00 am</p>
-                                    </li>
-                                    <li>Sat-Sun: 9:00 am - 20:00 am</li>
-                                </ul>
-                            </li>
-                        </ul>
+                            </span>
+
+                        <span className="med-center-span">
+                                <img src={Clock} alt="TODO"/>
+                                <div>
+                                    <p>Mon-Fri: 9:00 am - 22:00 am</p>
+                                    <p>Sat-Sun: 9:00 am - 20:00 am</p>
+                                </div>
+                            </span>
                     </div>
 
-                    <div>
-                        <ul>
-                            <h3>Medical Center 2</h3>
-                            <li>
-                                <img src={MapSymbol} alt="TODO"/>
-                                <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
-                            </li>
-                            <li>
-                                <img src={Phone} alt="TODO"/>
-                                <p>(406) 555-0123</p>
-                            </li>
-                            <li>
-                                <ul>
-                                    <li>
-                                        <img src={Clock} alt="TODO"/>
-                                        <p>Mon-Fri: 9:00 am - 22:00 am</p>
-                                    </li>
-                                    <li>Sat-Sun: 9:00 am - 20:00 am</li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <div id="med-center-second">
+                        <h4>Medical Center 2</h4>
+                        <span className="med-center-span">
+                            <img src={MapSymbol} alt="TODO"/>
+                            <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+                            </span>
+                        <span className="med-center-span">
+                            <img src={Phone} alt="TODO"/>
+                            <p>(406) 555-0123</p>
+                            </span>
+                        <span className="med-center-span">
+                            <img src={Clock} alt="TODO"/>
+                            <div>
+                                <p>Mon-Fri: 9:00 am - 22:00 am</p>
+                                <p>Sat-Sun: 9:00 am - 20:00 am</p>
+                            </div>
+                        </span>
+
                     </div>
-                    <Socials/>
+                    {/*<Socials/>*/}
                 </div>
             </div>
         </div>
