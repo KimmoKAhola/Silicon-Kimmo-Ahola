@@ -8,11 +8,11 @@ import BreadCrumb from "./sections/global/BreadCrumb.jsx";
 const Contact = () => {
     return (
         <div>
-            {/*<div id="contact-bg">*/}
-            {/*    <Navbar/>*/}
-            {/*    <BreadCrumb/>*/}
-            {/*    <Hero/>*/}
-            {/*</div>*/}
+            <div id="contact-bg">
+                <Navbar/>
+                <BreadCrumb/>
+                <Hero/>
+            </div>
             <Map/>
             <FooterDark/>
         </div>

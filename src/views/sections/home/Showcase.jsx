@@ -14,7 +14,10 @@ const Showcase = () => {
                             Save, spend & manage money in your pocket.</p>
                         <div id="showcase-buttons">
                             <StoreButtons/>
-                            <ArrowButton/>
+                            <span>
+                                <ArrowButton/>
+                                <p className="text-s">Discover more</p>
+                            </span>
                         </div>
                     </div>
 

@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
 
+
   label {
     cursor: pointer;
   }
@@ -42,9 +43,10 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: #ccc;
+      background-color: $gray-400;
       -webkit-transition: .4s;
       transition: .4s;
+      box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.10), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.09);
 
       &:before {
         position: absolute;
@@ -60,6 +62,7 @@
 
       &.round {
         border-radius: 34px;
+        box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.10), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.09);
       }
 
       &.round:before {

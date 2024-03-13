@@ -13,10 +13,10 @@ html, body {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
   padding-top: 20px; //oklart TODO
-  padding-bottom: 20px; //oklart TODO
+  //padding-bottom: 20px; //oklart TODO
 
   @include xl{
     padding-left: 20px;

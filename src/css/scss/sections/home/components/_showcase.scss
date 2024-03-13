@@ -15,8 +15,17 @@
     gap: 20px;
 
     #showcase-buttons {
+      padding-top: 24px;
       display: flex;
       flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+      span{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding-bottom: 75px;
+      }
     }
   }
 
