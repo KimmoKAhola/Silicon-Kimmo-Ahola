@@ -27,16 +27,18 @@ const Navbar = () => {
                 </div>
 
                 <div className="site-settings">
-                    <div><p>Light</p>
+                    <div id="theme-mode" className="theme-switch">
+                        <label htmlFor="theme-switch-mode">Light</label>
                         <label className="switch">
-                            <input type="checkbox"/>
+                            <input id="theme-switch-mode" type="checkbox"/>
                             <span className="slider round"></span>
                         </label>
-                        <p>Dark</p>
+                        <label htmlFor="theme-switch-mode">Dark</label>
                         <button className="primary-button"><img src={User} alt="TODO"/> <span>Sign in / up</span>
                         </button>
                     </div>
-                    <button onClick={toggleMenu} className="hamburger-menu"><img className="mobile-menu" src={Hamburger} alt="TODO"/></button>
+                    <button onClick={toggleMenu} className="hamburger-menu"><img className="mobile-menu" src={Hamburger}
+                                                                                 alt="TODO"/></button>
                 </div>
 
             </header>
