@@ -1464,33 +1464,14 @@ header .site-settings img {
 }
 
 .error-container {
-  display: grid;
-  place-items: center;
-  grid-template-rows: auto auto;
-  height: 100vh;
-  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-#error-test-bottom {
-  place-items: end;
-}
-
-.wrapper:hover .error-container #error-404-image {
-  transform: scale(1.005); /* Scale up the error container on hover */
-}
-
-#error-404-image {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.image-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.error-container img {
+  max-width: 500px;
+  width: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
