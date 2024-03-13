@@ -1,8 +1,17 @@
-header {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
+  &.active{
+    #menu{
+      display: none;
+    }
+    #mobile-menu{
+      display: block;
+    }
+  }
 
   .site-navigation {
     display: flex;
@@ -62,15 +71,14 @@ header {
 
 #mobile-menu{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
-  padding: 70px 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
   background-color: $gray-100;
   border-radius: 8px;
-  @include lg{
-    display: none;
-  }
-  @include md{
-    display: grid;
+
+  .mobile-item{
+    background-color: $success;
   }
 }
+

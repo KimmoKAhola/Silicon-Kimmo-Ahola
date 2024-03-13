@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <div className="container">
-            <header>
+            <header className={`navbar ${isOpen ? 'active' : ''}`}>
                 <div className="site-navigation">
                     <Link id="logo" to="/">
                         <img src={Logo} alt="silicon logotype"/>
@@ -43,11 +43,15 @@ const Navbar = () => {
 
             </header>
             {isOpen && (
-                <nav id="mobile-menu">
-                    <NavLink className="nav-link" to="/#overview">Overview</NavLink>
-                    <NavLink className="nav-link" to="/#features">Features</NavLink>
-                    <Link className="nav-link" to="/news">News</Link>
-                    <Link className="nav-link" to="/contact">Contact</Link>
+                <nav id="mobile-menu" className={isOpen ? 'active' : ''}>
+                    <div className="mobile-item"><NavLink className="nav-link" to="/#overview">Overview</NavLink></div>
+                    <div className="mobile-item"><NavLink className="nav-link" to="/#features">Features</NavLink></div>
+                    <div className="mobile-item"><Link className="nav-link" to="/news">News</Link></div>
+                    <div className="mobile-item"><Link className="nav-link" to="/contact">Contact</Link></div>
+                    {/*<div id="light-dark-mobile-icons">*/}
+                    {/*    <i className="fa-solid fa-sun"></i>*/}
+                    {/*    <i className="fa-solid fa-moon"></i>*/}
+                    {/*</div>*/}
                 </nav>
             )}
         </div>
