@@ -15,7 +15,7 @@ const defaultData = {
 
 const apiEndPoint = 'https://kyhnet23-assignment.azurewebsites.net/api/specialists';
 const fullNameRegex = new RegExp(`^(?!.*[.'-, ]{2})[a-zA-ZåäöÅÄÖ]{2,} [a-zA-ZåäöÅÄÖ. ',-]{1,}[a-zA-ZåäöÅÄÖ]$`);
-const emailRegex = new RegExp(`^[a-öA-Ö0-9_.-]{2,}@[a-öA-Ö]{2,}\\.[a-öA-Ö]{2,}$`);
+const emailRegex = new RegExp(`^[a-öA-Ö0-9_.-]{2,}@[a-zA-Z]{2,}\\.[a-zA-Z]{2,}$`);
 
 const Hero = () => {
     const [specialists, setSpecialists] = useState([]);
@@ -146,7 +146,6 @@ const Hero = () => {
                                onChange={handleChange}
                                required="required"
                                errorMessage="Please enter your first and last name."
-                               // regexPattern="^(?!.*[.'-, ]{2})[a-zA-ZåäöÅÄÖ]{2,} [a-zA-ZåäöÅÄÖ. ',-]{1,}[a-zA-ZåäöÅÄÖ]$"
                                regexPattern={fullNameRegex}/>
 
                     <FormInput id="email"
@@ -157,7 +156,7 @@ const Hero = () => {
                                onChange={handleChange}
                                required="required"
                                errorMessage="Please enter a valid email."
-                               regexPattern="^[a-öA-Ö0-9_.-]{2,}@[a-öA-Ö]{2,}\.[a-öA-Ö]{2,}$"/>
+                               regexPattern={emailRegex}/>
 
 
                     <div>
