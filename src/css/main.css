@@ -1292,6 +1292,17 @@ input:focus {
   display: flex;
   gap: 20px;
 }
+@media (max-width: 1199px) {
+  #testimonial-buttons {
+    justify-content: center;
+    gap: 100px;
+  }
+}
+@media (max-width: 991px) {
+  #testimonial-buttons {
+    padding-bottom: 50px;
+  }
+}
 
 #card {
   display: flex;

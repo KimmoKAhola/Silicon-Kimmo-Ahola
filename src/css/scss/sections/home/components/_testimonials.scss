@@ -43,6 +43,13 @@
 #testimonial-buttons {
   display: flex;
   gap: 20px;
+  @include xl{
+    justify-content: center;
+    gap: 100px;
+  }
+  @include lg{
+    padding-bottom: 50px;
+  }
 }
 
 #card {
