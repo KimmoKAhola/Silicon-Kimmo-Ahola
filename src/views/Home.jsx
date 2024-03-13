@@ -14,14 +14,14 @@ const Home = () => {
     return (
         <div>
             <Navbar />
-            <Showcase/>
-            <Brands/>
-            <AppFeatures/>
-            <Slider/>
-            <Features/>
+            {/*<Showcase/>*/}
+            {/*<Brands/>*/}
+            {/*<AppFeatures/>*/}
+            {/*<Slider/>*/}
+            {/*<Features/>*/}
             <Testimonials/>
-            <FAQ/>
-            <Subscribe/>
+            {/*<FAQ/>*/}
+            {/*<Subscribe/>*/}
             <FooterLight/>
         </div>
     )

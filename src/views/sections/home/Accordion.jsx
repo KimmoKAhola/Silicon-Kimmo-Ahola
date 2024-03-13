@@ -54,7 +54,7 @@ const Accordion = () => {
     };
 
     return (
-        <div>
+        <div id="accordion">
             {accordionData.map((item, index) => (
                 <div className="accordion" key={index}>
                     <div className="accordion-item">

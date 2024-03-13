@@ -9,7 +9,7 @@ const Faq = () => {
     return (
         <div className="container">
             <div id="faq-container">
-                <div>
+                <div id="faq-left-column">
                     <h2>Any questions? Check out the FAQs</h2>
                     <p>Still have unanswered questions and need to get in touch?</p>
 

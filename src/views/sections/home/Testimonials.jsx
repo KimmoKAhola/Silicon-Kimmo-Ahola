@@ -11,21 +11,21 @@ const Testimonials = () => {
         <div id="testimonials-bg">
             <div className="container">
                 <div id="testimonials">
-                    <div>
+                    <div id="testimonials-left-column">
                         <h2>Clients are Loving Our App</h2>
                         <div id="testimonial-buttons">
                             <ArrowButton direction="left"/>
                             <ArrowButton direction="right"/>
                         </div>
                     </div>
-                    <Card/>
+                    <TestimonialCard/>
                 </div>
             </div>
         </div>
     )
 }
 
-const Card = () => {
+const TestimonialCard = () => {
     return (
         <div id="card">
             <div className="testimonial-card">
