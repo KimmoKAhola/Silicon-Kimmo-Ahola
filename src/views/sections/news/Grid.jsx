@@ -23,9 +23,14 @@ const Grid = () => {
 
     return (
         <div className="container">
-            <div id="news-grid">{data.map((item) => (
-                <Card key={item.id} data={item}/>
-            ))}</div>
+            <div className="grid-container">
+                <h1>Our News</h1>
+                <div id="news-grid">
+                    {data.map((item) => (
+                        <Card key={item.id} data={item}/>
+                    ))}
+                </div>
+            </div>
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import SubscriberButton from "../global/SubscriberButton.jsx";
 
 const Subscribe = () => {
     return (
@@ -8,7 +9,7 @@ const Subscribe = () => {
                 <div id="sub-container">
                     <div id="sub-header">
                         <h1>Don't Want to Miss Anything?</h1>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="65" height="68" viewBox="0 0 65 68" fill="none">
+                        <svg id="sub-header-icon" xmlns="http://www.w3.org/2000/svg" width="65" height="68" viewBox="0 0 65 68" fill="none">
                             <path
                                 d="M53.9527 51.0013C62.3487 40.4345 55.9829 24.9879 42.2046 24.2502C41.5147 24.1855 40.7434 24.2517 40.0788 24.2932C40.2031 33.3394 35.9074 43.1829 28.517 45.6747C21.8475 47.888 18.1833 41.4522 20.9357 35.9987C24.2323 29.5232 30.0387 24.1482 37.1035 22.1798C36.5381 16.4845 33.7599 11.4126 27.6185 9.69459C17.2678 6.82046 6.49364 16.3682 4.98841 26.127C4.89565 27.1568 3.30272 27.0767 3.39548 26.047C3.98732 12.914 19.7395 2.55218 31.9628 8.57876C36.6881 10.9601 39.2277 15.9751 39.8996 21.6457C47.3233 20.7147 54.415 25.014 58.2418 31.1879C62.6406 38.3502 60.6002 46.3281 55.6096 52.2988C54.827 53.264 53.2765 51.9415 53.9527 51.0013ZM26.7754 32.1846C24.8343 34.4257 22.6994 37.2717 22.4212 40.361C22.1176 43.3439 26.1813 43.4135 27.9117 43.1255C30.0685 42.7392 31.6338 40.809 32.798 39.0836C35.4208 35.4527 37.1637 30.0084 37.2824 24.8273C33.2016 26.1063 29.631 29.06 26.7754 32.1846Z"
                                 fill="#6366F1"/>
@@ -60,11 +61,8 @@ const Subscribe = () => {
                         </div>
 
                     </div>
-                    <div className="news-subscription">
-                        <div>
-                            <input type="text"/>
-                            <button className="primary-button"><span>Subscribe *</span></button>
-                        </div>
+                    <div id="news-subscribe-field">
+                        <SubscriberButton/>
                         <p>*Yes, I agree to the <a href="#">terms</a> and <a href="#">privacy policy</a></p>
                     </div>
                 </div>

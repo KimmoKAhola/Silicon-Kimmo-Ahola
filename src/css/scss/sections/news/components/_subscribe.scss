@@ -3,10 +3,17 @@
   margin-left: auto;
   margin-right: auto;
   gap: 48px;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 #sub-header{
   display: flex;
+  gap: 27px;
+}
+
+#sub-header-icon{
+  margin-top: 5px;
 }
 
 .news-sub-form{
@@ -23,6 +30,18 @@
   display: flex;
 }
 
+#news-subscribe-field{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  p{
+    @include text-s;
+    color: $gray-600;
+    a{
+      text-decoration: underline;
+    }
+  }
+}
 
 #news-subscribe-bg{
   background-color: $gray-100;

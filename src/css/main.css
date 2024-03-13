@@ -1159,21 +1159,91 @@ header .site-settings img {
 
 .news-card {
   display: grid;
-  place-items: center;
   grid-template-rows: auto 1fr;
+  gap: 24px;
+  background: #fcfcfc;
+  box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
+  border-radius: 8px;
+  position: relative;
 }
-.news-card div {
-  display: flex;
-  flex-direction: column;
+
+.news-card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
 }
-.news-card div div {
+
+.news-card-image-bookmark {
+  padding: 9px;
+  border-radius: 50%;
+  background: #fcfcfc;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  transition: ease-in 0.3s;
+  z-index: 1;
+}
+.news-card-image-bookmark:hover {
+  cursor: pointer;
+  background: #EFF2FC;
+  transform: translateY(-1px);
+}
+
+.card-heading {
   display: flex;
   justify-content: space-between;
+  margin: 0 24px;
+}
+
+.card-heading-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+  background: #EFF2FC;
+  border-radius: 4px;
+}
+.card-heading-category p {
+  color: #33354D;
+}
+
+.card-heading-date {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  color: #9397AD;
+}
+
+.card-data {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 24px;
+}
+
+#card-divider {
+  background: rgb(226, 229, 241);
+  height: 1px;
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 24px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 40px;
 }
 
 #news-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  gap: 24px;
 }
 @media (max-width: 1199px) {
   #news-grid {
@@ -1186,10 +1256,17 @@ header .site-settings img {
   margin-left: auto;
   margin-right: auto;
   gap: 48px;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 #sub-header {
   display: flex;
+  gap: 27px;
+}
+
+#sub-header-icon {
+  margin-top: 5px;
 }
 
 .news-sub-form {
@@ -1203,6 +1280,23 @@ header .site-settings img {
 
 .news-subscription {
   display: flex;
+}
+
+#news-subscribe-field {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#news-subscribe-field p {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  color: #9397AD;
+}
+#news-subscribe-field p a {
+  text-decoration: underline;
 }
 
 #news-subscribe-bg {
