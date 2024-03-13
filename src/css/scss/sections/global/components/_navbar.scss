@@ -4,13 +4,42 @@
   align-items: center;
   width: 100%;
 
-  &.active{
-    #menu{
+  #navbar-arrow {
+    display: none; // hide when hamburger menu is not available
+  }
+
+  &.active {
+    @include md {
+      #menu {
+        display: none;
+      }
+    }
+
+    .hamburger-menu {
+      //background-color: red;
       display: none;
     }
-    #mobile-menu{
+
+    #arrow {
+      display: block;
+      background-color: #8B5CF6;
+    }
+
+    #navbar-arrow {
+      display: block;
+      background-color: red;
+    }
+
+    #mobile-menu {
       display: block;
     }
+  }
+
+  @include lg {
+    #mobile-menu.active {
+      display: none;
+    }
+
   }
 
   .site-navigation {
@@ -37,7 +66,11 @@
       gap: 20px;
     }
 
-    img {
+    //img {
+    //  display: none;
+    //}
+
+    .hamburger-menu {
       display: none;
     }
   }
@@ -54,7 +87,12 @@
         //padding-right: 50px;
         //margin-right: 50px;
       }
-      button{
+
+      .hamburger-menu {
+        display: block;
+      }
+
+      button {
         //padding-right: 50px;
         padding: 10px;
         margin-right: 50px;
@@ -63,22 +101,45 @@
     }
   }
   @include md {
-    #menu{
+    #menu {
       display: none;
     }
   }
 }
 
-#mobile-menu{
-  display: grid;
-  place-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  background-color: $gray-100;
-  border-radius: 8px;
+#mobile-menu {
+  @include lg {
+    display: none;
+  }
+  @include xl {
+    display: none;
+  }
+  @include xxl {
+    display: none;
+  }
+  @include test {
+    display: none;
+  }
+  @include md {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-  .mobile-item{
-    background-color: $success;
+    #arrow {
+      place-self: end;
+    }
+    padding: 20px;
+    gap: 20px;
+    border-radius: 8px;
+
+    .mobile-item {
+      * {
+        background-color: $gray-100;
+        padding: 20px;
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+      }
+    }
   }
 }
 

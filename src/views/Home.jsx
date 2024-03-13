@@ -19,10 +19,10 @@ const Home = () => {
             {/*<AppFeatures/>*/}
             {/*<Slider/>*/}
             {/*<Features/>*/}
-            <Testimonials/>
+            {/*<Testimonials/>*/}
             {/*<FAQ/>*/}
             {/*<Subscribe/>*/}
-            <FooterLight/>
+            {/*<FooterLight/>*/}
         </div>
     )
 }
