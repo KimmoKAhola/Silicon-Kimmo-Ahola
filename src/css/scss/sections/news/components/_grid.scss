@@ -5,10 +5,18 @@
 
 #news-grid{
   display: grid;
-  //grid-template-columns: 1fr 1fr 1fr;
   grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
   gap: 24px;
-  @include xl{
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  @include lg{
+    grid-template-columns: 1fr 1fr;
+  }
+  @include md{
+    grid-template-columns:auto;
+    //margin: 0 40px;
+    //max-width: 75%;
+    //place-items: center;
+  }
+  @include sm{
+    grid-template-columns: auto; //TODO Needed??
   }
 }

@@ -5,6 +5,13 @@
   @include shadow-s;
   border-radius: 8px;
   position: relative;
+  //max-width: 400px;
+  //@include md{
+  //  max-width: 75%;
+  //  grid-template-rows: 1fr;
+  //  grid-template-columns: 1fr;
+  //  place-items: center;
+  //}
 }
 
 .image-container{
@@ -12,6 +19,7 @@
 }
 
 .news-card-image{
+
   width: 100%;
   height: auto;
   border-radius: 8px 8px 0 0;
@@ -30,6 +38,9 @@
     cursor: pointer;
     background: $gray-200;
     transform: translateY(-1px);
+  }
+  &.active{
+    background: $success;
   }
 }
 

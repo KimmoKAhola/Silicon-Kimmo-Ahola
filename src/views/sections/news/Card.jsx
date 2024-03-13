@@ -1,14 +1,20 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Bookmark from '../../../images/news/bookmark.svg'
 
 
 const Card = ({data}) => {
+    const [bookmark, setBookmark] = useState(false);
+
+    const handleBookmark = () =>{
+        setBookmark(!bookmark);
+    }
+
     return (
         <div>
             <div className="news-card">
                 <div className="news-card-image-container">
                     <img className="news-card-image" src={data.imageUrl} alt="TODO"/>
-                    <img className="news-card-image-bookmark" src={Bookmark} alt="TODO"/>
+                    <img onClick={handleBookmark} className={`news-card-image-bookmark ${bookmark ? 'active' : ''}`} src={Bookmark} alt="TODO"/>
                 </div>
                 <div className="card-heading">
                     <p className="card-heading-category">{data.category}</p>
