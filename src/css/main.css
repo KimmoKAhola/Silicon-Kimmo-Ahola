@@ -1733,7 +1733,6 @@ input:focus {
   background-color: #fcfcfc;
   border-radius: 8px;
   border: 1px #D4D7E5 solid;
-  padding: 10px 5px;
   line-height: 160%;
   font-weight: 400;
   color: #565973;
@@ -1741,6 +1740,7 @@ input:focus {
   font-size: 16px;
   margin-bottom: 5px;
   height: 52px;
+  padding-left: 16px;
 }
 
 .contact-time {

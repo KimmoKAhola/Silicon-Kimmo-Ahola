@@ -54,16 +54,20 @@ const Hero = () => {
     };
 
     const handleSpecialistChange = (e) => {
-        const selectedSpecialistId = e.target.value;
-        setValues(prevValues => ({
-            ...prevValues,
-            specialist: selectedSpecialistId
-        }));
-        setSelectedSpecialist(selectedSpecialistId);
+        try {
+            const selectedSpecialistId = e.target.value;
+            setValues(prevValues => ({
+                ...prevValues,
+                specialist: selectedSpecialistId
+            }));
+            setSelectedSpecialist(selectedSpecialistId);
 
-        const data = specialists.find(specialists => specialists.id === selectedSpecialistId)
-        setChosenData(`${data.firstName} ${data.lastName}`)
-        setChosenImage(data.profileImageUrl)
+            const data = specialists.find(specialists => specialists.id === selectedSpecialistId)
+            setChosenData(`${data.firstName} ${data.lastName}`)
+            setChosenImage(data.profileImageUrl)
+        } catch {
+
+        }
     };
 
     const handleSubmit = async (e) => {
@@ -200,7 +204,8 @@ const Hero = () => {
                                    errorMessage="Please enter a valid time"/>
                     </div>
 
-                    <button id="contact-form-button" className="primary-button"><span>Make an appointment</span></button>
+                    <button id="contact-form-button" className="primary-button"><span>Make an appointment</span>
+                    </button>
                 </form>
 
                 {showModal && (

@@ -89,10 +89,11 @@
   background-color: $white;
   border-radius: 8px;
   border: 1px $gray-400 solid;
-  padding: 10px 5px;
+  //padding: 10px 5px;
   @include text-m;
   margin-bottom: 5px;
   height: 52px;
+  padding-left: 16px;
 }
 
 .contact-time {
