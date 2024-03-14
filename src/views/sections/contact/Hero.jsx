@@ -17,6 +17,7 @@ const defaultData = {
 const apiEndPoint = 'https://kyhnet23-assignment.azurewebsites.net/api/specialists';
 const fullNameRegex = new RegExp(`^(?!.*[.'-, ]{2})[a-zA-ZåäöÅÄÖ]{2,} [a-zA-ZåäöÅÄÖ. ',-]{1,}[a-zA-ZåäöÅÄÖ]$`);
 const emailRegex = new RegExp(`^[a-öA-Ö0-9_.-]{2,}@[a-zA-Z]{2,}\\.[a-zA-Z]{2,}$`);
+const successMessage = "Looks good!"
 
 const Hero = () => {
     const [specialists, setSpecialists] = useState([]);
@@ -158,6 +159,7 @@ const Hero = () => {
                                onChange={handleChange}
                                required="required"
                                errorMessage="Please enter your first and last name."
+                               successMessage={successMessage}
                                regexPattern={fullNameRegex}/>
 
                     <FormInput id="email"
@@ -168,6 +170,7 @@ const Hero = () => {
                                onChange={handleChange}
                                required="required"
                                errorMessage="Please enter a valid email."
+                               successMessage={successMessage}
                                regexPattern={emailRegex}/>
 
 
@@ -192,7 +195,8 @@ const Hero = () => {
                                    value={values.date}
                                    onChange={handleChange}
                                    required="required"
-                                   errorMessage="Please enter a valid date"/>
+                                   errorMessage="Please enter a valid date"
+                                   successMessage={successMessage}/>
 
                         <FormInput id="time"
                                    type="time"
@@ -201,7 +205,8 @@ const Hero = () => {
                                    value={values.time}
                                    onChange={handleChange}
                                    required="required"
-                                   errorMessage="Please enter a valid time"/>
+                                   errorMessage="Please enter a valid time"
+                                   successMessage={successMessage}/>
                     </div>
 
                     <button id="contact-form-button" className="primary-button"><span>Make an appointment</span>

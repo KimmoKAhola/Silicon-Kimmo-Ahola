@@ -1706,6 +1706,14 @@ input:focus {
   margin-top: 2px;
   width: fit-content;
 }
+.hero .contact-form-span-success {
+  color: #22C55E;
+  background-color: #e4f8eb;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-top: 2px;
+  width: fit-content;
+}
 .hero .section {
   display: grid;
   grid-template-columns: auto 1fr;

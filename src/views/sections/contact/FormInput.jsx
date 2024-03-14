@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const FormInput = ({ id, label, type, name, value, regexPattern, onChange, required, errorMessage }) => {
+const FormInput = ({ id, label, type, name, value, regexPattern, onChange, required, errorMessage, successMessage }) => {
     const [isValid, setIsValid] = useState(true);
     const handleChange = (e) => {
         const inputValue = e.target.value;
@@ -24,6 +24,7 @@ const FormInput = ({ id, label, type, name, value, regexPattern, onChange, requi
                 className={inputClassName}
             />
             {!isValid && <span className="contact-form-span">{errorMessage}</span>}
+            {isValid && <span className="contact-form-span-success">{successMessage}</span>}
         </div>
     );
 };
