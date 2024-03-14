@@ -18,11 +18,14 @@ html, body {
   padding-top: 20px; //oklart TODO
   //padding-bottom: 20px; //oklart TODO
 
-  @include xl{
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 1500px;
-    //max-width: 100%;
+  //@include xl{
+  //  padding-left: 20px;
+  //  padding-right: 20px;
+  //  max-width: 1500px;
+  //  //max-width: 100%;
+  //}
+  @include sm{
+    max-width: 95%;
   }
 }
 

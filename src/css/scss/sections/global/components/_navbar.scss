@@ -53,6 +53,11 @@
     .hamburger-menu {
       display: none;
     }
+    @include mobile{
+      #theme-mode{
+        display: none;
+      }
+    }
   }
 
   @include lg {
