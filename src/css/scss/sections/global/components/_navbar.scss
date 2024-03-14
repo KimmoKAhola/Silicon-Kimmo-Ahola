@@ -69,17 +69,12 @@
 
       .hamburger-menu {
         display: block;
+        background-color: transparent;
       }
 
       .mobile-menu {
-        background-color: $gray-500;
         padding: 3px;
         border-radius: 50%;
-
-        &:hover {
-
-        }
-
         height: 40px;
       }
     }

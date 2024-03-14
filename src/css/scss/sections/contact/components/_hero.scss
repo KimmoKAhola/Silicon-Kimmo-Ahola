@@ -92,6 +92,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+  @include sm{
+    grid-template-columns: 1fr;
+  }
 }
 
 #contact-form-dropdown{

@@ -262,6 +262,9 @@ button:hover {
 .hamburger-menu img {
   height: 30px;
 }
+.hamburger-menu:hover {
+  box-shadow: none;
+}
 
 button:hover {
   background: #fcfcfc;
@@ -572,9 +575,9 @@ input:focus {
   }
   .navbar .site-settings .hamburger-menu {
     display: block;
+    background-color: transparent;
   }
   .navbar .site-settings .mobile-menu {
-    background-color: #B4B7C9;
     padding: 3px;
     border-radius: 50%;
     height: 40px;
@@ -1684,6 +1687,11 @@ input:focus {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+}
+@media (max-width: 500px) {
+  #contact-form-date-time {
+    grid-template-columns: 1fr;
+  }
 }
 
 #contact-form-dropdown span {

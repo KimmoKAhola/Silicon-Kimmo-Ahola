@@ -16,6 +16,9 @@ button {
   img {
     height: 30px;
   }
+  &:hover{
+    box-shadow: none;
+  }
 }
 
 button:hover {
