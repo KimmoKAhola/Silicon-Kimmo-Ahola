@@ -4,8 +4,38 @@
   align-items: center;
   justify-content: center;
 
-  img{
+  #error-404-logo {
     max-width: 500px;
-    width: auto;
+    width: 100%;
+    height: auto;
   }
+
+  button {
+    justify-content: center;
+  }
+
+  #error-test-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    #error-text{
+      text-align: center;
+      color: $gray-700;
+    }
+  }
+
+  button {
+    span {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+  }
+}
+
+#error-footer {
+  padding: 20px;
 }

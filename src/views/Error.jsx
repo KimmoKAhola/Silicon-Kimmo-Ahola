@@ -3,7 +3,7 @@ import Navbar from "./sections/global/Navbar.jsx";
 import Content from './sections/error/Content.jsx'
 
 function ErrorFooter() {
-    return <p>2024. All rights reserved. Silicon template.</p>
+    return <p id="error-footer">2024. All rights reserved. Silicon template.</p>
 }
 
 const Error = () => {
