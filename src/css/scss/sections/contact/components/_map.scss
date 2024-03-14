@@ -39,9 +39,9 @@
     }
   }
   #map {
-    @include sm{
-      display: none;
-    }
+    //@include sm{
+    //  display: none;
+    //}
     iframe{
       height: 540px;
       max-width: 636px;

@@ -1735,11 +1735,6 @@ input:focus {
     margin: 0 auto;
   }
 }
-@media (max-width: 500px) {
-  #temp #map {
-    display: none;
-  }
-}
 #temp #map iframe {
   height: 540px;
   max-width: 636px;
