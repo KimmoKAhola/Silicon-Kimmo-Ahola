@@ -3,6 +3,9 @@
   place-items: center;
   grid-template-columns: 1fr 1fr;
   padding: 100px 50px;
+  @include md{
+    padding: 0px;
+  }
 
   #features-first {
     display: grid;

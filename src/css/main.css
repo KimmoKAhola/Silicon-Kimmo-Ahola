@@ -1096,6 +1096,11 @@ input:focus {
   grid-template-columns: 1fr 1fr;
   padding: 100px 50px;
 }
+@media (max-width: 767px) {
+  #features-container {
+    padding: 0px;
+  }
+}
 #features-container #features-first {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
