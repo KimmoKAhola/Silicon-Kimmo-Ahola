@@ -24,9 +24,6 @@
     #mobile-menu.active {
       display: none;
     }
-    #theme-mode{
-      display: none;
-    }
   }
 
   .site-navigation {
@@ -78,9 +75,11 @@
         background-color: $gray-500;
         padding: 3px;
         border-radius: 50%;
-        &:hover{
+
+        &:hover {
 
         }
+
         height: 40px;
       }
     }
@@ -106,10 +105,7 @@
     display: none;
   }
   @include md {
-    //display: grid;
-    //grid-template-rows: 1fr;
-    //grid-template-columns: 1fr 1fr;
-    #mobile-site-settings{
+    #mobile-site-settings {
       display: flex;
     }
     display: flex;
@@ -127,6 +123,7 @@
         display: grid;
         place-items: center;
       }
+
     }
   }
 }

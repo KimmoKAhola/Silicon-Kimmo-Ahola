@@ -167,7 +167,7 @@ const Hero = () => {
                                regexPattern={emailRegex}/>
 
 
-                    <div>
+                    <div id="contact-form-dropdown">
                         <p>Specialist</p>
                         <select className="contact-specialist-field" value={selectedSpecialist}
                                 onChange={handleSpecialistChange}>
@@ -178,12 +178,12 @@ const Hero = () => {
                                 </option>
                             ))}
                         </select>
-                        {specialistError && <span>ERROR FILL ME!</span>}
+                        {specialistError && <span>Please choose a specialist</span>}
                     </div>
-                    <div>
+                    <div id="contact-form-date-time">
                         <FormInput id="date"
                                    type="date"
-                                   label="date"
+                                   label="Date"
                                    name="date"
                                    value={values.date}
                                    onChange={handleChange}
@@ -192,7 +192,7 @@ const Hero = () => {
 
                         <FormInput id="time"
                                    type="time"
-                                   label="time"
+                                   label="Time"
                                    name="time"
                                    value={values.time}
                                    onChange={handleChange}
@@ -200,7 +200,7 @@ const Hero = () => {
                                    errorMessage="Please enter a valid time"/>
                     </div>
 
-                    <button className="primary-button"><span>Make an appointment</span></button>
+                    <button id="contact-form-button" className="primary-button"><span>Make an appointment</span></button>
                 </form>
 
                 {showModal && (

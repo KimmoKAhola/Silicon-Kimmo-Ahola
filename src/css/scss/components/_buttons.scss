@@ -12,7 +12,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  img{
+
+  img {
     height: 30px;
   }
 }
@@ -58,7 +59,16 @@ button:hover {
   }
 }
 
+@include md {
+  #mobile-sign-in-button {
+    background-color: red;
+    width: 100%;
+    justify-content: center;
+
+  }
+}
 .primary-button {
+
   img {
     height: 18px;
   }
@@ -112,4 +122,9 @@ button:hover {
   height: 36px;
   width: fit-content;
   padding: 20px 30px;
+}
+
+#contact-form-button{
+  margin-top: 12px;
+  @include shadow-primary;
 }

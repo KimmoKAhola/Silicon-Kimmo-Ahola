@@ -47,20 +47,6 @@ const Navbar = () => {
             {isOpen && (
                 <nav id="mobile-menu" className={isOpen ? 'active' : ''}>
 
-                    <div id="mobile-site-settings">
-                        <div id="mobile-theme-mode" className="theme-switch">
-                            <label htmlFor="theme-switch-mode">Light</label>
-                            <label className="switch">
-                                <input id="theme-switch-mode" type="checkbox"/>
-                                <span className="slider round"></span>
-                            </label>
-                            <label htmlFor="theme-switch-mode">Dark</label>
-                        </div>
-                        <button id="sign-in-button" className="primary-button"><img src={User} alt="TODO"/> <span>Sign in / up</span>
-                        </button>
-                    </div>
-
-
                     <div className="mobile-item">
                         <NavLink className="nav-link" to="/#overview">Overview</NavLink>
                     </div>
@@ -76,6 +62,10 @@ const Navbar = () => {
                     <div className="mobile-item">
                         <Link className="nav-link" to="/contact">Contact</Link>
                     </div>
+
+
+                    <button className="primary-button" id="mobile-sign-in-button"><img src={User} alt="TODO"/> <span>Sign in / up</span>
+                    </button>
 
 
                 </nav>

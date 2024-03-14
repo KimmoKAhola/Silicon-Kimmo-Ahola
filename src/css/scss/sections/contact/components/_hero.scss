@@ -1,9 +1,36 @@
 .hero {
   display: grid;
-  width: 100%;
+  //width: 100%; //TODO
   grid-template-columns: 1fr 1fr;
+  @include lg {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
   .contact-info {
     padding-right: 50px;
+    @include lg{
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      h1{
+        grid-row: 1;
+      }
+      h2{
+        padding-bottom: 20px;
+      }
+      #email-us{
+        grid-row: 2;
+      }
+      #careers{
+        grid-row: 2;
+      }
+    }
+    @include md{
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .contact-form {
@@ -13,13 +40,10 @@
     border-radius: 8px;
     padding: 72px;
     @include shadow-l;
-    input{
-      width: 100%;
-      padding: 5px;
+
+    @include lg{
+      margin-top: 100px;
     }
-    //position: relative;
-    //top: 100px;
-    //z-index: 1;
   }
 
   .section {
@@ -27,15 +51,17 @@
     grid-template-columns: auto 1fr;
     gap: 20px;
     max-width: 450px;
-    img{
+
+    img {
       padding: 16px;
     }
-    a{
+
+    a {
       display: flex;
       align-items: center;
       gap: 8px;
 
-      &:hover{
+      &:hover {
         color: $secondary;
       }
     }
@@ -47,17 +73,29 @@
 }
 
 
-
-.contact-specialist-field{
+.contact-specialist-field {
   width: 100%;
   background-color: $white;
   border-radius: 8px;
-  box-shadow: none;
-  padding: 20px;
+  border: 1px $gray-400 solid;
+  padding: 10px 5px;
+  @include text-m;
 }
 
-.contact-time{
+.contact-time {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+}
+
+#contact-form-date-time{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+#contact-form-dropdown{
+  span{
+    color: $danger;
+  }
 }
