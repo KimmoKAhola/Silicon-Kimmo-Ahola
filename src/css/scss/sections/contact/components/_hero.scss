@@ -1,6 +1,5 @@
 .hero {
   display: grid;
-  //width: 100%; //TODO
   grid-template-columns: 1fr 1fr;
   @include lg {
     grid-template-columns: 1fr;
