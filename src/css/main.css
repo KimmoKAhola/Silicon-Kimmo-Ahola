@@ -1113,16 +1113,13 @@ input:focus {
   font-size: 24px;
 }
 #showcase #left-side #showcase-buttons {
-  padding-top: 24px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: space-between;
+  padding-top: 20px;
 }
 #showcase #left-side #showcase-buttons span {
   display: flex;
   align-items: center;
   gap: 16px;
+  padding-top: 75px;
   padding-bottom: 75px;
 }
 #showcase #right-side {
@@ -1143,8 +1140,7 @@ input:focus {
     place-items: center;
   }
   #showcase #right-side {
-    grid-row: 1;
-    padding-bottom: 30px;
+    grid-row: 2;
   }
   #showcase #right-side img {
     display: grid;

@@ -15,15 +15,12 @@
     gap: 20px;
 
     #showcase-buttons {
-      padding-top: 24px;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      justify-content: space-between;
+      padding-top: 20px;
       span{
         display: flex;
         align-items: center;
         gap: 16px;
+        padding-top: 75px;
         padding-bottom: 75px;
       }
     }
@@ -50,14 +47,13 @@
     place-items: center;
 
     #right-side {
-      grid-row: 1;
+      grid-row: 2;
 
       img {
         display: grid;
         place-items: center;
       }
 
-      padding-bottom: 30px;
     }
     #left-side {
       display: grid;
