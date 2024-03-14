@@ -38,6 +38,9 @@
     gap: 24px;
     border-radius: 8px;
     padding: 72px;
+    @include mobile{
+      padding: 20px;
+    }
     @include shadow-l;
 
     @include lg{

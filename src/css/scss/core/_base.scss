@@ -27,6 +27,9 @@ html, body {
   @include sm{
     max-width: 95%;
   }
+  @include mobile{
+    max-width: 95%;
+  }
 }
 
 

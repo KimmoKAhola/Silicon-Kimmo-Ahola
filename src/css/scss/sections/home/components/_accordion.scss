@@ -9,6 +9,9 @@
 .accordion {
   margin: 10px;
   padding: 10px;
+  @include sm{
+    padding: 10px 0;
+  }
   border-radius: 8px;
   @include shadow-s;
   .accordion-item {
