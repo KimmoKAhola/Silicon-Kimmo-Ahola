@@ -9,7 +9,6 @@ const FormInput = ({ id, label, type, name, value, regexPattern, onChange, requi
         onChange(e);
     };
 
-    const inputClassName = isValid ? 'valid-input' : 'invalid-input';
     return (
         <div className="form-input">
             <label className="form-text-label" htmlFor={id}>{label}</label>
@@ -21,10 +20,8 @@ const FormInput = ({ id, label, type, name, value, regexPattern, onChange, requi
                 onChange={handleChange}
                 required={required}
                 autoComplete="off"
-                className={inputClassName}
             />
             {!isValid && <span className="contact-form-span">{errorMessage}</span>}
-            {isValid && <span className="contact-form-span-success">{successMessage}</span>}
         </div>
     );
 };

@@ -471,12 +471,6 @@ input:focus {
   height: 52px;
   padding-left: 16px;
 }
-.form-input input.valid-input {
-  border: 1px solid #22C55E;
-}
-.form-input input.invalid-input {
-  border: 1px solid #EF4444;
-}
 
 .form-text-label {
   color: #0B0F19;
@@ -1701,14 +1695,6 @@ input:focus {
 .hero .contact-form-span {
   color: #EF4444;
   background-color: #fde8e8;
-  border-radius: 4px;
-  padding: 4px 8px;
-  margin-top: 2px;
-  width: fit-content;
-}
-.hero .contact-form-span-success {
-  color: #22C55E;
-  background-color: #e4f8eb;
   border-radius: 4px;
   padding: 4px 8px;
   margin-top: 2px;
