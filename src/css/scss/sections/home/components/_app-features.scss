@@ -1,7 +1,8 @@
 #app-features {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+  padding-top: 100px;
+  padding-bottom: 100px;
   #app-features-mobile {
     max-width: 70%;
     height: auto;

@@ -8,6 +8,8 @@
 #testimonials {
   display: grid;
   grid-template-columns: 1fr auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
   @include lg {
     grid-template-columns: 1fr;
     place-items: center;

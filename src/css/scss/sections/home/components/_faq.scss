@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 10px;
-
+  padding-top: 100px;
+  padding-bottom: 100px;
   #faq-left-column {
     display: flex;
     flex-direction: column;

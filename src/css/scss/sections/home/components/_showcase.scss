@@ -1,7 +1,7 @@
 #showcase {
+  padding-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   #left-side {
     h1{
       @include d4;
