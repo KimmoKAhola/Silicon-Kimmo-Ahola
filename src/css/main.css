@@ -1827,10 +1827,12 @@ input:focus {
   display: flex;
   align-items: center;
   gap: 8px;
+  color: #fcfcfc;
 }
 
 #error-footer {
-  padding: 20px;
+  padding-left: 50px;
+  padding-bottom: 48px;
 }
 
 /*# sourceMappingURL=main.css.map */

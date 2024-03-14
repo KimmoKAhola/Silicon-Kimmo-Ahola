@@ -31,11 +31,13 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        color: $white;
       }
     }
   }
 }
 
 #error-footer {
-  padding: 20px;
+  padding-left: 50px;
+  padding-bottom: 48px;
 }
