@@ -16,6 +16,12 @@ input {
   input{
     height: 52px;
     padding-left: 16px;
+    &.valid-input{
+      border: 1px solid $success;
+    }
+    &.invalid-input{
+      border: 1px solid $danger;
+    }
   }
 }
 

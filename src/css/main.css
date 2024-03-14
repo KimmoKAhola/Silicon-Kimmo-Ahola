@@ -471,6 +471,12 @@ input:focus {
   height: 52px;
   padding-left: 16px;
 }
+.form-input input.valid-input {
+  border: 1px solid #22C55E;
+}
+.form-input input.invalid-input {
+  border: 1px solid #EF4444;
+}
 
 .form-text-label {
   color: #0B0F19;
