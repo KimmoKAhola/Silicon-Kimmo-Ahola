@@ -11,7 +11,7 @@ const FormInput = ({ id, label, type, name, value, regexPattern, onChange, requi
 
     return (
         <div className="form-input">
-            <label htmlFor={id}>{label}</label>
+            <label className="form-text-label" htmlFor={id}>{label}</label>
             <input
                 type={type}
                 id={id}
@@ -21,7 +21,7 @@ const FormInput = ({ id, label, type, name, value, regexPattern, onChange, requi
                 required={required}
                 autoComplete="off"
             />
-            {!isValid && <span id="contact-form-span">{errorMessage}</span>}
+            {!isValid && <span className="contact-form-span">{errorMessage}</span>}
         </div>
     );
 };

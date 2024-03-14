@@ -14,8 +14,13 @@ input {
   display: flex;
   flex-direction: column;
   input{
+    height: 52px;
     padding: 5px;
   }
+}
+
+.form-text-label{
+  color: $gray-900;
 }
 
 

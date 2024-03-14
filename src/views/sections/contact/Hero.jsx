@@ -168,7 +168,7 @@ const Hero = () => {
 
 
                     <div id="contact-form-dropdown">
-                        <p>Specialist</p>
+                        <p className="form-text-label">Specialist</p>
                         <select className="contact-specialist-field" value={selectedSpecialist}
                                 onChange={handleSpecialistChange}>
                             <option value=""></option>
@@ -178,7 +178,7 @@ const Hero = () => {
                                 </option>
                             ))}
                         </select>
-                        {specialistError && <span>Please choose a specialist</span>}
+                        {specialistError && <span className="contact-form-span">Please choose a specialist</span>}
                     </div>
                     <div id="contact-form-date-time">
                         <FormInput id="date"

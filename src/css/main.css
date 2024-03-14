@@ -468,7 +468,12 @@ input:focus {
   flex-direction: column;
 }
 .form-input input {
+  height: 52px;
   padding: 5px;
+}
+
+.form-text-label {
+  color: #0B0F19;
 }
 
 .contact-text-field {
@@ -1687,8 +1692,13 @@ input:focus {
     margin-top: 100px;
   }
 }
-.hero #contact-form-span {
+.hero .contact-form-span {
   color: #EF4444;
+  background-color: #fde8e8;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-top: 2px;
+  width: fit-content;
 }
 .hero .section {
   display: grid;
@@ -1723,6 +1733,8 @@ input:focus {
   color: #565973;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
+  margin-bottom: 5px;
+  height: 52px;
 }
 
 .contact-time {

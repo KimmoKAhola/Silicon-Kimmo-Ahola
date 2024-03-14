@@ -48,8 +48,13 @@
       margin-top: 100px;
     }
   }
-  #contact-form-span{
+  .contact-form-span{
     color: $danger;
+    background-color: #fde8e8;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-top: 2px;
+    width: fit-content;
   }
 
   .section {
@@ -86,6 +91,8 @@
   border: 1px $gray-400 solid;
   padding: 10px 5px;
   @include text-m;
+  margin-bottom: 5px;
+  height: 52px;
 }
 
 .contact-time {
