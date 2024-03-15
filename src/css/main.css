@@ -1752,6 +1752,7 @@ input:focus {
 }
 @media (max-width: 500px) {
   .hero .contact-form {
+    padding: 40px 20px;
     width: 90%;
   }
 }
