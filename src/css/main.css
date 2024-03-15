@@ -680,21 +680,26 @@ input:focus {
 @media (max-width: 767px) {
   #mobile-menu {
     display: grid;
+    background-color: #EFF2FC;
+    border-radius: 10px;
+    padding: 20px;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 20px;
+    place-items: center;
     gap: 20px;
   }
   #mobile-menu #mobile-site-settings {
     display: flex;
   }
   #mobile-menu .mobile-item {
-    background-color: #EFF2FC;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
+    background: #6366F1;
+    box-shadow: 0px 8px 18px -8px rgba(99, 102, 241, 0.9);
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
     position: relative;
   }
   #mobile-menu .mobile-item .nav-link {
+    color: #fcfcfc;
     display: grid;
     place-items: center;
     transform: translateY(90%);

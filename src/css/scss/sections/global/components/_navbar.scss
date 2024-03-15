@@ -113,18 +113,24 @@
       display: flex; // TODO??
     }
     display: grid;
+    background-color: $gray-200;
+    border-radius: 10px;
+    padding: 20px;
     grid-template-columns: repeat(2, 1fr);
-    //place-items: center;
-    padding-top: 20px;
+    place-items: center;
+    //padding-top: 20px;
     gap: 20px;
 
     .mobile-item {
-      background-color: $gray-200;
-      height: 120px;
-      width: 120px;
-      border-radius: 50%;
+      //background-color: $primary;
+      @include shadow-primary;
+      height: 100px;
+      width: 100px;
+      //border-radius: 50%;
+      border-radius: 20px;
       position: relative;
       .nav-link {
+        color: $white;
         display: grid;
         place-items: center;
         transform: translateY(90%);
