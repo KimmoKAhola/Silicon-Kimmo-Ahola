@@ -21,7 +21,6 @@
     flex: 1;
     @include sm{
       flex-direction: column;
-      width: 90%;
     }
     gap: 20px;
     align-items: center;

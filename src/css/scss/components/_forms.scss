@@ -33,7 +33,6 @@ input {
 }
 
 .sub-right {
-  display: flex;
   div {
     display: flex;
     input {
@@ -81,4 +80,11 @@ input {
   height: 52px;
 }
 
-
+.error-message-span{
+  color: $danger;
+  background-color: #fde8e8;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-top: 2px;
+  width: fit-content;
+}

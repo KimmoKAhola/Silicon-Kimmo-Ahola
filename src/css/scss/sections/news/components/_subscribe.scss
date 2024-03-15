@@ -60,17 +60,23 @@
 
 
 #news-letter-subscribe-input {
-  .sub-right{
-
-  }
   .footer-button{
     border-radius: 4px;
-    margin-left: 50px
+    margin-left: 50px;
+    @include md{
+      margin-left:0px
+    }
   }
   .subscriber-form-input{
     input{
       @include border-l;
       width: 700px;
+      @include lg{
+        width: 400px;
+      }
+      @include md{
+        width: 90%;
+      }
     }
   }
 }

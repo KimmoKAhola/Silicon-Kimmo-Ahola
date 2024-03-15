@@ -507,9 +507,6 @@ input:focus {
   padding: 5px;
 }
 
-.sub-right {
-  display: flex;
-}
 .sub-right div {
   display: flex;
 }
@@ -543,6 +540,15 @@ input:focus {
     width: 80%;
   }
 }
+.error-message-span {
+  color: #EF4444;
+  background-color: #fde8e8;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-top: 2px;
+  width: fit-content;
+}
+
 .contact-icon {
   background-color: #fcfcfc;
   padding: 16px;
@@ -1347,7 +1353,6 @@ input:focus {
 @media (max-width: 500px) {
   .subscriber span {
     flex-direction: column;
-    width: 90%;
   }
 }
 
@@ -1640,9 +1645,24 @@ input:focus {
   border-radius: 4px;
   margin-left: 50px;
 }
+@media (max-width: 767px) {
+  #news-letter-subscribe-input .footer-button {
+    margin-left: 0px;
+  }
+}
 #news-letter-subscribe-input .subscriber-form-input input {
   border-radius: 8px;
   width: 700px;
+}
+@media (max-width: 991px) {
+  #news-letter-subscribe-input .subscriber-form-input input {
+    width: 400px;
+  }
+}
+@media (max-width: 767px) {
+  #news-letter-subscribe-input .subscriber-form-input input {
+    width: 90%;
+  }
 }
 
 #news-subscribe-bg {

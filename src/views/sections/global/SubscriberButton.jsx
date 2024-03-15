@@ -14,7 +14,7 @@ const SubscriberButton = (props) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if (!isValid){
+        if (!isValid) {
             console.log("regex failed?")
             return;
         }
@@ -22,12 +22,13 @@ const SubscriberButton = (props) => {
             const response = await fetch(
                 `https://kyhnet23-assignment.azurewebsites.net/api/subscribe?email=${email}`,
                 {
-                method: 'POST',
-            });
+                    method: 'POST',
+                });
 
             if (!response.ok) {
                 console.log("fel")
-            } if (response.ok){
+            }
+            if (response.ok) {
                 setChosenEmail(email);
                 setShowModal(true);
 
@@ -46,9 +47,9 @@ const SubscriberButton = (props) => {
         setEmail(e.target.value)
         const isValidInput = new RegExp(emailRegex).test(e.target.value); // use this for displaying error messages after each keystroke
         setIsValid(isValidInput);
-        if (!isValidInput){
+        if (!isValidInput) {
             setErrorMessage("Please enter a valid email");
-        } else{
+        } else {
             setErrorMessage("")
         }
     };
@@ -66,13 +67,13 @@ const SubscriberButton = (props) => {
                         <img src={Post} className="icon" alt=""/>
                     </div>
                     <button className="footer-button" type="submit"><span>{props.value}</span></button>
-                    {errorMessage && <span style={{color: 'red'}}>{errorMessage}</span>}
                 </form>
+                {errorMessage && <span className="error-message-span">{errorMessage}</span>}
             </div>
             {showModal && (
                 <Modal onClose={closeModal}>
                     <p className="modal-success">You have been successfully subscribed to our newsletter!</p>
-                    <p className="modal-body" >Our newsletter will be sent to {chosenEmail}</p>
+                    <p className="modal-body">Our newsletter will be sent to {chosenEmail}</p>
                     <button className="primary-button" onClick={closeModal}><span>Close</span></button>
                 </Modal>
             )}
