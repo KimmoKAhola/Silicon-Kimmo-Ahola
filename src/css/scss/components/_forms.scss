@@ -95,3 +95,21 @@ input {
     background-color: #2d1825;
   }
 }
+
+.subscriber-form {
+  @include sm {
+    width: 300px;
+  }
+}
+
+.sub-right {
+  .subscriber-form {
+    .subscriber-form-input {
+      input {
+        @include sm {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

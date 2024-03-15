@@ -60,21 +60,22 @@
 
 
 #news-letter-subscribe-input {
-  .footer-button{
+  .footer-button {
     border-radius: 4px;
     margin-left: 50px;
-    @include md{
-      margin-left:0px
+    @include md {
+      margin-left: 0px
     }
   }
-  .subscriber-form-input{
-    input{
+
+  .subscriber-form-input {
+    input {
       @include border-l;
       width: 700px;
-      @include lg{
+      @include lg {
         width: 400px;
       }
-      @include md{
+      @include md {
         width: 90%;
       }
     }
@@ -107,9 +108,12 @@
   .news-sub-form {
     display: flex;
     flex-direction: column;
+
     h5 {
       padding-bottom: 10px;
     }
+
     gap: 0;
   }
 }
+
