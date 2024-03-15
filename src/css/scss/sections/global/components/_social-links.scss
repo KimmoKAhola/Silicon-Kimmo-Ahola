@@ -2,6 +2,11 @@
   padding: 20px;
   span {
     display: flex;
+    @include sm{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
     gap: 25px;
     i {
       color: $gray-800;
