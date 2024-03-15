@@ -110,9 +110,6 @@
   @include xxl {
     display: none;
   }
-  @include test {
-    display: none;
-  }
   @include md {
     #mobile-site-settings {
       display: flex; // TODO??
