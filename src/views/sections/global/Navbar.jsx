@@ -52,7 +52,7 @@ const Navbar = () => {
 
                     <div id="mobile-navbar-overview" className="mobile-item">
                         <div className="mob-test">
-                            <Link className="nav-link" to="/#overview">
+                            <Link className="nav-link" to="/">
                             <i className="fa-regular fa-house"></i>
                             <p>Overview</p>
                         </Link>
@@ -61,7 +61,7 @@ const Navbar = () => {
 
                     <div id="mobile-navbar-features" className="mobile-item">
                         <div className="mob-test">
-                            <Link className="nav-link" to="/#features">
+                            <Link className="nav-link" to="/">
                             <i className="fa-thin fa-crystal-ball"></i>
                             <p>Features</p>
                         </Link>
@@ -97,7 +97,7 @@ const Navbar = () => {
                     </div>
 
                     <div id="mobile-sign-in-button" className="mobile-item">
-                        <div className="mob-test"><Link className="nav-link" to="/">
+                        <div className="mob-test"><Link className="nav-link" to="*">
                             <i id="mobile-sign-in-icon" className="fa-regular fa-user"></i>
                             <p>Sign in</p>
                         </Link></div>
