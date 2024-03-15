@@ -86,14 +86,13 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    <div className="mobile-item">
+                    <div id="mobile-sign-in-button" className="mobile-item">
                         <Link className="nav-link" to="/">
-                            <i className="fa-regular fa-user"></i>
+                            <i id="mobile-sign-in-icon" className="fa-regular fa-user"></i>
                             Sign in
                         </Link>
                     </div>
                 </nav>
-
             )}
         </div>
     )
