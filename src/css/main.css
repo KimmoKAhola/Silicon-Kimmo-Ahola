@@ -536,9 +536,6 @@ input:focus {
   .subscriber-form {
     height: auto;
   }
-  .subscriber-form input {
-    width: 80%;
-  }
 }
 .error-message-span {
   color: #EF4444;
