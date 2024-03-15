@@ -4,24 +4,29 @@ import StoreButtons from "../home/Store-Buttons.jsx";
 import Socials from "./Socials.jsx";
 import {Link} from "react-router-dom";
 
+const links = [
+    {to: '/', text: 'Overview'},
+    {to: '/', text: 'Features'},
+    {to: '/news', text: 'News'},
+    {to: '/contact', text: 'Contact'},
+    {to: '/*', text: 'Account'}
+]
 
 const FooterLight = () => {
     return (
         <div className="container">
-            <div id="light-footer">
+            <div className="light-footer">
                 <Link id="logo" to="/">
                     <img src={Logo} alt="silicon logotype"/>
                 </Link>
-                <ul id="footer-links">
-                    <Link className="nav-link" to="/">Overview</Link>
-                    <Link className="nav-link" to="/">Features</Link>
-                    <Link className="nav-link" to="/news">News</Link>
-                    <Link className="nav-link" to="/contact">Contact</Link>
-                    <Link className="nav-link" to="/*">Account</Link>
-                </ul>
+                <nav id="footer-links">
+                    {links.map((link, index) =>(
+                        <Link key={index} className="nav-link" to={link.to}>{link.text}</Link>
+                    ))}
+                </nav>
                 <StoreButtons/>
                 <Socials/>
-                <p>
+                <p className="text-s">
                     2024. All rights reserved. Pulvinar urna condimentum amet tempor, ornare integer. Lorem odio justo
                     malesuada suspendisse viverra aliquet quisque turpis non. Feugiat in odio non nunc ornare
                     consectetur.
