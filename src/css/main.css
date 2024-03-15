@@ -1692,6 +1692,11 @@ input:focus {
     padding: 50px;
   }
 }
+@media (max-width: 767px) {
+  .hero .contact-info {
+    padding: 0;
+  }
+}
 .hero .contact-info .contact-section {
   display: grid;
   grid-template-columns: auto 1fr;

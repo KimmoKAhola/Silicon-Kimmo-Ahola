@@ -19,6 +19,9 @@
       width: 100%;
       padding: 50px;
     }
+    @include md{
+      padding: 0;
+    }
     .contact-section{
       display: grid;
       grid-template-columns: auto 1fr;
