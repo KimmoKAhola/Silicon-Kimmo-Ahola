@@ -1647,7 +1647,7 @@ input:focus {
   .news-sub-form {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 0;
   }
   .news-sub-form h5 {
     padding-bottom: 10px;

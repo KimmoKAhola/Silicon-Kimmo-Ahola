@@ -1,6 +1,5 @@
 import React from 'react'
-import Notification from '../../../images/subscribe/notification.svg'
-import Post from '../../../images/icons/post.svg'
+import Notification from '../../../images/icons/notification.svg'
 import SubscriberButton from "../global/SubscriberButton.jsx";
 const Subscribe = () => {
     return (
@@ -11,7 +10,7 @@ const Subscribe = () => {
                         <img id="subscriber-bell-icon" src={Notification} alt="TODO"/>
                         <h5>Subscribe to our newsletter to stay informed about latest updates</h5>
                     </div>
-                    <SubscriberButton/>
+                    <SubscriberButton value="Subscribe"/>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import SubscriberButton from "../global/SubscriberButton.jsx";
 
-const Subscribe = () => {
+const Newsletter = () => {
     return (
         <div id="news-subscribe-bg">
             <div className="container">
@@ -72,7 +72,7 @@ const Subscribe = () => {
 
                     </div>
                     <div id="news-subscribe-field">
-                        <div id="news-letter-subscribe-input"><SubscriberButton value="Subscribe *" /></div>
+                        <div id="news-letter-subscribe-input"><SubscriberButton value="Newsletter *" /></div>
                         <p>*Yes, I agree to the <a href="#">terms</a> and <a href="#">privacy policy</a></p>
                     </div>
                 </div>
@@ -81,4 +81,4 @@ const Subscribe = () => {
         </div>
     )
 }
-export default Subscribe
+export default Newsletter

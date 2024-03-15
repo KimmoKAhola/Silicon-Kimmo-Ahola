@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom";
-import HomeIcon from '../../../images/error/home-icon.svg'
+import HomeIcon from '../../../images/icons/error-home-icon.svg'
 import Error_BG from '../../../images/error/404.png'
 
 const Content = () => {

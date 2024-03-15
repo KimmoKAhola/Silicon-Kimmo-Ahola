@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Bookmark from '../../../images/news/bookmark.svg'
+import Bookmark from '../../../images/icons/bookmark.svg'
 
 
 const Card = ({data}) => {

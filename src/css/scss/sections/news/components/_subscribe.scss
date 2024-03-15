@@ -68,15 +68,12 @@
     margin-left: 50px
   }
   .subscriber-form-input{
-    //max-width: 70%;
     input{
       @include border-l;
-      //height: 52px;  //TODO
       width: 700px;
     }
   }
 }
-
 
 #news-subscribe-bg {
   background-color: $gray-100;
@@ -104,12 +101,9 @@
   .news-sub-form {
     display: flex;
     flex-direction: column;
-    //grid-template-columns: 1fr;
-    //place-items: center;
     h5 {
       padding-bottom: 10px;
     }
-
-    gap: 0px;
+    gap: 0;
   }
 }

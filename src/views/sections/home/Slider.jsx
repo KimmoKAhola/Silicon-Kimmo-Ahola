@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import How1 from '../../../images/mobile-howdoesitwork_1.svg'
 import How2 from '../../../images/mobile-howdoesitwork_2.svg'
 import How3 from '../../../images/mobile-howdoesitwork_3.svg'
-import PhoneFrame from '../../../images/phone-frame.png'
 import ArrowButton from "../global/ArrowButton.jsx";
 
 const images = [How1, How2, How3];
