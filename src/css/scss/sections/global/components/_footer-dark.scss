@@ -22,6 +22,15 @@
     @include lg {
       grid-template-columns: 1fr;
       place-items: start;
+      #test-header{
+        display: grid;
+      }
+      .site-links{
+        display: none;
+      }
+      #footer-contact{
+        display: none;
+      }
     }
   }
 
@@ -70,5 +79,23 @@
     border-radius: 5px 0 0 5px;
     background-color: $gray-900;
     border: 1px rgba(255, 255, 255, 0.18) solid;
+  }
+}
+
+#test-header{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.footer-dark-test{
+  padding-bottom: 50px;
+  ul{
+    display: grid;
+  }
+  &.active{
+    display: grid;
+  }
+  &.inactive{
+    display: none;
   }
 }
