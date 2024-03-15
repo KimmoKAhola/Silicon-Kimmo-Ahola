@@ -69,6 +69,9 @@
   border: 1px solid $gray-400;
   @include shadow-l;
   padding: 30px;
+  @include mobile{
+    padding: 10px;
+  }
   border-radius: 8px;
   display: grid;
   grid-template-rows: auto auto auto;
