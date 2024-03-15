@@ -7,11 +7,14 @@ import ArrowButton from "./ArrowButton.jsx";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
-
+    const [toggleMobileSwitch, setToggleMobileSwitch] = useState(false)
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     }
 
+    const toggleMobileTheme = () => {
+        setToggleMobileSwitch(!toggleMobileSwitch);
+    }
 
     return (
         <div className="container">
@@ -75,11 +78,11 @@ const Navbar = () => {
                         </Link>
                     </div>
 
-                    <div className="mobile-item">
-                        <Link className="nav-link" to="/contact">
-                            <i className="fa-regular fa-sun"></i>
+                    <div className={`mobile-item ${toggleMobileSwitch ? '' : 'active'}`}>
+                        <Link id="mobile-toggle-switch" onClick={toggleMobileTheme} className="nav-link" to="/contact">
+                            {toggleMobileSwitch && <i id="mobile-sun" className="fa-regular fa-sun"></i>}
+                            {!toggleMobileSwitch && <i id="mobile-moon" className="fa-regular fa-moon"></i>}
                             Light/Dark
-                            {/*<i className="fa-regular fa-moon"></i>*/}
                         </Link>
                     </div>
 
@@ -95,4 +98,6 @@ const Navbar = () => {
         </div>
     )
 }
+
+
 export default Navbar
