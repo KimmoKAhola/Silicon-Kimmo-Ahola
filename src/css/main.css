@@ -1686,6 +1686,12 @@ input:focus {
   gap: 72px;
   padding-right: 50px;
 }
+@media (max-width: 991px) {
+  .hero .contact-info {
+    width: 100%;
+    padding: 50px;
+  }
+}
 .hero .contact-info .contact-section {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -1726,7 +1732,6 @@ input:focus {
 }
 .hero .contact-form {
   display: grid;
-  grid-template-rows: 1fr;
   gap: 24px;
   border-radius: 8px;
   padding: 72px;
@@ -1742,6 +1747,7 @@ input:focus {
 @media (max-width: 991px) {
   .hero .contact-form {
     margin-top: 100px;
+    width: 65%;
   }
 }
 .hero .contact-form-span {

@@ -15,7 +15,10 @@
     flex-direction: column;
     gap: 72px;
     padding-right: 50px;
-
+    @include lg{
+      width: 100%;
+      padding: 50px;
+    }
     .contact-section{
       display: grid;
       grid-template-columns: auto 1fr;
@@ -53,7 +56,6 @@
 
   .contact-form {
     display: grid;
-    grid-template-rows: 1fr;
     gap: 24px;
     @include border-l;
     padding: 72px;
@@ -65,6 +67,7 @@
 
     @include lg{
       margin-top: 100px;
+      width: 65%;
     }
   }
   .contact-form-span{
