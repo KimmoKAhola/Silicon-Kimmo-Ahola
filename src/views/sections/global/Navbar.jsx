@@ -51,46 +51,56 @@ const Navbar = () => {
                 <nav id="mobile-menu" className={isOpen ? 'active' : ''}>
 
                     <div id="mobile-navbar-overview" className="mobile-item">
-                        <Link className="nav-link" to="/#overview">
+                        <div className="mob-test">
+                            <Link className="nav-link" to="/#overview">
                             <i className="fa-regular fa-house"></i>
-                            Overview
+                            <p>Overview</p>
                         </Link>
+                        </div>
                     </div>
 
                     <div id="mobile-navbar-features" className="mobile-item">
-                        <Link className="nav-link" to="/#features">
+                        <div className="mob-test">
+                            <Link className="nav-link" to="/#features">
                             <i className="fa-thin fa-crystal-ball"></i>
-                            Features
+                            <p>Features</p>
                         </Link>
+                        </div>
                     </div>
 
                     <div id="mobile-navbar-news" className="mobile-item">
-                        <Link className="nav-link" to="/news">
+                        <div className="mob-test">
+                            <Link className="nav-link" to="/news">
                             <i className="fa-solid fa-rss"></i>
-                            News
+                            <p>News</p>
                         </Link>
+                        </div>
                     </div>
 
                     <div id="mobile-navbar-contact" className="mobile-item">
-                        <Link className="nav-link" to="/contact">
+                        <div className="mob-test"><Link className="nav-link" to="/contact">
                             <i className="fa-regular fa-comments-question"></i>
-                            Contact
+                            <p>Contact</p>
                         </Link>
+                        </div>
                     </div>
 
-                    <div id="mobile-toggle-switch" onClick={toggleMobileTheme} className={`mobile-item ${toggleMobileSwitch ? 'inactive' : 'active'}`}>
-                        <div className="nav-link">
-                            {toggleMobileSwitch && <i id="mobile-sun" className="fa-regular fa-sun"></i>}
-                            {!toggleMobileSwitch && <i id="mobile-moon" className="fa-regular fa-moon"></i>}
-                            Light/Dark
+                    <div id="mobile-toggle-switch" onClick={toggleMobileTheme}
+                         className={`mobile-item ${toggleMobileSwitch ? 'inactive' : 'active'}`}>
+                        <div className="mob-test">
+                            <div className="nav-link">
+                                {toggleMobileSwitch && <i id="mobile-sun" className="fa-regular fa-sun"></i>}
+                                {!toggleMobileSwitch && <i id="mobile-moon" className="fa-regular fa-moon"></i>}
+                                <p>Light/Dark</p>
+                            </div>
                         </div>
                     </div>
 
                     <div id="mobile-sign-in-button" className="mobile-item">
-                        <Link className="nav-link" to="/">
+                        <div className="mob-test"><Link className="nav-link" to="/">
                             <i id="mobile-sign-in-icon" className="fa-regular fa-user"></i>
-                            Sign in
-                        </Link>
+                            <p>Sign in</p>
+                        </Link></div>
                     </div>
                 </nav>
             )}
