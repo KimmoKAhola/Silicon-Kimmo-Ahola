@@ -211,8 +211,8 @@ const Hero = () => {
 
                 {showModal && (
                     <Modal onClose={closeModal}>
-                        <p id="modal-success" className="text-xl">Your appointment has been booked.</p>
-                        <p>Your chosen specialist:</p>
+                        <p className="modal-success">Your appointment has been booked.</p>
+                        <p className="modal-body">Your chosen specialist:</p>
                         <img src={chosenImage} alt="TODO"/>
                         {chosenData}
                         <button className="primary-button" onClick={closeModal}><span>Close</span></button>

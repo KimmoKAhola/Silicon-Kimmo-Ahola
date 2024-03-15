@@ -72,7 +72,7 @@ const Subscribe = () => {
 
                     </div>
                     <div id="news-subscribe-field">
-                        <SubscriberButton/>
+                        <div id="news-letter-subscribe-input"><SubscriberButton value="Subscribe *" /></div>
                         <p>*Yes, I agree to the <a href="#">terms</a> and <a href="#">privacy policy</a></p>
                     </div>
                 </div>

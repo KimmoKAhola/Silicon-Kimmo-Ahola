@@ -1,4 +1,4 @@
-#sub-container{
+#sub-container {
   display: grid;
   margin-left: auto;
   margin-right: auto;
@@ -7,86 +7,109 @@
   padding-bottom: 30px;
 }
 
-#sub-header{
+#sub-header {
   display: flex;
   gap: 27px;
 }
 
-#sub-header-icon{
+#sub-header-icon {
   margin-top: 5px;
-  @include md{
+  @include md {
     display: none;
   }
 }
 
-#sub-form-header-icon{
+#sub-form-header-icon {
   display: none;
-  @include md{
+  @include md {
     display: block;
   }
 }
 
-.news-sub-form{
+.news-sub-form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
 
-  h5{
+  h5 {
     //max-width: 196px;
   }
 }
 
-.news-subscription{
+.news-subscription {
   display: flex;
   align-items: center;
   gap: 8px;
   @include text-s;
 }
 
-#news-subscribe-field{
+#news-subscribe-field {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  p{
+
+  p {
     @include text-s;
     color: $gray-600;
-    a{
+
+    a {
       text-decoration: underline;
     }
   }
 }
 
-#news-subscribe-bg{
+
+#news-letter-subscribe-input {
+  .sub-right{
+
+  }
+  .footer-button{
+    border-radius: 4px;
+    margin-left: 50px
+  }
+  .subscriber-form-input{
+    //max-width: 70%;
+    input{
+      @include border-l;
+      //height: 52px;  //TODO
+      width: 700px;
+    }
+  }
+}
+
+
+#news-subscribe-bg {
   background-color: $gray-100;
 }
 
-@include xl{
-  .news-sub-form{
-    h5{
+@include xl {
+  .news-sub-form {
+    h5 {
       padding-bottom: 10px;
     }
   }
 }
 
-@include lg{
-    #sub-container{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-    }
-  #news-sub-form-header{
+@include lg {
+  #sub-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  #news-sub-form-header {
     display: flex;
     gap: 15px;
   }
 
-  .news-sub-form{
+  .news-sub-form {
     display: flex;
     flex-direction: column;
     //grid-template-columns: 1fr;
     //place-items: center;
-    h5{
+    h5 {
       padding-bottom: 10px;
     }
+
     gap: 0px;
   }
 }

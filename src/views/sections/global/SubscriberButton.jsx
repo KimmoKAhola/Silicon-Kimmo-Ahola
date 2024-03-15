@@ -4,7 +4,7 @@ import Modal from '../global/Modal.jsx'
 
 const emailRegex = new RegExp(`^[a-öA-Ö0-9_.-]{2,}@[a-zA-Z]{2,}\\.[a-zA-Z]{2,}$`);
 
-const SubscriberButton = () => {
+const SubscriberButton = (props) => {
     const [email, setEmail] = useState('');
     const [chosenEmail, setChosenEmail] = useState("");
     const [showModal, setShowModal] = useState(false);
@@ -55,9 +55,9 @@ const SubscriberButton = () => {
 
     return (
         <div>
-            <div id="sub-right">
+            <div className="sub-right">
                 <form className="subscriber-form" onSubmit={handleSubmit}>
-                    <div id="subscriber-form-input"><input
+                    <div className="subscriber-form-input"><input
                         type="text"
                         placeholder="Your Email"
                         value={email}
@@ -65,15 +65,15 @@ const SubscriberButton = () => {
                         onChange={handleChange}/>
                         <img src={Post} className="icon" alt=""/>
                     </div>
-                    <button className="footer-button" type="submit"><span>Subscribe</span></button>
+                    <button className="footer-button" type="submit"><span>{props.value}</span></button>
                     {errorMessage && <span style={{color: 'red'}}>{errorMessage}</span>}
                 </form>
             </div>
             {showModal && (
                 <Modal onClose={closeModal}>
-                    <p id="modal-success" className="text-xl">You have been successfully subscribed to our newsletter!</p>
-                    <p>Our newsletter will be sent to {chosenEmail}</p>
-                    <button className="primary-button" onClick={closeModal}>Close</button>
+                    <p className="modal-success">You have been successfully subscribed to our newsletter!</p>
+                    <p className="modal-body" >Our newsletter will be sent to {chosenEmail}</p>
+                    <button className="primary-button" onClick={closeModal}><span>Close</span></button>
                 </Modal>
             )}
         </div>

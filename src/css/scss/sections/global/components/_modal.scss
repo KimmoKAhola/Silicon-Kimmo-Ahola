@@ -24,14 +24,14 @@
   flex-direction: column;
 }
 
-#modal-logo{
+#modal-logo {
   background: linear-gradient(to bottom, $gray-400, $gray-100);
   border-radius: 10px 10px 0 0;
   padding: 10px 30px;
   border-bottom: 1px solid $gray-300;
 }
 
-#modal-background{
+#modal-background {
   position: absolute;
   top: 60%;
   left: 50%;
@@ -51,6 +51,12 @@
   padding: 20px;
 }
 
-#modal-success{
+.modal-success {
+  @include text-xl;
   color: $success;
+}
+
+.modal-body{
+  @include text-s;
+  color: $gray-700;
 }

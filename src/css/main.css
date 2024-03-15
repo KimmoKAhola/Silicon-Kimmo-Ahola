@@ -484,16 +484,12 @@ input:focus {
   padding: 5px;
 }
 
-#sub-right {
+.sub-right {
   display: flex;
 }
-#sub-right div {
+.sub-right div {
   display: flex;
 }
-#sub-right div input {
-  width: 100%;
-}
-
 .subscriber-form {
   position: relative;
   display: flex;
@@ -778,7 +774,6 @@ input:focus {
 }
 .brand-footer-logos ul li i:hover {
   color: white;
-  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -851,8 +846,22 @@ input:focus {
   padding: 20px;
 }
 
-#modal-success {
+.modal-success {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
   color: #22C55E;
+}
+
+.modal-body {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  color: #565973;
 }
 
 .breadcrumb {
@@ -1605,6 +1614,15 @@ input:focus {
 }
 #news-subscribe-field p a {
   text-decoration: underline;
+}
+
+#news-letter-subscribe-input .footer-button {
+  border-radius: 4px;
+  margin-left: 50px;
+}
+#news-letter-subscribe-input .subscriber-form-input input {
+  border-radius: 8px;
+  width: 700px;
 }
 
 #news-subscribe-bg {

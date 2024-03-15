@@ -32,12 +32,12 @@ input {
   padding: 5px;
 }
 
-#sub-right {
+.sub-right {
   display: flex;
   div {
     display: flex;
     input {
-      width: 100%;
+      //width: 100%;
     }
   }
 }
@@ -76,4 +76,12 @@ input {
       width: 80%;
     }
   }
+}
+
+@mixin form-l{
+  height: 52px;
+}
+
+@mixin border-l{
+  border-radius: 8px;
 }
