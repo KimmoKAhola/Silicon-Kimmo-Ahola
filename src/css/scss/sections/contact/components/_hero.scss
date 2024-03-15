@@ -1,3 +1,7 @@
+#contact-bg {
+  background-color: $gray-100;
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -7,11 +11,26 @@
   }
 
   .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
     padding-right: 50px;
+
+    .contact-section{
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 24px;
+      .contact-form-icon{
+        display: flex;
+        place-self: start;
+        @include icon-rounded;
+      }
+    }
+
     @include lg{
       display: grid;
       grid-template-rows: 1fr;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 50px;
       h1{
         grid-row: 1;
@@ -57,17 +76,15 @@
     width: fit-content;
   }
 
-  .section {
+
+  .contact-section-body {
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 20px;
+    grid-template-rows: auto 1fr;
+    gap: 12px;
     max-width: 450px;
 
-    img {
-      padding: 16px;
-    }
-
     a {
+      padding-top: 12px;
       display: flex;
       align-items: center;
       gap: 8px;
@@ -79,9 +96,6 @@
   }
 }
 
-#contact-bg {
-  background-color: $gray-100;
-}
 
 
 .contact-specialist-field {
@@ -89,7 +103,6 @@
   background-color: $white;
   border-radius: 8px;
   border: 1px $gray-400 solid;
-  //padding: 10px 5px;
   @include text-m;
   margin-bottom: 5px;
   height: 52px;

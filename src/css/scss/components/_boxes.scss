@@ -3,3 +3,16 @@ input[type="checkbox"]{
     cursor: pointer;
   }
 }
+
+@mixin border-l{
+  border-radius: 8px;
+}
+
+@mixin border-m{
+  border-radius: 6px;
+}
+
+@mixin border-circle{
+  background-color: inherit;
+  border-radius: 50%;
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import MapSymbol from '../../../images/contact/bx-map.svg'
 import Phone from '../../../images/contact/bx-phone-call.svg'
 import Clock from '../../../images/contact/bx-time-five.svg'
-import Socials from "../global/Socials.jsx";
+import SocialLinks from "../global/SocialLinks.jsx";
 
 const Map = () => {
     return (
@@ -58,7 +58,7 @@ const Map = () => {
                         </span>
 
                     </div>
-                    {/*<Socials/>*/}
+                    {/*<SocialLinks/>*/}
                 </div>
             </div>
         </div>

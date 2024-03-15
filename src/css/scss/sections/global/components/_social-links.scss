@@ -1,42 +1,20 @@
 .brand-footer-logos {
   padding: 20px;
-  ul {
+  span {
     display: flex;
     gap: 25px;
-
-    li {
-      height: 44px;
-      width: 44px;
-      i {
-        transition: ease-in 0.3s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        @include border-l;
-        background-color: $gray-200;
-
-        &:hover {
-          color: white;
-          cursor: pointer;
-        }
-      }
+    i {
+      color: $gray-800;
+      height: 20px;
+      width: 20px;
+      transition: ease-in 0.3s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      @include border-m;
+      background-color: $gray-200;
     }
   }
 }
 
-#facebook:hover {
-  background-color: #316FF6;
-}
-
-#twitter:hover {
-  background-color: #1CA1F2;
-}
-
-#instagram:hover {
-  background: linear-gradient(135deg, #833AB4, #E1306C, #FCAF45);
-}
-
-#youtube:hover {
-  background-color: #FF0000;
-}

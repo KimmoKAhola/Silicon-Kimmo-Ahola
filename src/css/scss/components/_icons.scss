@@ -1,10 +1,23 @@
-.icon-rounded{
-  background-color: $white;
-  border-radius: 50%;
-}
+//.icon-rounded{
+//  background-color: $white;
+//  @include border-circle;
+//  //border-radius: 50%;
+//}
 
 .contact-icon {
   background-color: $white;
   padding: 16px;
   border-radius: 50%;
+}
+
+@mixin icon-rounded{
+  background-color: $white;
+  padding: 16px;
+  border-radius: 50%;
+}
+
+#section-email{
+  height: 28px;
+  width: 28px;
+  @include icon-rounded;
 }

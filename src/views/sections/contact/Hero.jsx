@@ -123,25 +123,23 @@ const Hero = () => {
         <div className="container">
             <div className="hero">
                 <div className="contact-info">
-                    <h1>Contact Us</h1>
+                    <h1 id="contact-info-header">Contact Us</h1>
 
-                    <div id="email-us">
-                        <h2>Email us</h2>
-                        <div className="section">
-                            <img className="contact-icon" src={Envelope} alt="TODO"/>
+                    <div className="contact-section">
+                        <div className="contact-form-icon"><img src={Envelope} alt="TODO"/></div>
+                        <div className="contact-section-body">
+                            <h4>Email us</h4>
                             <div>
-                                <p>Please feel free to drop us a line. We will respond as soon as possible</p>
+                                <p className="text-m">Please feel free to drop us a line. We will respond as soon as possible</p>
                                 <a href="#">Leave a message <img src={RightArrow} alt="TODO"/></a>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="careers">
-                        <h2>Careers</h2>
-                        <div className="section">
-                            <img className="icon-rounded" src={AddGroup} alt="TODO"/>
+                        <div className="contact-form-icon"><img src={AddGroup} alt="TODO"/></div>
+                        <div className="contact-section-body">
+                            <h4>Careers</h4>
                             <div>
-                                <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
+                                <p className="text-m">Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
                                 <a href="#">Send an application <img src={RightArrow} alt="TODO"/></a>
                             </div>
                         </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../../../images/logo/silicon-logo-light_theme.svg'
 import StoreButtons from "../home/Store-Buttons.jsx";
-import Socials from "./Socials.jsx";
+import SocialLinks from "./SocialLinks.jsx";
 import {Link} from "react-router-dom";
 
 const links = [
@@ -25,7 +25,7 @@ const FooterLight = () => {
                     ))}
                 </nav>
                 <StoreButtons/>
-                <Socials/>
+                <SocialLinks/>
                 <p className="text-s">
                     2024. All rights reserved. Pulvinar urna condimentum amet tempor, ornare integer. Lorem odio justo
                     malesuada suspendisse viverra aliquet quisque turpis non. Feugiat in odio non nunc ornare
