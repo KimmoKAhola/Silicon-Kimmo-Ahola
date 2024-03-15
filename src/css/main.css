@@ -682,6 +682,7 @@ input:focus {
 }
 @media (max-width: 767px) {
   #mobile-menu {
+    margin-top: 20px;
     display: grid;
     background-color: #EFF2FC;
     border-radius: 10px;
