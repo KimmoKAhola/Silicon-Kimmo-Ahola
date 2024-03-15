@@ -1,22 +1,19 @@
 import React from 'react'
 import Mobile from '../../../images/mobile-appfeatures.svg'
-import Feature1 from '../../../images/icons/feature_1.svg'
-import Feature2 from '../../../images/icons/feature_2.svg'
-import Feature3 from '../../../images/icons/feature_3.svg'
-import Feature4 from '../../../images/icons/feature_4.svg'
-import Feature5 from '../../../images/icons/feature_5.svg'
-import Feature6 from '../../../images/icons/feature_6.svg'
+import FeatureIcon_1 from '../../../images/icons/feature_1.svg'
+import FeatureIcon_2 from '../../../images/icons/feature_2.svg'
+import FeatureIcon_3 from '../../../images/icons/feature_3.svg'
+import FeatureIcon_4 from '../../../images/icons/feature_4.svg'
+import FeatureIcon_5 from '../../../images/icons/feature_5.svg'
+import FeatureIcon_6 from '../../../images/icons/feature_6.svg'
 
 const AppFeatures = () => {
     return (
         <div className="container">
-
             <div id="app-features">
-                <img id="app-features-mobile" src={Mobile} alt="TODO"/>
-
+                <img id="app-features-mobile-image" src={Mobile} alt="icon"/>
                 <div id="feature-grid">
-
-                    <div id="right-top">
+                    <div id="feature-grid-header">
                         <h2>App Features</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas.
                             Nam
@@ -24,52 +21,45 @@ const AppFeatures = () => {
                             facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec
                             lacus.</p>
                     </div>
-
                     <div id="right-bottom">
-                        <div className="feature-grid-test">
-                            <img className="feature-icon" src={Feature1} alt="TODO"/>
+                        <div className="feature-grid-item">
+                            <img className="feature-icon" src={FeatureIcon_1} alt="icon"/>
                             <div>
                                 <h5>Easy Payments</h5>
                                 <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
                             </div>
                         </div>
-
-                        <div className="feature-grid-test">
-                            <img className="feature-icon" src={Feature2} alt="TODO"/>
+                        <div className="feature-grid-item">
+                            <img className="feature-icon" src={FeatureIcon_2} alt="icon"/>
                             <div>
                                 <h5>Data Security</h5>
                                 <p>Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non. </p>
                             </div>
                         </div>
-
-
-                        <div className="feature-grid-test">
-                            <img className="feature-icon" src={Feature3} alt="TODO"/>
+                        <div className="feature-grid-item">
+                            <img className="feature-icon" src={FeatureIcon_3} alt="icon"/>
                             <div>
                                 <h5>Cost Statistics</h5>
                                 <p>Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh.</p>
                             </div>
                         </div>
-
-                        <div className="feature-grid-test">
-                            <img className="feature-icon" src={Feature4} alt="TODO"/>
+                        <div className="feature-grid-item">
+                            <img className="feature-icon" src={FeatureIcon_4} alt="icon"/>
                             <div>
                                 <h5>Support 24/7</h5>
                                 <p>A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
                             </div>
                         </div>
-
-                        <div className="feature-grid-test">
-                            <img className="feature-icon" src={Feature5} alt="TODO"/>
+                        <div className="feature-grid-item">
+                            <img className="feature-icon" src={FeatureIcon_5} alt="icon"/>
                             <div>
                                 <h5>Regular Cashback</h5>
                                 <p>Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet
                                     eleifend.</p>
                             </div>
                         </div>
-
-                        <div className="feature-grid-test">
-                            <img className="feature-icon" src={Feature6} alt="TODO"/>
+                        <div className="feature-grid-item">
+                            <img className="feature-icon" src={FeatureIcon_6} alt="icon"/>
                             <div>
                                 <h5>Top standards</h5>
                                 <p>Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis
@@ -78,7 +68,6 @@ const AppFeatures = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

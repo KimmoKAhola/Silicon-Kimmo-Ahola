@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react'
-import How1 from '../../../images/mobile-howdoesitwork_1.svg'
-import How2 from '../../../images/mobile-howdoesitwork_2.svg'
-import How3 from '../../../images/mobile-howdoesitwork_3.svg'
+import CarouselImage_1 from '../../../images/mobile-howdoesitwork_1.svg'
+import CarouselImage_2 from '../../../images/mobile-howdoesitwork_2.svg'
+import CarouselImage_3 from '../../../images/mobile-howdoesitwork_3.svg'
 import ArrowButton from "../global/ArrowButton.jsx";
 
-const images = [How1, How2, How3];
-const headers = [
+const carouselImages = [CarouselImage_1, CarouselImage_2, CarouselImage_3];
+const carouselContent = [
     {
         title: 'Step 1. Advanced budget management',
         content: 'Maecenas ut lacus rutrum, blandit justo eu, suscipit nisi. Pellentesque habitant morbi. ',
@@ -21,7 +21,7 @@ const headers = [
 ]
 
 
-const Carousel = ({images, headers}) => {
+const Carousel = ({images, content}) => {
     const [index, setIndex] = useState(0);
 
     // I know we are not supposed to touch the DOM when using react, but this was the only way I knew how to do this! :(
@@ -49,17 +49,16 @@ const Carousel = ({images, headers}) => {
 
     return (
         <div>
-            <div id="pictures">
+            <div id="carousel-pictures">
                 <ArrowButton onClick={handlePrevious} direction="left"/>
-                <img className="outer" src={images[index]} alt="TODO"/>
-                <img src={images[(index + 1) % images.length]} alt="TODO"/>
-                {/*<img src={PhoneFrame} alt="TODO" style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', zIndex: 1 }}/>*/}
-                <img className="outer" src={images[(index + 2) % images.length]} alt="TODO"/>
+                <img className="outer-carousel-image" src={images[index]} alt="mobile"/>
+                <img src={images[(index + 1) % images.length]} alt="mobile"/>
+                <img className="outer-carousel-image" src={images[(index + 2) % images.length]} alt="mobile"/>
                 <ArrowButton onClick={handleNext} direction="right"/>
             </div>
-            <div id="slider-bottom">
-                <h4>{headers[index].title}</h4>
-                <p>{headers[index].content}</p>
+            <div id="carousel-content">
+                <h4>{content[index].title}</h4>
+                <p>{content[index].content}</p>
             </div>
         </div>
     );
@@ -71,7 +70,7 @@ const Slider = () => {
             <div className="container">
                 <div id="slider-container">
                     <h2>How Does It Work?</h2>
-                    <Carousel images={images} headers={headers}/>
+                    <Carousel images={carouselImages} content={carouselContent}/>
                 </div>
             </div>
         </div>
