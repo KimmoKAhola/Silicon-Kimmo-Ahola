@@ -49,51 +49,46 @@ const Navbar = () => {
 
                     <div className="mobile-item">
                         <Link className="nav-link" to="/#overview">
-                            Overview
                             <i className="fa-regular fa-house"></i>
+                            Overview
                         </Link>
                     </div>
 
                     <div className="mobile-item">
                         <Link className="nav-link" to="/#features">
-                            Features
                             <i className="fa-thin fa-crystal-ball"></i>
+                            Features
                         </Link>
                     </div>
 
                     <div className="mobile-item">
                         <Link className="nav-link" to="/news">
-                            News
                             <i className="fa-solid fa-rss"></i>
+                            News
                         </Link>
                     </div>
 
                     <div className="mobile-item">
                         <Link className="nav-link" to="/contact">
-                            Contact
                             <i className="fa-regular fa-comments-question"></i>
+                            Contact
                         </Link>
                     </div>
 
                     <div className="mobile-item">
                         <Link className="nav-link" to="/contact">
-                            Light/Dark
                             <i className="fa-regular fa-sun"></i>
+                            Light/Dark
                             {/*<i className="fa-regular fa-moon"></i>*/}
                         </Link>
                     </div>
 
                     <div className="mobile-item">
                         <Link className="nav-link" to="/">
-                            Sign in
                             <i className="fa-regular fa-user"></i>
+                            Sign in
                         </Link>
                     </div>
-
-                    {/*<button className="primary-button" id="mobile-sign-in-button"><img src={User} alt="TODO"/> <span>Sign in / up</span>*/}
-                    {/*</button>*/}
-
-
                 </nav>
 
             )}

@@ -133,7 +133,11 @@
         color: $white;
         display: grid;
         place-items: center;
-        transform: translateY(90%);
+        gap: 5px;
+        transform: translateY(50%);
+        i{
+          font-size: 2rem;
+        }
       }
     }
   }

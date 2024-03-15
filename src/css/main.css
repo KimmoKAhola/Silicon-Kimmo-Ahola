@@ -702,7 +702,11 @@ input:focus {
     color: #fcfcfc;
     display: grid;
     place-items: center;
-    transform: translateY(90%);
+    gap: 5px;
+    transform: translateY(50%);
+  }
+  #mobile-menu .mobile-item .nav-link i {
+    font-size: 2rem;
   }
 }
 
