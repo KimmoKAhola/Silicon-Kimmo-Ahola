@@ -1399,28 +1399,28 @@ input:focus {
   }
 }
 
-#testimonial-buttons {
+#testimonial-arrow-buttons {
   display: flex;
   gap: 20px;
 }
 @media (max-width: 1199px) {
-  #testimonial-buttons {
+  #testimonial-arrow-buttons {
     justify-content: center;
     gap: 100px;
   }
 }
 @media (max-width: 991px) {
-  #testimonial-buttons {
+  #testimonial-arrow-buttons {
     padding-bottom: 50px;
   }
 }
 
-#card {
+#testimonial-cards {
   display: flex;
   gap: 20px;
 }
 @media (max-width: 767px) {
-  #card {
+  #testimonial-cards {
     flex-direction: column;
     gap: 50px;
   }
@@ -1438,6 +1438,7 @@ input:focus {
   gap: 10px;
 }
 .testimonial-card p {
+  color: #565973;
   max-width: 350px;
 }
 
@@ -1455,6 +1456,9 @@ input:focus {
 .testimonial-author img {
   height: 48px;
   width: 48px;
+}
+.testimonial-author p {
+  color: #9397AD;
 }
 
 .news-card {

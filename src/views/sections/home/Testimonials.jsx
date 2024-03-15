@@ -1,10 +1,29 @@
 import React from 'react'
-import Quotes from '../../../images/icons/quotes.png'
-import Author1 from '../../../images/blobs/fannie-summers.png'
-import Author2 from '../../../images/blobs/albert-flores.png'
-import Stars1 from '../../../images/icons/rating-1.png'
-import Stars2 from '../../../images/icons/rating-2.png'
+import QuoteIcon from '../../../images/icons/quotes.png'
+import QuoteAuthor_1 from '../../../images/blobs/fannie-summers.png'
+import QuoteAuthor_2 from '../../../images/blobs/albert-flores.png'
+import StarRating_1 from '../../../images/icons/rating-1.png'
+import StarRating_2 from '../../../images/icons/rating-2.png'
 import ArrowButton from "../global/ArrowButton.jsx";
+
+const cardInfo = [
+    {
+        body: "Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis.\n" +
+            "                Laoreet\n" +
+            "                posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. " +
+            "Montes justo\n" +
+            "                turpis\n" +
+            "                sit amet.",
+        author: "Fannie Summers",
+        title: "Designer"
+    },
+    {
+        body: "Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet porttitor. " +
+            "Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor tincidunt egestas eget nunc.",
+        author: "Albert Flores",
+        title: "Developer"
+    }
+]
 
 const Testimonials = () => {
     return (
@@ -12,8 +31,8 @@ const Testimonials = () => {
             <div className="container">
                 <div id="testimonials">
                     <div id="testimonials-left-column">
-                        <h2>Clients are Loving Our App</h2>
-                        <div id="testimonial-buttons">
+                        <h1>Clients are Loving Our App</h1>
+                        <div id="testimonial-arrow-buttons">
                             <ArrowButton direction="left"/>
                             <ArrowButton direction="right"/>
                         </div>
@@ -27,37 +46,31 @@ const Testimonials = () => {
 
 const TestimonialCard = () => {
     return (
-        <div id="card">
+        <div id="testimonial-cards">
             <div className="testimonial-card">
-                <img className="card-quote-icon" src={Quotes} alt="TODO"/>
-                <img src={Stars1} alt="TODO"/>
-                <p className="text-lg">Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis.
-                Laoreet
-                posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo
-                turpis
-                sit amet.</p>
+                <img className="card-quote-icon" src={QuoteIcon} alt="quote icon"/>
+                <img src={StarRating_1} alt="4 star rating"/>
+                <p className="text-lg">{cardInfo[0].body}</p>
                 <div className="testimonial-author">
-                    <img src={Author1} alt="TODO"/>
-                    <div>
-                        <h6>Fannie Summers</h6>
-                        <p className="text-s">Designer</p>
-                    </div>
+                    <img src={QuoteAuthor_1} alt="author"/>
+                    <span>
+                        <h6>{cardInfo[0].author}</h6>
+                        <p className="text-s">{cardInfo[0].title}</p>
+                    </span>
                 </div>
             </div>
 
 
             <div className="testimonial-card">
-                <img className="card-quote-icon" src={Quotes} alt="TODO"/>
-                <img src={Stars2} alt="TODO"/>
-                <p className="text-lg">Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet
-                    porttitor. Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor
-                    tincidunt egestas eget nunc.</p>
+                <img className="card-quote-icon" src={QuoteIcon} alt="quote icon"/>
+                <img src={StarRating_2} alt="5 star rating"/>
+                <p className="text-lg">{cardInfo[1].body}</p>
                 <div className="testimonial-author">
-                    <img src={Author2} alt="TODO"/>
-                    <div>
-                        <h6>Albert Flores</h6>
-                        <p className="text-s">Developer</p>
-                    </div>
+                    <img src={QuoteAuthor_2} alt="author"/>
+                    <span>
+                        <h6>{cardInfo[1].author}</h6>
+                        <p className="text-s">{cardInfo[1].title}</p>
+                    </span>
                 </div>
             </div>
 
