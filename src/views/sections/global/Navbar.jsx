@@ -48,24 +48,50 @@ const Navbar = () => {
                 <nav id="mobile-menu" className={isOpen ? 'active' : ''}>
 
                     <div className="mobile-item">
-                        <NavLink className="nav-link" to="/#overview">Overview</NavLink>
+                        <Link className="nav-link" to="/#overview">
+                            Overview
+                            <i className="fa-regular fa-house"></i>
+                        </Link>
                     </div>
 
                     <div className="mobile-item">
-                        <NavLink className="nav-link" to="/#features">Features</NavLink>
+                        <Link className="nav-link" to="/#features">
+                            Features
+                            <i className="fa-thin fa-crystal-ball"></i>
+                        </Link>
                     </div>
 
                     <div className="mobile-item">
-                        <Link className="nav-link" to="/news">News</Link>
+                        <Link className="nav-link" to="/news">
+                            News
+                            <i className="fa-solid fa-rss"></i>
+                        </Link>
                     </div>
 
                     <div className="mobile-item">
-                        <Link className="nav-link" to="/contact">Contact</Link>
+                        <Link className="nav-link" to="/contact">
+                            Contact
+                            <i className="fa-regular fa-comments-question"></i>
+                        </Link>
                     </div>
 
+                    <div className="mobile-item">
+                        <Link className="nav-link" to="/contact">
+                            Light/Dark
+                            <i className="fa-regular fa-sun"></i>
+                            {/*<i className="fa-regular fa-moon"></i>*/}
+                        </Link>
+                    </div>
 
-                    <button className="primary-button" id="mobile-sign-in-button"><img src={User} alt="TODO"/> <span>Sign in / up</span>
-                    </button>
+                    <div className="mobile-item">
+                        <Link className="nav-link" to="/">
+                            Sign in
+                            <i className="fa-regular fa-user"></i>
+                        </Link>
+                    </div>
+
+                    {/*<button className="primary-button" id="mobile-sign-in-button"><img src={User} alt="TODO"/> <span>Sign in / up</span>*/}
+                    {/*</button>*/}
 
 
                 </nav>

@@ -667,21 +667,26 @@ input:focus {
 }
 @media (max-width: 767px) {
   #mobile-menu {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    padding-top: 20px;
     gap: 20px;
-    border-radius: 8px;
   }
   #mobile-menu #mobile-site-settings {
     display: flex;
   }
-  #mobile-menu .mobile-item * {
-    background-color: #F3F6FF;
-    padding: 20px;
-    border-radius: 10px;
+  #mobile-menu .mobile-item {
+    background-color: #EFF2FC;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    position: relative;
+  }
+  #mobile-menu .mobile-item .nav-link {
     display: grid;
     place-items: center;
+    transform: translateY(90%);
   }
 }
 
