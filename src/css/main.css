@@ -1750,6 +1750,11 @@ input:focus {
     width: 65%;
   }
 }
+@media (max-width: 500px) {
+  .hero .contact-form {
+    width: 90%;
+  }
+}
 .hero .contact-form-span {
   color: #EF4444;
   background-color: #fde8e8;
