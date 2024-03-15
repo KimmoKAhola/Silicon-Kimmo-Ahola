@@ -7,7 +7,7 @@ import ArrowButton from "./ArrowButton.jsx";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
-    const [toggleMobileSwitch, setToggleMobileSwitch] = useState(false)
+    const [toggleMobileSwitch, setToggleMobileSwitch] = useState(true)
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     }
