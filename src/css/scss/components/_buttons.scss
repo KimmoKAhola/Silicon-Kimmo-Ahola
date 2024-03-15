@@ -49,6 +49,7 @@ button:hover {
   display: flex;
   gap: 15px;
   height: 52px;
+  transition: 0.2s ease-in;
 
   @include md {
     display: grid;
@@ -59,6 +60,7 @@ button:hover {
 
   img:hover {
     cursor: pointer;
+    filter: brightness(90%);
   }
 }
 

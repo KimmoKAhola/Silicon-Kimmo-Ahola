@@ -10,7 +10,7 @@ const FooterLight = () => {
         <div className="container">
             <div id="light-footer">
                 <Link id="logo" to="/">
-                    <img src={Logo} alt="TODO"/>
+                    <img src={Logo} alt="silicon logotype"/>
                 </Link>
                 <ul id="footer-links">
                     <Link className="nav-link" to="/">Overview</Link>

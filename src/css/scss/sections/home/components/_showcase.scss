@@ -1,21 +1,20 @@
-#showcase {
+#showcase-container {
   padding-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  #left-side {
-    h1{
-      @include d4;
-    }
-    p{
-      @include text-lead;
-    }
+  #showcase-body {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 
     #showcase-buttons {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: space-between;
       padding-top: 20px;
+
       span{
         display: flex;
         align-items: center;
@@ -26,13 +25,13 @@
     }
   }
 
-  #right-side {
+  #showcase-image {
     display: grid;
     place-items: end;
   }
 
   @include xl {
-    #right-side {
+    #showcase-image {
       img {
         height: auto;
         width: 100%;

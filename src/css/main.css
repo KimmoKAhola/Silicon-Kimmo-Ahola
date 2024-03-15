@@ -299,6 +299,7 @@ button:hover {
   display: flex;
   gap: 15px;
   height: 52px;
+  transition: 0.2s ease-in;
 }
 @media (max-width: 767px) {
   .store-buttons {
@@ -310,6 +311,7 @@ button:hover {
 }
 .store-buttons img:hover {
   cursor: pointer;
+  filter: brightness(90%);
 }
 
 @media (max-width: 767px) {
@@ -1011,6 +1013,7 @@ input:focus {
 }
 #brand-logos img {
   max-width: 196px;
+  height: 30px;
   width: 100%;
   padding: 20px;
   border: 1px solid rgb(226, 229, 241);
@@ -1031,7 +1034,14 @@ input:focus {
 }
 @media (max-width: 767px) {
   #brand-logos {
-    display: none;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+}
+@media (max-width: 500px) {
+  #brand-logos {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -1157,72 +1167,62 @@ input:focus {
     grid-row: 1;
   }
 }
-#showcase {
+#showcase-container {
   padding-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-#showcase #left-side {
+#showcase-container #showcase-body {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-#showcase #left-side h1 {
-  line-height: 130%;
-  font-weight: 800;
-  color: #0B0F19;
-  font-family: "Manrope", sans-serif;
-  font-size: 56px !important;
-}
-#showcase #left-side p {
-  line-height: 160%;
-  font-weight: 400;
-  color: #565973;
-  font-family: "Manrope", sans-serif;
-  font-size: 24px;
-}
-#showcase #left-side #showcase-buttons {
+#showcase-container #showcase-body #showcase-buttons {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 20px;
 }
-#showcase #left-side #showcase-buttons span {
+#showcase-container #showcase-body #showcase-buttons span {
   display: flex;
   align-items: center;
   gap: 16px;
   padding-top: 75px;
   padding-bottom: 75px;
 }
-#showcase #right-side {
+#showcase-container #showcase-image {
   display: grid;
   place-items: end;
 }
 @media (max-width: 1199px) {
-  #showcase #right-side img {
+  #showcase-container #showcase-image img {
     height: auto;
     width: 100%;
   }
 }
 @media (max-width: 991px) {
-  #showcase {
+  #showcase-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     width: auto;
     place-items: center;
   }
-  #showcase #right-side {
+  #showcase-container #right-side {
     grid-row: 2;
   }
-  #showcase #right-side img {
+  #showcase-container #right-side img {
     display: grid;
     place-items: center;
   }
-  #showcase #left-side {
+  #showcase-container #left-side {
     display: grid;
     place-items: center;
     text-align: center;
     max-width: 100%;
   }
-  #showcase #left-side h1 {
+  #showcase-container #left-side h1 {
     padding-bottom: 10px;
   }
 }

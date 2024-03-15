@@ -37,13 +37,13 @@ input {
   div {
     display: flex;
     input {
-      //width: 100%;
+      //width: 100%;  //TODO
     }
   }
 }
 
 .subscriber-form {
-  position: relative; //?? messes with z index
+  position: relative;
   display: flex;
 
   input{
@@ -54,8 +54,7 @@ input {
 
 .subscriber-form .icon {
   position: absolute;
-  //position: relative;
-  left: 5px; // Adjust as needed for desired spacing
+  left: 5px;
   top: 50%;
   transform: translateY(-50%);
 }
