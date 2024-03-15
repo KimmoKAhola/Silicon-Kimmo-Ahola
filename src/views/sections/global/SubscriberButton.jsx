@@ -57,13 +57,14 @@ const SubscriberButton = () => {
         <div>
             <div id="sub-right">
                 <form className="subscriber-form" onSubmit={handleSubmit}>
-                    <input
+                    <div id="subscriber-form-input"><input
                         type="text"
                         placeholder="Your Email"
                         value={email}
                         autoComplete="off"
                         onChange={handleChange}/>
-                    <img src={Post} className="icon" alt=""/>
+                        <img src={Post} className="icon" alt=""/>
+                    </div>
                     <button className="footer-button" type="submit"><span>Subscribe</span></button>
                     {errorMessage && <span style={{color: 'red'}}>{errorMessage}</span>}
                 </form>

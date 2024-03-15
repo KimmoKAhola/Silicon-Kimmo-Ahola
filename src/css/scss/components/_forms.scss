@@ -36,8 +36,6 @@ input {
   display: flex;
   div {
     display: flex;
-    //flex: 1;  //TODO this messes with my modal
-
     input {
       width: 100%;
     }
@@ -45,16 +43,18 @@ input {
 }
 
 .subscriber-form {
-  position: relative;
+  position: relative; //?? messes with z index
   display: flex;
 
   input{
     border-radius: 4px 0 0 4px;
+    position: relative;
   }
 }
 
 .subscriber-form .icon {
   position: absolute;
+  //position: relative;
   left: 5px; // Adjust as needed for desired spacing
   top: 50%;
   transform: translateY(-50%);
