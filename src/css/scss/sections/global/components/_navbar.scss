@@ -4,28 +4,6 @@
   align-items: center;
   width: 100%;
 
-  #navbar-arrow {
-    display: none; // hide when hamburger menu is not available
-  }
-
-  &.active {
-    @include md {
-      #menu {
-        display: none;
-      }
-    }
-
-    #mobile-menu {
-      display: block;
-    }
-  }
-
-  @include lg {
-    #mobile-menu.active {
-      display: none;
-    }
-  }
-
   .site-navigation {
     display: flex;
     align-items: center;
@@ -56,21 +34,15 @@
     .hamburger-menu {
       display: none;
     }
-
-    @include mobile {
-      #theme-mode {
-        display: none;
-      }
-    }
   }
 
   @include lg {
     .site-settings {
-
       #sign-in-button {
         display: none;
       }
-      #theme-mode{
+
+      #theme-mode {
         display: none;
       }
 
@@ -83,14 +55,9 @@
         display: block;
         background-color: transparent;
       }
-
-      .mobile-menu {
-        padding: 3px;
-        border-radius: 50%;
-        height: 40px;
-      }
     }
   }
+  // This hides the navbar links in md mode
   @include md {
     #menu {
       display: none;
@@ -100,17 +67,58 @@
 
 #mobile-menu {
   @include lg {
-    #mobile-toggle-switch{
-      display: block;
+    #mobile-navbar-overview {
+      display: none;
+    }
+    #mobile-navbar-features {
+      display: none;
+    }
+    #mobile-navbar-news {
+      display: none;
+    }
+    #mobile-navbar-contact {
+      display: none;
+    }
+
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: end;
+    padding-right: 20px;
+    gap: 50px;
+
+    .mobile-item {
+      background-color: $gray-200;
+      border-radius: 10px;
+      padding: 40px;
+      width: 20%;
+      text-align: end;
+      &:hover {
+        cursor: pointer;
+      }
+
+
+      //hide font awesome icons
+      i {
+        display: none;
+      }
     }
   }
-  @include xl {
-    display: none;
-  }
-  @include xxl {
-    display: none;
-  }
+
+  // This works do not fkn touch!!
   @include md {
+    #mobile-navbar-overview {
+      display: block;
+    }
+    #mobile-navbar-features {
+      display: block;
+    }
+    #mobile-navbar-news {
+      display: block;
+    }
+    #mobile-navbar-contact {
+      display: block;
+    }
     #mobile-site-settings {
       display: flex; // TODO??
     }
@@ -118,13 +126,11 @@
     display: grid;
     background-color: $gray-200;
     border-radius: 10px;
-    padding: 40px 20px;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
     gap: 20px;
 
     .mobile-item {
-
       &:hover {
         cursor: pointer;
       }
@@ -140,7 +146,7 @@
         transition: 1s ease-in;
       }
 
-      &.inactive{
+      &.inactive {
         transition: 1s ease-in;
       }
 
@@ -152,11 +158,11 @@
         transform: translateY(20%);
 
         i {
+          display: block;
           font-size: 2.2rem;
           font-weight: 300;
           padding-bottom: 10px;
         }
-
 
         #mobile-sun {
           color: yellow;
@@ -171,4 +177,3 @@
     }
   }
 }
-

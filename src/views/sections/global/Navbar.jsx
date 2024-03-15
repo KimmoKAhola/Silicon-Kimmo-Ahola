@@ -50,28 +50,28 @@ const Navbar = () => {
             {isOpen && (
                 <nav id="mobile-menu" className={isOpen ? 'active' : ''}>
 
-                    <div className="mobile-item">
+                    <div id="mobile-navbar-overview" className="mobile-item">
                         <Link className="nav-link" to="/#overview">
                             <i className="fa-regular fa-house"></i>
                             Overview
                         </Link>
                     </div>
 
-                    <div className="mobile-item">
+                    <div id="mobile-navbar-features" className="mobile-item">
                         <Link className="nav-link" to="/#features">
                             <i className="fa-thin fa-crystal-ball"></i>
                             Features
                         </Link>
                     </div>
 
-                    <div className="mobile-item">
+                    <div id="mobile-navbar-news" className="mobile-item">
                         <Link className="nav-link" to="/news">
                             <i className="fa-solid fa-rss"></i>
                             News
                         </Link>
                     </div>
 
-                    <div className="mobile-item">
+                    <div id="mobile-navbar-contact" className="mobile-item">
                         <Link className="nav-link" to="/contact">
                             <i className="fa-regular fa-comments-question"></i>
                             Contact

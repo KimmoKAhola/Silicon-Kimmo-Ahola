@@ -583,22 +583,6 @@ input:focus {
   align-items: center;
   width: 100%;
 }
-.navbar #navbar-arrow {
-  display: none;
-}
-@media (max-width: 767px) {
-  .navbar.active #menu {
-    display: none;
-  }
-}
-.navbar.active #mobile-menu {
-  display: block;
-}
-@media (max-width: 991px) {
-  .navbar #mobile-menu.active {
-    display: none;
-  }
-}
 .navbar .site-navigation {
   display: flex;
   align-items: center;
@@ -626,11 +610,6 @@ input:focus {
 .navbar .site-settings .hamburger-menu {
   display: none;
 }
-@media (max-width: 420px) {
-  .navbar .site-settings #theme-mode {
-    display: none;
-  }
-}
 @media (max-width: 991px) {
   .navbar .site-settings {
     display: flex;
@@ -648,11 +627,6 @@ input:focus {
     display: block;
     background-color: transparent;
   }
-  .navbar .site-settings .mobile-menu {
-    padding: 3px;
-    border-radius: 50%;
-    height: 40px;
-  }
 }
 @media (max-width: 767px) {
   .navbar #menu {
@@ -661,17 +635,37 @@ input:focus {
 }
 
 @media (max-width: 991px) {
-  #mobile-menu #mobile-toggle-switch {
-    display: block;
-  }
-}
-@media (max-width: 1199px) {
   #mobile-menu {
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: end;
+    padding-right: 20px;
+    gap: 50px;
+  }
+  #mobile-menu #mobile-navbar-overview {
     display: none;
   }
-}
-@media (max-width: 1399px) {
-  #mobile-menu {
+  #mobile-menu #mobile-navbar-features {
+    display: none;
+  }
+  #mobile-menu #mobile-navbar-news {
+    display: none;
+  }
+  #mobile-menu #mobile-navbar-contact {
+    display: none;
+  }
+  #mobile-menu .mobile-item {
+    background-color: #EFF2FC;
+    border-radius: 10px;
+    padding: 40px;
+    width: 20%;
+    text-align: end;
+  }
+  #mobile-menu .mobile-item:hover {
+    cursor: pointer;
+  }
+  #mobile-menu .mobile-item i {
     display: none;
   }
 }
@@ -681,10 +675,21 @@ input:focus {
     display: grid;
     background-color: #EFF2FC;
     border-radius: 10px;
-    padding: 40px 20px;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
     gap: 20px;
+  }
+  #mobile-menu #mobile-navbar-overview {
+    display: block;
+  }
+  #mobile-menu #mobile-navbar-features {
+    display: block;
+  }
+  #mobile-menu #mobile-navbar-news {
+    display: block;
+  }
+  #mobile-menu #mobile-navbar-contact {
+    display: block;
   }
   #mobile-menu #mobile-site-settings {
     display: flex;
@@ -715,6 +720,7 @@ input:focus {
     transform: translateY(20%);
   }
   #mobile-menu .mobile-item .nav-link i {
+    display: block;
     font-size: 2.2rem;
     font-weight: 300;
     padding-bottom: 10px;
