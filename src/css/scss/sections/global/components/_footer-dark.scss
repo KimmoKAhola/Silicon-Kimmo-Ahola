@@ -2,18 +2,18 @@
   background-color: $gray-900;
 }
 
+@include lg {
+  #footer-dark {
+    grid-row: 3;
+  }
+}
+
 #footer-dark {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 20px;
   padding-bottom: 30px;
 
-  @include lg {
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: start;
-    max-width: 100%;
-  }
   #footer-links {
     display: grid;
     gap: 20px;
@@ -22,13 +22,15 @@
     @include lg {
       grid-template-columns: 1fr;
       place-items: start;
-      #test-header{
+
+
+      #test-header {
         display: grid;
       }
-      .site-links{
+      .site-links {
         display: none;
       }
-      #footer-contact{
+      #footer-contact {
         display: none;
       }
     }
@@ -43,6 +45,7 @@
 
   #footer-subscribe {
     display: flex;
+
     #dark-copyright {
       @include text-xs;
       color: rgba(255, 255, 255, 0.5);
@@ -66,6 +69,7 @@
     a:hover {
       text-decoration: underline;
     }
+
     color: $gray-100;
   }
 
@@ -82,20 +86,51 @@
   }
 }
 
-#test-header{
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.footer-dark-test{
-  padding-bottom: 50px;
-  ul{
-    display: grid;
+
+#dark-footer-mobile-accordion {
+  .dark-footer-accordion-item{
+    display: flex;
+    flex-direction: column;
   }
-  &.active{
+  display: none;
+  @include lg{
     display: grid;
+    gap: 50px;
+    grid-row: 1;
   }
-  &.inactive{
+  .accordion-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .social-links-accordion {
     display: none;
+    ul {
+      display: grid;
+    }
+
+    &.active {
+      display: grid;
+    }
+
+    &.inactive {
+      display: none;
+    }
+  }
+
+  .internal-links-accordion {
+    padding-bottom: 20px;
+    ul {
+      display: grid;
+    }
+
+    &.active {
+      display: grid;
+    }
+
+    &.inactive {
+      display: none;
+    }
   }
 }

@@ -5,10 +5,14 @@ import SubscriberButton from "./SubscriberButton.jsx";
 import ArrowButton from "./ArrowButton.jsx";
 
 const FooterDark = () => {
-    const [toggleAccordion, setToggleAccordion] = useState(false);
+    const [socialLinksAccordion, setSocialLinksAccordion] = useState(false);
+    const [internalLinksAccordion, setInternalLinksAccordion] = useState(false);
+    const toggleSocialLinks = () => {
+        setSocialLinksAccordion(!socialLinksAccordion);
+    }
 
-    const toggleState = () =>{
-        setToggleAccordion(!toggleAccordion);
+    const toggleInternalLinks = () => {
+        setInternalLinksAccordion(!internalLinksAccordion);
     }
 
     return (
@@ -59,14 +63,43 @@ const FooterDark = () => {
                     </div>
 
                 </div>
-                <div id="test-header"><p>Our social links</p><ArrowButton isActive={toggleAccordion ? "true" : false} onClick={toggleState} direction="down"/></div>
-                <div className={`footer-dark-test ${toggleAccordion ? 'active' : 'inactive'}`}>
-                    <ul>
-                        <Link to="#" className="Link">Facebook</Link>
-                        <Link to="#" className="Link">LinkedIn</Link>
-                        <Link to="#" className="Link">Twitter</Link>
-                        <Link to="#" className="Link">Instagram</Link>
-                    </ul>
+
+                <div id="dark-footer-mobile-accordion">
+                    <div className="dark-footer-accordion-item">
+                        <div className="accordion-header"><p>Our social links</p>
+                            <ArrowButton
+                                isActive={socialLinksAccordion ? "true" : false}
+                                onClick={toggleSocialLinks} direction={socialLinksAccordion ? "up" : "down"}/>
+                        </div>
+                        <div className={`social-links-accordion ${socialLinksAccordion ? 'active' : 'inactive'}`}>
+                            <ul>
+                                <Link to="#" className="Link">Facebook</Link>
+                                <Link to="#" className="Link">LinkedIn</Link>
+                                <Link to="#" className="Link">Twitter</Link>
+                                <Link to="#" className="Link">Instagram</Link>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="dark-footer-accordion-item">
+                        <div className="accordion-header"><p>Our social links 2</p><ArrowButton
+                            isActive={internalLinksAccordion ? "true" : false}
+                            onClick={toggleInternalLinks} direction={internalLinksAccordion ? "up" : "down"}/>
+                        </div>
+                        <div className={`internal-links-accordion ${internalLinksAccordion ? 'active' : 'inactive'}`}>
+                            <ul>
+                                <Link to="/" className="Link">Home</Link>
+                                <Link to="#" className="Link">Services</Link>
+                                <Link to="#" className="Link">Our Clients</Link>
+                                <Link to="#" className="Link">Testimonials</Link>
+                                <Link to="/news" className="Link">News</Link>
+                            </ul>
+                            <ul>
+                                <Link to="#" className="Link">Terms & Conditions</Link>
+                                <Link to="#" className="Link">Privacy Policy</Link>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
