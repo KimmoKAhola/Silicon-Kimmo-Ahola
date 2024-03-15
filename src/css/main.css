@@ -651,6 +651,7 @@ input:focus {
 }
 @media (max-width: 991px) {
   #mobile-menu {
+    background-color: #EFF2FC;
     margin-top: 20px;
     display: grid;
     grid-template-rows: 1fr;
@@ -728,9 +729,7 @@ input:focus {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
-    gap: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 30px 0;
   }
   #mobile-menu #mobile-navbar-overview {
     display: inline-block;

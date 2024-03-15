@@ -89,7 +89,8 @@
       display: none;
     }
 
-    //background-color: $gray-200;  //TODO
+    background-color: $gray-200;  //TODO
+    //background: linear-gradient(to bottom, $gray-100, $gray-400);
     margin-top: 20px;
     display: grid;
     grid-template-rows: 1fr;
@@ -172,16 +173,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
-    gap: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    //gap: 15px;
+    padding: 30px 0;
 
     .mobile-item {
       &:hover {
         cursor: pointer;
       }
 
-      display: flex;
+      display: flex; //TODO ?? works or not
       @include shadow-primary;
       @include mobile {
         height: 10px;
