@@ -682,7 +682,7 @@ input:focus {
     display: grid;
     background-color: #EFF2FC;
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px 20px;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     gap: 20px;
@@ -698,8 +698,15 @@ input:focus {
     border-radius: 20px;
     position: relative;
   }
+  #mobile-menu .mobile-item:hover {
+    cursor: pointer;
+  }
   #mobile-menu .mobile-item.active {
     background-color: #170442;
+    transition: 1s ease-in;
+  }
+  #mobile-menu .mobile-item.inactive {
+    transition: 1s ease-in;
   }
   #mobile-menu .mobile-item .nav-link {
     color: #fcfcfc;
@@ -718,7 +725,7 @@ input:focus {
   }
   #mobile-menu .mobile-item .nav-link #mobile-moon {
     color: #c8faff;
-    text-shadow: 0px 0px 20px #b5d4da;
+    text-shadow: 1px 1px 7px #b5d4da;
   }
 }
 

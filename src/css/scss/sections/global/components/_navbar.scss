@@ -115,13 +115,20 @@
     display: grid;
     background-color: $gray-200;
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px 20px;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     //padding-top: 20px;
     gap: 20px;
-
+    #mobile-toggle-switch{
+      //transition: 2s ease-in;
+    }
     .mobile-item {
+
+      &:hover {
+        cursor: pointer;
+      }
+
       //background-color: $primary;
       @include shadow-primary;
       height: 100px;
@@ -129,28 +136,37 @@
       //border-radius: 50%;
       border-radius: 20px;
       position: relative;
-      &.active{
+
+      &.active {
         background-color: #170442;
+        transition: 1s ease-in;
       }
+
+      &.inactive{
+        transition: 1s ease-in;
+      }
+
       .nav-link {
         color: $white;
         display: grid;
         place-items: center;
         gap: 5px;
         transform: translateY(50%);
-        i{
+
+        i {
           font-size: 2rem;
           font-weight: 300;
         }
 
 
-        #mobile-sun{
+        #mobile-sun {
           color: yellow;
           text-shadow: 0px 0px 20px yellow;
         }
-        #mobile-moon{
+
+        #mobile-moon {
           color: #c8faff;
-          text-shadow: 0px 0px 20px #b5d4da;
+          text-shadow: 1px 1px 7px #b5d4da;
         }
       }
     }
