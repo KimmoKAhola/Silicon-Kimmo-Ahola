@@ -48,6 +48,8 @@ input {
   input{
     border-radius: 4px 0 0 4px;
     position: relative;
+    margin-bottom: 4px;
+    min-height: 36px;
   }
 }
 
@@ -85,6 +87,11 @@ input {
   background-color: #fde8e8;
   border-radius: 4px;
   padding: 4px 8px;
-  margin-top: 2px;
   width: fit-content;
+}
+
+#footer-dark-subscription{
+  .error-message-span{
+    background-color: #2d1825;
+  }
 }
