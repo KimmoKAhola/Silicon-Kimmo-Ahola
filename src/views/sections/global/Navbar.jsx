@@ -79,11 +79,11 @@ const Navbar = () => {
                     </div>
 
                     <div id="mobile-toggle-switch" onClick={toggleMobileTheme} className={`mobile-item ${toggleMobileSwitch ? 'inactive' : 'active'}`}>
-                        <Link className="nav-link" to="/contact">
+                        <div className="nav-link">
                             {toggleMobileSwitch && <i id="mobile-sun" className="fa-regular fa-sun"></i>}
                             {!toggleMobileSwitch && <i id="mobile-moon" className="fa-regular fa-moon"></i>}
                             Light/Dark
-                        </Link>
+                        </div>
                     </div>
 
                     <div className="mobile-item">
