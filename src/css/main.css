@@ -1136,27 +1136,29 @@ input:focus {
     padding: 0px;
   }
 }
-#features-container #features-first {
+#features-container #features-top-row {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 20px;
 }
-#features-container #features-first ul li {
+#features-container #features-top-row #features-top-row-list span {
   padding: 3px 0;
   display: flex;
   gap: 10px;
 }
-#features-container #features-fourth #test-lol {
+#features-container #features-bottom-row #features-bottom-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 50px 0;
 }
-#features-container #features-fourth #test-lol img {
+
+.features-icon {
   height: 28px;
   width: 28px;
-  padding-left: 5px;
-  padding-bottom: 10px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #F3F6FF;
 }
 
 @media (max-width: 1199px) {
