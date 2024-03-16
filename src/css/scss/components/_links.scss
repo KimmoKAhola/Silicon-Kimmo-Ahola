@@ -26,6 +26,12 @@ a, .nav-link, Link{
     }
 }
 
+.email-link{
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
 #facebook:hover {
   background-color: #316FF6;
 }

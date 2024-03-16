@@ -76,37 +76,30 @@
     display: none;
   }
   @include lg {
-    #mobile-navbar-overview {
-      display: none;
-    }
-    #mobile-navbar-features {
-      display: none;
-    }
-    #mobile-navbar-news {
-      display: none;
-    }
-    #mobile-navbar-contact {
-      display: none;
-    }
 
-    background-color: $gray-200;  //TODO
-    //background: linear-gradient(to bottom, $gray-100, $gray-400);
     margin-top: 20px;
-    display: grid;
-    grid-template-rows: 1fr;
-    place-items: end;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 10px;
+    gap: 10px;
+
+    .mobile-item.hidden-lg {
+      display: none;
+    }
 
     .mobile-item {
       background-color: $primary;
       color: white;
       border-radius: 6px;
-      display: grid;
-      place-items: end;
+      display: flex;
+      padding: 12px;
+
+      .mobile-item {
+        width: 200px;
+        height: 200px;
+      }
+
       .nav-link {
         color: white;
         display: flex;
@@ -123,14 +116,6 @@
         transition: 1s ease-in;
       }
 
-      @include lg {
-        padding: 5px 20px;
-      }
-      @include md {
-        padding: 30px; //TODO 40 px works better?
-      }
-      width: 20%;
-      text-align: end;
       //text-align: center;
       &:hover {
         cursor: pointer;
@@ -154,21 +139,8 @@
 
   // This works do not fkn touch!!
   @include md {
-    #mobile-navbar-overview {
-      display: inline-block;
-    }
-    #mobile-navbar-features {
-      display: inline-block;
-    }
-    #mobile-navbar-news {
-      display: inline-block;
-    }
-    #mobile-navbar-contact {
-      display: inline-block;
-    }
-    #mobile-site-settings {
-      display: flex; // TODO??
-    }
+    background-color: $gray-200;  //TODO
+    border-radius: 12px;
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -176,20 +148,33 @@
     //gap: 15px;
     padding: 30px 0;
 
+    .mobile-item.hidden-lg {
+      display: flex;
+    }
+
     .mobile-item {
       &:hover {
         cursor: pointer;
       }
 
+      width: 70px;
+      height: 70px;
       display: flex; //TODO ?? works or not
+      justify-content: center;
+      align-items: center;
       @include shadow-primary;
-      @include mobile {
-        height: 10px;
-        width: 10px;
-      }
       border-radius: 20px;
 
       .nav-link {
+
+        .mobile-item{
+          .hidden-lg{
+
+          p{
+            display: none;
+          }
+          }
+        }
 
         i {
           display: grid;
@@ -203,13 +188,5 @@
       }
     }
   }
-}
-
-//testing for centering?
-.mob-test{
-  display: grid;
-  place-items: center;
-  //justify-content: center;
-  //align-items: center;
 }
 

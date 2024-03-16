@@ -149,6 +149,10 @@
 
     &.active {
       display: grid;
+      p{
+        padding-top: 20px;
+        color: $white;
+      }
     }
 
     &.inactive {

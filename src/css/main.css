@@ -260,6 +260,10 @@ a:hover, .nav-link:hover, Link:hover {
   cursor: pointer;
 }
 
+.email-link:hover {
+  text-decoration: underline;
+}
+
 #facebook:hover {
   background-color: #316FF6;
 }
@@ -659,37 +663,26 @@ input:focus {
 }
 @media (max-width: 991px) {
   #mobile-menu {
-    background-color: #EFF2FC;
     margin-top: 20px;
-    display: grid;
-    grid-template-rows: 1fr;
-    place-items: end;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 10px;
+    gap: 10px;
   }
-  #mobile-menu #mobile-navbar-overview {
-    display: none;
-  }
-  #mobile-menu #mobile-navbar-features {
-    display: none;
-  }
-  #mobile-menu #mobile-navbar-news {
-    display: none;
-  }
-  #mobile-menu #mobile-navbar-contact {
+  #mobile-menu .mobile-item.hidden-lg {
     display: none;
   }
   #mobile-menu .mobile-item {
     background-color: #6366F1;
     color: white;
     border-radius: 6px;
-    display: grid;
-    place-items: end;
-    width: 20%;
-    text-align: end;
+    display: flex;
+    padding: 12px;
+  }
+  #mobile-menu .mobile-item .mobile-item {
+    width: 200px;
+    height: 200px;
   }
   #mobile-menu .mobile-item .nav-link {
     color: white;
@@ -704,18 +697,6 @@ input:focus {
   #mobile-menu .mobile-item.inactive {
     transition: 1s ease-in;
   }
-}
-@media (max-width: 991px) and (max-width: 991px) {
-  #mobile-menu .mobile-item {
-    padding: 5px 20px;
-  }
-}
-@media (max-width: 991px) and (max-width: 767px) {
-  #mobile-menu .mobile-item {
-    padding: 30px;
-  }
-}
-@media (max-width: 991px) {
   #mobile-menu .mobile-item:hover {
     cursor: pointer;
   }
@@ -733,29 +714,23 @@ input:focus {
 }
 @media (max-width: 767px) {
   #mobile-menu {
+    background-color: #EFF2FC;
+    border-radius: 12px;
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
     padding: 30px 0;
   }
-  #mobile-menu #mobile-navbar-overview {
-    display: inline-block;
-  }
-  #mobile-menu #mobile-navbar-features {
-    display: inline-block;
-  }
-  #mobile-menu #mobile-navbar-news {
-    display: inline-block;
-  }
-  #mobile-menu #mobile-navbar-contact {
-    display: inline-block;
-  }
-  #mobile-menu #mobile-site-settings {
+  #mobile-menu .mobile-item.hidden-lg {
     display: flex;
   }
   #mobile-menu .mobile-item {
+    width: 70px;
+    height: 70px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background: #6366F1;
     box-shadow: 0px 8px 18px -8px rgba(99, 102, 241, 0.9);
     border-radius: 20px;
@@ -763,14 +738,9 @@ input:focus {
   #mobile-menu .mobile-item:hover {
     cursor: pointer;
   }
-}
-@media (max-width: 767px) and (max-width: 420px) {
-  #mobile-menu .mobile-item {
-    height: 10px;
-    width: 10px;
+  #mobile-menu .mobile-item .nav-link .mobile-item .hidden-lg p {
+    display: none;
   }
-}
-@media (max-width: 767px) {
   #mobile-menu .mobile-item .nav-link i {
     display: grid;
     place-items: center;
@@ -780,11 +750,6 @@ input:focus {
   #mobile-menu .mobile-item .nav-link p {
     display: none;
   }
-}
-
-.mob-test {
-  display: grid;
-  place-items: center;
 }
 
 .light-footer {
@@ -959,6 +924,10 @@ input:focus {
 }
 #dark-footer-mobile-accordion .internal-links-accordion.active {
   display: grid;
+}
+#dark-footer-mobile-accordion .internal-links-accordion.active p {
+  padding-top: 20px;
+  color: #fcfcfc;
 }
 #dark-footer-mobile-accordion .internal-links-accordion.inactive {
   display: none;

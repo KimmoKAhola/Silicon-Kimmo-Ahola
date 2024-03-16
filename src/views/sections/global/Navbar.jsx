@@ -50,58 +50,39 @@ const Navbar = () => {
             {isOpen && (
                 <nav id="mobile-menu" className={isOpen ? 'active' : ''}>
 
-                    <div id="mobile-navbar-overview" className="mobile-item">
-                        <div className="mob-test">
-                            <Link className="nav-link" to="/">
-                            <i className="fa-regular fa-house"></i>
-                            <p>Overview</p>
-                        </Link>
-                        </div>
-                    </div>
+                    <Link id="mobile-navbar-overview" className="nav-link mobile-item hidden-lg" to="/">
+                        <i className="fa-regular fa-house"></i>
+                        <p>Overview</p>
+                    </Link>
 
-                    <div id="mobile-navbar-features" className="mobile-item">
-                        <div className="mob-test">
-                            <Link className="nav-link" to="/">
-                            <i className="fa-thin fa-crystal-ball"></i>
-                            <p>Features</p>
-                        </Link>
-                        </div>
-                    </div>
+                    <Link id="mobile-navbar-features" className="nav-link mobile-item hidden-lg" to="/">
+                        <i className="fa-thin fa-crystal-ball"></i>
+                        <p>Features</p>
+                    </Link>
 
-                    <div id="mobile-navbar-news" className="mobile-item">
-                        <div className="mob-test">
-                            <Link className="nav-link" to="/news">
-                            <i className="fa-solid fa-rss"></i>
-                            <p>News</p>
-                        </Link>
-                        </div>
-                    </div>
+                    <Link id="mobile-navbar-news" className="nav-link mobile-item hidden-lg" to="/news">
+                        <i className="fa-solid fa-rss"></i>
+                        <p>News</p>
+                    </Link>
 
-                    <div id="mobile-navbar-contact" className="mobile-item">
-                        <div className="mob-test"><Link className="nav-link" to="/contact">
-                            <i className="fa-regular fa-comments-question"></i>
-                            <p>Contact</p>
-                        </Link>
-                        </div>
-                    </div>
+                    <Link id="mobile-navbar-contact" className="nav-link mobile-item hidden-lg" to="/contact">
+                        <i className="fa-regular fa-comments-question"></i>
+                        <p>Contact</p>
+                    </Link>
 
                     <div id="mobile-toggle-switch" onClick={toggleMobileTheme}
                          className={`mobile-item ${toggleMobileSwitch ? 'inactive' : 'active'}`}>
-                        <div className="mob-test">
-                            <div className="nav-link">
-                                {toggleMobileSwitch && <i id="mobile-sun" className="fa-regular fa-sun"></i>}
-                                {!toggleMobileSwitch && <i id="mobile-moon" className="fa-regular fa-moon"></i>}
-                                <p>Light/Dark</p>
-                            </div>
+                        <div className="nav-link">
+                            {toggleMobileSwitch && <i id="mobile-sun" className="fa-regular fa-sun"></i>}
+                            {!toggleMobileSwitch && <i id="mobile-moon" className="fa-regular fa-moon"></i>}
+                            <p>Light/Dark</p>
                         </div>
                     </div>
 
-                    <div id="mobile-sign-in-button" className="mobile-item">
-                        <div className="mob-test"><Link className="nav-link" to="*">
-                            <i id="mobile-sign-in-icon" className="fa-regular fa-user"></i>
-                            <p>Sign in</p>
-                        </Link></div>
-                    </div>
+                    <Link id="mobile-sign-in-button" className="nav-link mobile-item" to="*">
+                        <i id="mobile-sign-in-icon" className="fa-regular fa-user"></i>
+                        <p>Sign in</p>
+                    </Link>
                 </nav>
             )}
         </div>

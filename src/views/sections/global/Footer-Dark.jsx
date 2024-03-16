@@ -59,7 +59,7 @@ const FooterDark = () => {
 
                         <div id="footer-contact">
                             <p>Contact Us</p>
-                            <a href="#">example@gmail.com</a>
+                            <a className="email-link" href="#">example@gmail.com</a>
                         </div>
                     </div>
 
@@ -85,7 +85,7 @@ const FooterDark = () => {
                     <div className="dark-footer-accordion-item">
                         <div className="accordion-header">
                             <button onClick={toggleInternalLinks}>
-                                <p>Our social links 2 <p>{internalLinksAccordion ? '-' : '+'} </p></p></button>
+                                <p>Our internal links <p>{internalLinksAccordion ? '-' : '+'} </p></p></button>
                         </div>
                         <div className={`internal-links-accordion ${internalLinksAccordion ? 'active' : 'inactive'}`}>
                             <ul>
@@ -99,6 +99,10 @@ const FooterDark = () => {
                                 <Link to="#" className="Link">Terms & Conditions</Link>
                                 <Link to="#" className="Link">Privacy Policy</Link>
                             </ul>
+                            <div id="footer-contact">
+                                <p>Contact Us</p>
+                                <a className="email-link" href="#">example@gmail.com</a>
+                            </div>
                         </div>
                     </div>
                 </div>

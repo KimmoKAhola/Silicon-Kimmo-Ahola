@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
+
 }
 
 .breadcrumb-component{
@@ -9,9 +10,6 @@
   align-items: center;
   gap: 12px;
 
-  //#breadcrumb-chevron{
-  //  height: 16px;
-  //}
   .breadcrumb-link{
     color: $primary;
     transition: 0.3s ease-in;
