@@ -70,7 +70,7 @@
   @include shadow-l;
   padding: 30px;
   @include mobile{
-    padding: 10px;
+    padding: 30px 10px;
   }
   border-radius: 8px;
   display: grid;

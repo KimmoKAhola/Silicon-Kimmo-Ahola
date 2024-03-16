@@ -51,12 +51,29 @@
   padding: 20px;
 }
 
+.modal-specialist{
+  display: flex;
+  .modal-specialist-author{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    p{
+      @include text-m;
+    }
+  }
+}
+
 .modal-success {
   @include text-xl;
   color: $success;
 }
 
 .modal-body{
-  @include text-s;
-  color: $gray-700;
+  @include text-m;
+  color: $gray-600;
+  .divider{
+    margin-top: 10px;
+    border: 1px solid $gray-300;
+  }
 }
