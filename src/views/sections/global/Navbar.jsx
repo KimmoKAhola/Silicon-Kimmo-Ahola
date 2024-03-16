@@ -37,8 +37,10 @@ const Navbar = () => {
                             <span className="slider round"></span>
                         </label>
                         <label htmlFor="theme-switch-mode">Dark</label>
-                        <button id="sign-in-button" className="primary-button"><img src={User} alt="user"/> <span>Sign in / up</span>
-                        </button>
+                        <Link to="/signin">
+                            <button id="sign-in-button" className="primary-button"><img src={User} alt="user"/> <span>Sign in / up</span>
+                            </button>
+                        </Link>
                     </div>
                     <button onClick={toggleMenu} className="hamburger-menu">
                         <img className="mobile-menu" src={Hamburger} alt="mobile menu"/>
