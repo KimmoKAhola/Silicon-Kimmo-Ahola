@@ -2,8 +2,6 @@ import React, {useState} from 'react'
 import Logo from '../../../images/logo/silicon-logo-dark_theme.svg'
 import {Link} from "react-router-dom";
 import SubscriberButton from "./SubscriberButton.jsx";
-import ArrowButton from "./ArrowButton.jsx";
-import socialLinks from "./SocialLinks.jsx";
 
 const FooterDark = () => {
     const [socialLinksAccordion, setSocialLinksAccordion] = useState(false);
@@ -17,7 +15,6 @@ const FooterDark = () => {
     }
 
     return (
-
         <div id="footer-dark-bg">
             <div className="container">
                 <div id="footer-dark">
@@ -30,7 +27,6 @@ const FooterDark = () => {
                             dolor ullamcorper sodales ultrices eros. </p>
                         <h6>Subscribe to our newsletter</h6>
                         <SubscriberButton value="Subscribe"/>
-
                         <p id="dark-copyright">2024. All rights reserved. Silicon Template.</p>
                     </div>
                     <div id="footer-links">
@@ -47,7 +43,6 @@ const FooterDark = () => {
                                 <Link to="#" className="Link">Privacy Policy</Link>
                             </ul>
                         </div>
-
                         <div className="site-links">
                             <ul>
                                 <Link to="#" className="Link">Facebook</Link>
@@ -56,15 +51,12 @@ const FooterDark = () => {
                                 <Link to="#" className="Link">Instagram</Link>
                             </ul>
                         </div>
-
                         <div id="footer-contact">
                             <p>Contact Us</p>
                             <a className="email-link" href="#">example@gmail.com</a>
                         </div>
                     </div>
-
                 </div>
-
                 <div id="dark-footer-mobile-accordion">
                     <div className="dark-footer-accordion-item">
                         <div className="accordion-header">
@@ -81,7 +73,6 @@ const FooterDark = () => {
                             </ul>
                         </div>
                     </div>
-
                     <div className="dark-footer-accordion-item">
                         <div className="accordion-header">
                             <button onClick={toggleInternalLinks}>
@@ -107,7 +98,6 @@ const FooterDark = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }

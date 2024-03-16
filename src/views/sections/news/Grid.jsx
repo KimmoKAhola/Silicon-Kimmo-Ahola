@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Card from "./Card.jsx";
 
-
 const apiEndPoint = `https://kyhnet23-assignment.azurewebsites.net/api/news`;
 const Grid = () => {
     const [data, setData] = useState([]);
@@ -16,10 +15,8 @@ const Grid = () => {
                 console.error('Content fetching data', error);
             }
         };
-
         fetchData();
     }, []);
-
 
     return (
         <div className="container">

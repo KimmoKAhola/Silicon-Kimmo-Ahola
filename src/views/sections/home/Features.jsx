@@ -7,10 +7,8 @@ import ArrowRightIcon from '../../../images/icons/arrow-right.svg'
 import BottomCard from '../../../images/features/bottom-card.png';
 import TopCard from '../../../images/features/top-card.png';
 
-
 const Features = () => {
     return (
-
         <div className="container">
             <div id="features-container">
                 <div id="features-top-row">
@@ -20,8 +18,7 @@ const Features = () => {
                         <span><img src={CheckmarkIcon} alt="checkmark"/>No monthly cash commission</span>
                         <span><img src={CheckmarkIcon} alt="checkmark"/>Manage payments and transactions online</span>
                     </div>
-                    <button className="primary-button"><span>Learn more<img src={ArrowRightIcon}
-                                                                            alt="right arrow"/></span>
+                    <button className="primary-button"><span>Learn more<img src={ArrowRightIcon} alt="right arrow"/></span>
                     </button>
                 </div>
                 <img className="feature-card" id="top-card" src={TopCard} alt="money transfer"/>
@@ -38,8 +35,7 @@ const Features = () => {
                             <p>A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
                         </span>
                     </div>
-                    <button className="primary-button"><span>Learn more<img src={ArrowRightIcon}
-                                                                            alt="right arrow"/></span>
+                    <button className="primary-button"><span>Learn more<img src={ArrowRightIcon} alt="right arrow"/></span>
                     </button>
                 </div>
             </div>

@@ -3,7 +3,6 @@ import {Link, NavLink} from "react-router-dom";
 import Logo from '../../../images/logo/silicon-logo-light_theme.svg'
 import User from '../../../images/icons/user.svg'
 import Hamburger from '../../../images/icons/bx-menu.svg'
-import ArrowButton from "./ArrowButton.jsx";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -30,7 +29,6 @@ const Navbar = () => {
                         <Link className="nav-link" to="/contact">Contact</Link>
                     </nav>
                 </div>
-
                 <div className="site-settings">
                     <div id="theme-mode" className="theme-switch">
                         <label htmlFor="theme-switch-mode">Light</label>

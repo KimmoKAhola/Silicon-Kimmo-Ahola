@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import Bookmark from '../../../images/icons/bookmark.svg'
 
-
 const Card = ({data}) => {
     const [bookmark, setBookmark] = useState(false);
 

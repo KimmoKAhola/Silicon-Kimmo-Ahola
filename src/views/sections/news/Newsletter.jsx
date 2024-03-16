@@ -5,7 +5,6 @@ const Newsletter = () => {
     return (
         <div id="news-subscribe-bg">
             <div className="container">
-
                 <div id="sub-container">
                     <div id="sub-header">
                         <h1>Don't Want to Miss Anything?</h1>
@@ -19,7 +18,6 @@ const Newsletter = () => {
                                 fill="#6366F1"/>
                         </svg>
                     </div>
-
                     <div className="news-sub-form">
                         <div id="news-sub-form-header">
                             <h5>Sign up for newsletters</h5>
@@ -33,50 +31,42 @@ const Newsletter = () => {
                                     fill="#6366F1"/>
                             </svg>
                         </div>
-
                         <div className="checkbox-container">
                             <div className="news-subscription">
                                 <input type="checkbox"/>
                                 <p>Daily NewsLetter</p>
                             </div>
-
                             <div className="news-subscription">
                                 <input type="checkbox"/>
                                 <p>Event Updates</p>
                             </div>
                         </div>
-
                         <div className="checkbox-container">
                             <div className="news-subscription">
                                 <input type="checkbox"/>
                                 <p>Advertising Updates</p>
                             </div>
-
                             <div className="news-subscription">
                                 <input type="checkbox"/>
                                 <p>Startups Weekly</p>
                             </div>
                         </div>
-
                         <div className="checkbox-container">
                             <div className="news-subscription">
                                 <input type="checkbox"/>
                                 <p>Week in Review</p>
                             </div>
-
                             <div className="news-subscription">
                                 <input type="checkbox"/>
                                 <p>Podcasts</p>
                             </div>
                         </div>
-
                     </div>
                     <div id="news-subscribe-field">
                         <div id="news-letter-subscribe-input"><SubscriberButton value="Subscribe *" /></div>
                         <p>*Yes, I agree to the <a href="#">terms</a> and <a href="#">privacy policy</a></p>
                     </div>
                 </div>
-
             </div>
         </div>
     )

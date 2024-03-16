@@ -59,8 +59,6 @@ const TestimonialCard = () => {
                     </span>
                 </div>
             </div>
-
-
             <div className="testimonial-card">
                 <img className="card-quote-icon" src={QuoteIcon} alt="quote icon"/>
                 <img src={StarRating_2} alt="5 star rating"/>
@@ -73,7 +71,6 @@ const TestimonialCard = () => {
                     </span>
                 </div>
             </div>
-
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import ArrowButton from "../global/ArrowButton.jsx";
+
 const accordionData = [
     {
         title: 'Is any of my personal information stored in the App?',
@@ -58,10 +59,8 @@ const Accordion = () => {
             {accordionData.map((item, index) => (
                 <div className="accordion" key={index}>
                     <div className="accordion-item">
-                        <div
-                            className={`accordion-title ${accordionStates[index] ? 'active' : ''}`}
-                            onClick={() => toggleAccordion(index)}
-                        >
+                        <div className={`accordion-title ${accordionStates[index] ? 'active' : ''}`}
+                            onClick={() => toggleAccordion(index)}>
                             <h6>{item.title}</h6>
                             <div>
                                 {accordionStates[index] ?

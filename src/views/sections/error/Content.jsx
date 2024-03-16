@@ -11,10 +11,9 @@ const Content = () => {
                 <p id="error-text" className="text-xl">The page you are looking for is not available.</p>
                 <button id="error-button" className="primary-button">
                     <span>
-                        <Link to="/"><img src={HomeIcon} alt=""/>Go to homepage</Link>
+                        <Link to="/"><img src={HomeIcon} alt="home icon"/>Go to homepage</Link>
                     </span>
                 </button>
-
             </div>
         </div>
     )
