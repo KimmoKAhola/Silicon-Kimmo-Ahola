@@ -12,7 +12,7 @@ const Error = () => {
             <Navbar/>
             <div id="error-wrapper">
                 <Content/>
-                <div id="test"><ErrorFooter/></div>
+                <ErrorFooter/>
             </div>
         </div>
     )

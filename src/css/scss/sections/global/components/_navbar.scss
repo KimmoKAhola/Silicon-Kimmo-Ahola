@@ -203,3 +203,8 @@
     margin-top: 5px;
   }
 }
+
+#news-navbar{
+  @include shadow-s;
+  padding-bottom: 16px;
+}

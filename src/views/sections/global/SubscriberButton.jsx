@@ -45,7 +45,7 @@ const SubscriberButton = (props) => {
 
     const handleChange = (e) => {
         setEmail(e.target.value)
-        const isValidInput = new RegExp(emailRegex).test(e.target.value); // use this for displaying error messages after each keystroke
+        const isValidInput = new RegExp(emailRegex).test(e.target.value);
         setIsValid(isValidInput);
         if (!isValidInput) {
             setErrorMessage("Please enter a valid email");

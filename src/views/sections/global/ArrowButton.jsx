@@ -23,7 +23,7 @@ const ArrowButton = ({ direction, isActive, onClick }) => {
     return (
         <div className={`arrow-button ${isActive ? 'active' : ''}`}>
             <button style={{ transform: `rotate(${rotationDegrees}deg)`, transition: 'transform 0.2s ease' }} onClick={onClick ? onClick : undefined}>
-                <img src={Arrow} alt="TODO" />
+                <img src={Arrow} alt="arrow" />
             </button>
         </div>
     );

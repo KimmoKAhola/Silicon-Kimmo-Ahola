@@ -7,7 +7,7 @@ const Subscribe = () => {
         <div className="container">
             <div className="subscriber">
                     <span>
-                        <img id="subscriber-bell-icon" src={Notification} alt="TODO"/>
+                        <img id="subscriber-bell-icon" src={Notification} alt="subscriber icon"/>
                         <h5>Subscribe to our newsletter to stay informed about latest updates</h5>
                     </span>
                 <SubscriberButton value="Subscribe"/>

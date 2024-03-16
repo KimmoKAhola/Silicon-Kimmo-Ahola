@@ -114,8 +114,6 @@ const Hero = () => {
             } catch (error) {
                 console.error("error: ", error);
             }
-        } else {
-            console.log("regex failed"); // Add some more error handling here
         }
     }
 
@@ -126,21 +124,21 @@ const Hero = () => {
                     <h1 id="contact-info-header">Contact Us</h1>
 
                     <div className="contact-section">
-                        <div className="contact-form-icon"><img src={Envelope} alt="TODO"/></div>
+                        <div className="contact-form-icon"><img src={Envelope} alt="contact icon"/></div>
                         <div className="contact-section-body">
                             <h4>Email us</h4>
                             <div>
                                 <p className="text-m">Please feel free to drop us a line. We will respond as soon as possible</p>
-                                <a href="#">Leave a message <img src={RightArrow} alt="TODO"/></a>
+                                <a href="#">Leave a message <img src={RightArrow} alt="right arrow"/></a>
                             </div>
                         </div>
 
-                        <div className="contact-form-icon"><img src={AddGroup} alt="TODO"/></div>
+                        <div className="contact-form-icon"><img src={AddGroup} alt="contact us"/></div>
                         <div className="contact-section-body">
                             <h4>Careers</h4>
                             <div>
                                 <p className="text-m">Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
-                                <a href="#">Send an application <img src={RightArrow} alt="TODO"/></a>
+                                <a href="#">Send an application <img src={RightArrow} alt="right arrow"/></a>
                             </div>
                         </div>
                     </div>
@@ -214,7 +212,7 @@ const Hero = () => {
                             <div className="divider"></div>
                             <div className="modal-specialist">
                                 <div className="modal-specialist-author">
-                                    <img src={chosenImage} alt="TODO"/>
+                                    <img src={chosenImage} alt="author profile picture"/>
                                     <p>{chosenData}</p>
                                 </div>
                             </div>

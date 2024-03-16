@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 
-const FormInput = ({ id, label, type, name, value, regexPattern, onChange, required, errorMessage, successMessage }) => {
+const FormInput = ({ id, label, type, name, value, regexPattern, onChange, required, errorMessage }) => {
     const [isValid, setIsValid] = useState(true);
     const handleChange = (e) => {
         const inputValue = e.target.value;
-        const isValidInput = new RegExp(regexPattern).test(inputValue); // use this for displaying error messages after each keystroke
+        const isValidInput = new RegExp(regexPattern).test(inputValue);
         setIsValid(isValidInput);
         onChange(e);
     };

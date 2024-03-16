@@ -8,7 +8,9 @@ import BreadCrumb from "./sections/global/BreadCrumb.jsx";
 const News = () => {
     return (
         <div>
-            <Navbar/>
+            <div id="news-navbar">
+                <Navbar/>
+            </div>
             <BreadCrumb/>
             <Grid/>
             <Newsletter/>

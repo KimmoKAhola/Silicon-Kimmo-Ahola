@@ -12,11 +12,11 @@ const BreadCrumb = () => {
     return (
         <div className="container">
             <div className="breadcrumb">
-                <img id="breadcrumb-home" src={Home} alt="TODO"/>
+                <img id="breadcrumb-home" src={Home} alt="home icon"/>
 
                 <div className="breadcrumb-component">
                     <Link to="/" className="breadcrumb-link text-s">Home</Link>
-                    <img className="breadcrumb-chevron" src={ChevronRight} alt="TODO"/>
+                    <img className="breadcrumb-chevron" src={ChevronRight} alt="right chevron"/>
                     <Link to={location.pathname} className="breadcrumb-link text-s">{formattedLocation}</Link>
                 </div>
             </div>

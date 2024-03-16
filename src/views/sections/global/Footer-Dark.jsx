@@ -22,7 +22,7 @@ const FooterDark = () => {
             <div className="container">
                 <div id="footer-dark">
                     <div id="footer-dark-subscription">
-                        <Link id="footer-dark-logo" className="logo" to="/home"><img src={Logo} alt="TODO"/></Link>
+                        <Link id="footer-dark-logo" className="logo" to="/home"><img src={Logo} alt="silicon logotype"/></Link>
                         <p id="footer-text">Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit.
                             Lacus, eget eu vitae
                             nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget

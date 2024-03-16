@@ -15,15 +15,15 @@ const Faq = () => {
 
                     <div id="cards">
                         <div className="faq-card">
-                            <img src={Phone} alt="TODO"/>
+                            <img src={Phone} alt="phone icon"/>
                             <p>Still have questions?</p>
-                            <a id="call" href="#"><span>Contact us <img src={RightArrow} alt="TODO"/></span></a>
+                            <a id="call" href="#"><span>Contact us <img src={RightArrow} alt="right arrow"/></span></a>
                         </div>
 
                         <div className="faq-card">
-                            <img src={ChatBubble} alt="TODO"/>
+                            <img src={ChatBubble} alt="chat icon"/>
                             <p>Don't like phone calls?</p>
-                            <a id="chat" href="#"><span>Contact us <img src={RightArrowGreen} alt="TODO"/></span></a>
+                            <a id="chat" href="#"><span>Contact us <img src={RightArrowGreen} alt="green right arrow"/></span></a>
                         </div>
                     </div>
                 </div>

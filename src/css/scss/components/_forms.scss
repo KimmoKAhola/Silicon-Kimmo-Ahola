@@ -80,9 +80,6 @@ input {
 @include mobile{
   .subscriber-form{
     height: auto;
-    input{
-      //width: 80%;  //TODO
-    }
   }
 }
 

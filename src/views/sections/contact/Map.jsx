@@ -21,17 +21,17 @@ const Map = () => {
                         <h4>Medical Center 1</h4>
 
                         <span className="med-center-span">
-                                <img src={MapSymbol} alt="TODO"/>
+                                <img src={MapSymbol} alt="map icon"/>
                                 <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
                             </span>
 
                         <span className="med-center-span">
-                                <img src={Phone} alt="TODO"/>
+                                <img src={Phone} alt="phone icon"/>
                                 <p>(406) 555-0120</p>
                             </span>
 
                         <span className="med-center-span">
-                                <img src={Clock} alt="TODO"/>
+                                <img src={Clock} alt="clock icon"/>
                                 <div>
                                     <p>Mon-Fri: 9:00 am - 22:00 am</p>
                                     <p>Sat-Sun: 9:00 am - 20:00 am</p>
@@ -42,15 +42,15 @@ const Map = () => {
                     <div id="med-center-second">
                         <h4>Medical Center 2</h4>
                         <span className="med-center-span">
-                            <img src={MapSymbol} alt="TODO"/>
+                            <img src={MapSymbol} alt="map icon"/>
                             <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
                             </span>
                         <span className="med-center-span">
-                            <img src={Phone} alt="TODO"/>
+                            <img src={Phone} alt="phone icon"/>
                             <p>(406) 555-0123</p>
                             </span>
                         <span className="med-center-span">
-                            <img src={Clock} alt="TODO"/>
+                            <img src={Clock} alt="clock icon"/>
                             <div>
                                 <p>Mon-Fri: 9:00 am - 22:00 am</p>
                                 <p>Sat-Sun: 9:00 am - 20:00 am</p>
@@ -58,7 +58,7 @@ const Map = () => {
                         </span>
 
                     </div>
-                    {/*<SocialLinks/>*/}
+                    <div id="contact-form-social-links"><SocialLinks/></div>
                 </div>
             </div>
         </div>

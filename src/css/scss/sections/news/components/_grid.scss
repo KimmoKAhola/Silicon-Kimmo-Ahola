@@ -12,11 +12,8 @@
   }
   @include md{
     grid-template-columns:auto;
-    //margin: 0 40px;
-    //max-width: 75%;
-    //place-items: center;
   }
   @include sm{
-    grid-template-columns: auto; //TODO Needed??
+    grid-template-columns: auto;
   }
 }

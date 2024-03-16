@@ -5,8 +5,8 @@ import GooglePlay from "../../../images/googleplay.svg";
 const StoreButtons = () => {
     return (
         <div className="store-buttons">
-                <img src={AppStore} alt="TODO"/>
-                <img src={GooglePlay} alt="TODO"/>
+                <img src={AppStore} alt="app store logo"/>
+                <img src={GooglePlay} alt="google play logo"/>
         </div>
     )
 }
