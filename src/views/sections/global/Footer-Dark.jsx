@@ -29,7 +29,7 @@ const FooterDark = () => {
                             elementum
                             dolor ullamcorper sodales ultrices eros. </p>
                         <h6>Newsletter to our newsletter</h6>
-                        <SubscriberButton value="Newsletter"/>
+                        <SubscriberButton value="Subscribe"/>
 
                         <p id="dark-copyright">2024. All rights reserved. Silicon Template.</p>
                     </div>
