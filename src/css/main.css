@@ -2079,7 +2079,7 @@ input:focus {
 #error-wrapper {
   display: grid;
   grid-template-rows: 1fr auto;
-  height: 90vh;
+  height: 90dvh;
 }
 
 .error-container {
