@@ -4,8 +4,6 @@
   display: flex;
   align-items: center;
 
-
-
   label {
     cursor: pointer;
   }
@@ -69,7 +67,6 @@
       &.round:before {
         border-radius: 50%;
       }
-
     }
   }
 }

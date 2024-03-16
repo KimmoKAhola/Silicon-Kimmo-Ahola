@@ -8,7 +8,7 @@ const Map = () => {
     return (
         <div className="container">
 
-            <div id="temp">
+            <div id="map-container">
                 <div id="map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14293.278419970502!2d15.697626704485648!3d59.82493027339397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1710173893695!5m2!1ssv!2sse"

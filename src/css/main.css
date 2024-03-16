@@ -673,6 +673,23 @@ input:focus {
   #mobile-menu .mobile-item.hidden-lg {
     display: none;
   }
+  #mobile-menu #mobile-sign-in-button {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+@media (max-width: 991px) and (max-width: 991px) {
+  #mobile-menu #mobile-sign-in-button i {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 991px) and (max-width: 767px) {
+  #mobile-menu #mobile-sign-in-button i {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 991px) {
   #mobile-menu .mobile-item {
     background-color: #6366F1;
     color: white;
@@ -2048,61 +2065,61 @@ input:focus {
   color: #EF4444;
 }
 
-#temp {
+#map-container {
   padding-top: 200px;
   padding-bottom: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 134px;
 }
-#temp #contact-addresses {
+#map-container #contact-addresses {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-#temp #contact-addresses h4 {
+#map-container #contact-addresses h4 {
   padding-bottom: 12px;
 }
-#temp #contact-addresses .med-center-span {
+#map-container #contact-addresses .med-center-span {
   padding: 12px 0;
 }
 @media (max-width: 991px) {
-  #temp {
+  #map-container {
     grid-template-columns: auto;
     width: 100%;
     margin: 0 auto;
   }
-  #temp #map {
+  #map-container #map {
     display: flex;
     justify-content: center;
   }
-  #temp #map iframe {
+  #map-container #map iframe {
     width: 100%;
     height: auto;
   }
-  #temp #contact-addresses {
+  #map-container #contact-addresses {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
   }
 }
 @media (max-width: 991px) and (max-width: 767px) {
-  #temp #contact-addresses {
+  #map-container #contact-addresses {
     grid-template-columns: 1fr;
     place-items: start;
     margin: 0 auto;
   }
 }
-#temp #map iframe {
+#map-container #map iframe {
   height: 540px;
   max-width: 636px;
   width: 100%;
 }
-#temp .med-center-span {
+#map-container .med-center-span {
   display: flex;
   gap: 5px;
 }
-#temp .med-center-span img {
+#map-container .med-center-span img {
   place-self: start;
 }
 

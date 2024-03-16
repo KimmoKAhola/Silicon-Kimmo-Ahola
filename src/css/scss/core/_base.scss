@@ -9,7 +9,6 @@ html, body {
   grid-template-rows: auto 1fr auto;
 }
 
-
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -29,7 +28,6 @@ html, body {
     max-width: 95%;
   }
 }
-
 
 .text-lead {
   @include text-lead;

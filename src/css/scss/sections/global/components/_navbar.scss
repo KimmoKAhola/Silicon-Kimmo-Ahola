@@ -88,6 +88,20 @@
       display: none;
     }
 
+    #mobile-sign-in-button{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      i{
+        @include lg{
+          font-size: 1rem;
+        }
+        @include md{
+          font-size: 2rem;
+        }
+      }
+    }
+
     .mobile-item {
       background-color: $primary;
       color: white;
@@ -99,6 +113,7 @@
         width: 200px;
         height: 200px;
       }
+
 
       .nav-link {
         color: white;
