@@ -8,10 +8,12 @@ function ErrorFooter() {
 
 const Error = () => {
     return (
-        <div className="wrapper">
+        <div>
             <Navbar/>
-            <Content/>
-            <ErrorFooter/>
+            <div id="error-wrapper">
+                <Content/>
+                <div id="test"><ErrorFooter/></div>
+            </div>
         </div>
     )
 }

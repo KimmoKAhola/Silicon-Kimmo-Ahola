@@ -2076,6 +2076,12 @@ input:focus {
   place-self: start;
 }
 
+#error-wrapper {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 90vh;
+}
+
 .error-container {
   display: flex;
   flex-direction: column;
@@ -2096,9 +2102,16 @@ input:focus {
   align-items: center;
   gap: 16px;
 }
+.error-container #error-test-bottom p {
+  color: #33354D;
+}
 .error-container #error-test-bottom #error-text {
   text-align: center;
   color: #565973;
+}
+.error-container button {
+  background: #6366F1;
+  box-shadow: 0px 8px 18px -8px rgba(99, 102, 241, 0.9);
 }
 .error-container button span a {
   display: flex;
@@ -2109,7 +2122,6 @@ input:focus {
 
 #error-footer {
   padding-left: 50px;
-  padding-bottom: 48px;
 }
 
 /*# sourceMappingURL=main.css.map */
