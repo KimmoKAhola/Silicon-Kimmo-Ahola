@@ -75,7 +75,7 @@ const Navbar = () => {
                         <div className="nav-link">
                             {toggleMobileSwitch && <i id="mobile-sun" className="fa-regular fa-sun"></i>}
                             {!toggleMobileSwitch && <i id="mobile-moon" className="fa-regular fa-moon"></i>}
-                            <p>Light/Dark</p>
+                            <p>{toggleMobileSwitch ? 'Light' : 'Dark'}</p>
                         </div>
                     </div>
 
