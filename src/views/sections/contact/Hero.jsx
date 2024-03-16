@@ -28,6 +28,8 @@ const Hero = () => {
     const [chosenData, setChosenData] = useState("")
     const [chosenImage, setChosenImage] = useState("")
 
+    const [dateError, setDateError] = useState(false);
+
     const closeModal = () => {
         setShowModal(false);
     };
@@ -75,9 +77,17 @@ const Hero = () => {
 
         const isValidName = fullNameRegex.test(values.fullName);
         const isValidEmail = emailRegex.test(values.email);
+        const currentDate = new Date();
+        let currentDay = currentDate.getDate();
+        let currentMonth = currentDate.getMonth();
+        let currentYear = currentDate.getFullYear();
 
-        if (isValidEmail && isValidName) {
 
+        let futureDate = new Date(currentYear, currentMonth, currentDay + 1)
+        let pickedDate = values.date.split('-');
+        pickedDate = new Date(pickedDate[0], pickedDate[1]-1, pickedDate[2]);
+
+        if (isValidEmail && isValidName && pickedDate.getTime() >= futureDate.getTime()) {
             if (!values.specialist) {
                 setSpecialistError(true);
                 return;
@@ -102,11 +112,11 @@ const Hero = () => {
                     });
 
                 if (response.ok) {
-                    console.log(values)
                     setSelectedSpecialist('')
                     setValues(defaultData)
                     setShowModal(true);
                     setSpecialistError(false);
+                    setDateError(false);
 
                 } else {
                     console.log("error: ", values)
@@ -114,6 +124,8 @@ const Hero = () => {
             } catch (error) {
                 console.error("error: ", error);
             }
+        } else{
+            setDateError(true);
         }
     }
 
@@ -128,7 +140,8 @@ const Hero = () => {
                         <div className="contact-section-body">
                             <h4>Email us</h4>
                             <div>
-                                <p className="text-m">Please feel free to drop us a line. We will respond as soon as possible</p>
+                                <p className="text-m">Please feel free to drop us a line. We will respond as soon as
+                                    possible</p>
                                 <a href="#">Leave a message <img src={RightArrow} alt="right arrow"/></a>
                             </div>
                         </div>
@@ -137,7 +150,8 @@ const Hero = () => {
                         <div className="contact-section-body">
                             <h4>Careers</h4>
                             <div>
-                                <p className="text-m">Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
+                                <p className="text-m">Sit ac ipsum leo lorem magna nunc mattis maecenas non
+                                    vestibulum.</p>
                                 <a href="#">Send an application <img src={RightArrow} alt="right arrow"/></a>
                             </div>
                         </div>
@@ -201,6 +215,7 @@ const Hero = () => {
                                    errorMessage="Please enter a valid time"/>
                     </div>
 
+                    {dateError && <span className="contact-form-span">Please enter a valid date at least 1 day ahead.</span>}
                     <button id="contact-form-button" className="primary-button"><span>Make an appointment</span>
                     </button>
                 </form>
@@ -221,7 +236,6 @@ const Hero = () => {
                     </Modal>
                 )}
             </div>
-
         </div>
     )
 }
