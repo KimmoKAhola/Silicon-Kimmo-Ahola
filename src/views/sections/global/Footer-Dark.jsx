@@ -3,6 +3,7 @@ import Logo from '../../../images/logo/silicon-logo-dark_theme.svg'
 import {Link} from "react-router-dom";
 import SubscriberButton from "./SubscriberButton.jsx";
 import ArrowButton from "./ArrowButton.jsx";
+import socialLinks from "./SocialLinks.jsx";
 
 const FooterDark = () => {
     const [socialLinksAccordion, setSocialLinksAccordion] = useState(false);
@@ -66,10 +67,10 @@ const FooterDark = () => {
 
                 <div id="dark-footer-mobile-accordion">
                     <div className="dark-footer-accordion-item">
-                        <div className="accordion-header"><p>Our social links</p>
-                            <ArrowButton
-                                isActive={socialLinksAccordion ? "true" : false}
-                                onClick={toggleSocialLinks} direction={socialLinksAccordion ? "up" : "down"}/>
+                        <div className="accordion-header">
+                            <button onClick={toggleSocialLinks}>
+                                <p>Our social links<p>{socialLinksAccordion ? '-' : '+'} </p></p>
+                            </button>
                         </div>
                         <div className={`social-links-accordion ${socialLinksAccordion ? 'active' : 'inactive'}`}>
                             <ul>
@@ -82,9 +83,9 @@ const FooterDark = () => {
                     </div>
 
                     <div className="dark-footer-accordion-item">
-                        <div className="accordion-header"><p>Our social links 2</p><ArrowButton
-                            isActive={internalLinksAccordion ? "true" : false}
-                            onClick={toggleInternalLinks} direction={internalLinksAccordion ? "up" : "down"}/>
+                        <div className="accordion-header">
+                            <button onClick={toggleInternalLinks}>
+                                <p>Our social links 2 <p>{internalLinksAccordion ? '-' : '+'} </p></p></button>
                         </div>
                         <div className={`internal-links-accordion ${internalLinksAccordion ? 'active' : 'inactive'}`}>
                             <ul>
