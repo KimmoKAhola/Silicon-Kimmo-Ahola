@@ -28,7 +28,7 @@ const FooterDark = () => {
                             nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget
                             elementum
                             dolor ullamcorper sodales ultrices eros. </p>
-                        <h6>Newsletter to our newsletter</h6>
+                        <h6>Subscribe to our newsletter</h6>
                         <SubscriberButton value="Subscribe"/>
 
                         <p id="dark-copyright">2024. All rights reserved. Silicon Template.</p>
