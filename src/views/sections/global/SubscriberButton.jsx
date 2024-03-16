@@ -73,7 +73,7 @@ const SubscriberButton = (props) => {
             {showModal && (
                 <Modal onClose={closeModal}>
                     <p className="modal-success">You have been successfully subscribed to our newsletter!</p>
-                    <p className="modal-body">Our newsletter will be sent to {chosenEmail}</p>
+                    <p className="modal-body">You will receive our newsletter at {chosenEmail}</p>
                     <button className="primary-button" onClick={closeModal}><span>Close</span></button>
                 </Modal>
             )}
